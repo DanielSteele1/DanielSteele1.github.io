@@ -315,7 +315,7 @@ export default function MyApp() {
         <div class="project3">
           <Project_card
             heading="Snake"
-            src=".png"
+            src="Skycompass.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -330,7 +330,7 @@ export default function MyApp() {
         <div class="project4" >
           <Project_card
             heading="CRUD App"
-            src=".png"
+            src="Skycompass.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -352,7 +352,7 @@ export default function MyApp() {
         <div class="project6" >
           <Project_card
             heading="TODO list"
-            src=".png"
+            src="Skycompass.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."

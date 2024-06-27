@@ -56,7 +56,7 @@ body {
 }
 
 .nav-heading a {
-  color: #61dafb; 
+  color: #61dafb;
   font-family: 'Overpass', sans-serif;
   font-size: 25px;
   text-decoration: none;
@@ -170,6 +170,95 @@ body {
 
 }
 
+@media screen and (max-width: 1300px) {
+
+
+  .heading {
+
+    margin: 10px auto;
+
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .profile {
+
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+  }
+
+  .profile-container {
+
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+
+
+  }
+
+  .picture {
+
+    flex-direction: column;
+    margin: 0 10px;
+
+  }
+
+  .Icons {
+
+    flex-direction: row;
+    margin: 0 10px;
+
+  }
+
+  .navigation {
+
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+
+  }
+
+  .nav-heading {
+    margin-right: 0;
+    /* Adjust margin for smaller screens */
+    font-size: 20px;
+    /* Reduce font size for smaller screens */
+    width: fit-content;
+    margin: 10px auto;
+
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .nav-item {
+    font-size: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  .Project_card {
+
+    margin: 10px auto;
+
+  }
+
+  .Project_card img {
+
+    overflow: hidden;
+    height: fit-content;
+    width: 420px;
+  }
+
+}
+
 .nav-heading {
 
   display: flex;
@@ -264,8 +353,8 @@ body {
 
 .stack-img-row {
 
-margin: 10px;
-color:#61dafb;
+  margin: 10px;
+  color: #61dafb;
 
 }
 
@@ -362,10 +451,11 @@ color:#61dafb;
 
   display: flex;
   height: fit-content;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   width: fit-content;
-  margin: 10px auto;
+  margin: 0px auto;
 
 }
 
@@ -377,8 +467,8 @@ color:#61dafb;
   justify-content: center;
   align-items: center;
   width: 500px;
-  height: 530px;
-  margin: 10px;
+  height: 550px;
+  margin: 10px auto;
 
 }
 
@@ -407,10 +497,10 @@ color:#61dafb;
 
 .Project_card img {
 
-  height: 250px;
-  margin: 10px;
+  height: 230px;
   border: 2px solid transparent;
   align-self: center;
+  justify-content: center;
 
 }
 
@@ -435,14 +525,14 @@ color:#61dafb;
 
 .socials1 {
 
-margin: 10px;
+  margin: 10px;
 
 }
 
 .socials2 {
 
-margin: 10px;
-  
+  margin: 10px;
+
 }
 
 .socials img:hover,
@@ -492,7 +582,7 @@ margin: 10px;
 .contactForm button,
 .Project_card button {
 
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
   border: 2px solid;
   border-color: #61dafb;
@@ -547,7 +637,7 @@ margin: 10px;
 
 }
 
-.contactForm h2{
+.contactForm h2 {
 
   font-family: 'Overpass', sans-serif;
   color: #61dafb;
@@ -566,7 +656,7 @@ margin: 10px;
 .footer-item {
 
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
   margin: auto;
@@ -578,14 +668,14 @@ margin: 10px;
 
 .item-link1 {
 
-  flex:0;
+  flex: 0;
   padding: 10px;
 
 }
 
 .item-link2 {
 
-  flex:0;
+  flex: 0;
   padding: 10px;
 }
 

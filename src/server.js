@@ -19,7 +19,6 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-
 let mailVariables = {
 
 from: email, 
