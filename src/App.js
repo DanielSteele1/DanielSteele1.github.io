@@ -96,10 +96,8 @@ function Project_card({ src, description, heading }) {
     <div class="Project_card">
       <div id="heading"> {heading} </div>
       <img src={src} />
-      <br></br>
-      <div id="description"> {description} </div>
+      <div id="description" class="noselect"> {description} </div>
       <div id="button"> <button> View Project </button>  </div>
-      <br></br>
 
     </div>
   )
@@ -109,7 +107,7 @@ function ContactForm() {
 
   return (
 
-    <form class="contactForm">
+    <form className="contactForm">
             <div id="contact"> </div>
 
       <div class="heading"> <h1> Get In Touch </h1>  </div>
@@ -117,7 +115,6 @@ function ContactForm() {
 
       <h2> If preferred, you can message me via my LinkedIn page as i check it regularly. </h2>
       <h2>  Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h2>
-      <br></br>
 
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email" />
@@ -176,30 +173,25 @@ function StackCard({src, description}) {
 export default function MyApp() {
 
   return (
-
     <div>
 
       <Canvas />
-      <div id="about"> </div>
       <Navigation />
 
       <div id="navigation-line"> </div>
-      <div class="heading"> <h1> I'm Daniel Steele - Full Stack Developer  </h1>  </div>
+      <div class="heading"> <h1> Daniel Steele - Full Stack Developer  </h1>  </div>
 
       <div class="profile-container">
         <Profile />
 
         <div class="profile_Desc">
           I'm Daniel Steele, A Full Stack Engineer
-          <br></br>
           That's recently graduated with a degree
-          <br></br>
           from the University of Plymouth, UK.
           <br></br>
+          <br></br>
           I love to code, and I'm looking for
-          <br></br>
           oppurtunities in the UK to
-          <br></br>
           show off my development skills.
         </div>
 
@@ -214,15 +206,15 @@ export default function MyApp() {
       </div>
 
       <div class="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
-      <br></br>
+
       <div class="stack">
 
         <div class="stack-desc-container">
           <div class="stack-desc">
 
-            <h1> Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development. 
+             Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development. 
               Although I have knowledge of Javascript, React, MongoDB / MySql and have worked with different web API's in the past, I still thrive to teach myself new technologies and libraries in the field.
-              As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.  </h1>
+              As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.  
           </div>
         </div>
 
@@ -280,12 +272,7 @@ export default function MyApp() {
 
       <div id="projects"> </div>
 
-      <br></br>
-      <br></br>
-
-      <div class="heading"> <h1> Here's some of my recent projects: </h1> </div>
-      <br></br>
-      <br></br>
+      <div class="heading"> <h1> My recent projects: </h1> </div>
       <div class="projects">
 
         <div class="project1">
@@ -363,8 +350,6 @@ export default function MyApp() {
       </div>
 
       <ContactForm />
-
-      <h1> https://benscott.dev/#about </h1>
 
       <Footer />
 
