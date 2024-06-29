@@ -21,8 +21,8 @@ function Picture5() {
         src="linkedin.png"
         alt="picture"
         style={({ borderRadius: '75%' })}
-        width={50}
-        height={50}
+        width={55}
+        height={55}
         onClick={handleLinkedinClick}
       />
     </div>
@@ -44,8 +44,8 @@ function Picture6() {
       src="github-logo.png"
       alt="picture"
       style={({ borderRadius: '75%' })}
-      width={50}
-      height={50}
+      width={55}
+      height={55}
       onClick={handleGithubClick}
 
     />
@@ -74,7 +74,7 @@ function Navigation() {
     <div class="navigation">
 
       <div class="nav-item">
-        <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
+        <h1 class="nav-heading"> <a href="#about"> About </a>  </h1> 
       </div>
 
       <div class="nav-item">
@@ -179,6 +179,7 @@ export default function MyApp() {
       <Navigation />
 
       <div id="navigation-line"> </div>
+      <div id="about"> </div>
       <div class="heading"> <h1> Daniel Steele - Full Stack Developer  </h1>  </div>
 
       <div class="profile-container">
@@ -301,8 +302,8 @@ export default function MyApp() {
 
         <div class="project3">
           <Project_card
-            heading="Snake"
-            src="Skycompass.png"
+            heading="Ongoing Project"
+            src="coming_soon.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -316,8 +317,8 @@ export default function MyApp() {
 
         <div class="project4" >
           <Project_card
-            heading="CRUD App"
-            src="Skycompass.png"
+            heading="Ongoing Project"
+            src="coming_soon.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -338,8 +339,8 @@ export default function MyApp() {
 
         <div class="project6" >
           <Project_card
-            heading="TODO list"
-            src="Skycompass.png"
+            heading="Ongoing Project"
+            src="coming_soon.png"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
