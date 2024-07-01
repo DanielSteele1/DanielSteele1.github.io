@@ -184,7 +184,7 @@ body {
   .Project_card img {
 
     width: 100;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .stack-desc {
@@ -333,7 +333,12 @@ body {
   margin:auto;
 }
 
+.Project_card img {
 
+  width: 100;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 }
 @media (max-width: 480px) {
@@ -367,6 +372,11 @@ body {
    
   }
 
+  .Project_card img {
+
+    width: 100%;
+    margin: 0 auto;
+  }
 
 }
 

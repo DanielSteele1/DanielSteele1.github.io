@@ -91,14 +91,14 @@ function Navigation() {
   )
 }
 
-function Project_card({ src, description, heading }) {
+function Project_card({ src, description, heading, link}) {
   return (
 
     <div class="Project_card">
       <div id="heading"> {heading} </div>
       <img src={src} />
       <div id="description" class="noselect"> {description} </div>
-      <div id="button"> <button> View Project </button>  </div>
+      <div id="button" > <a href={link} target="_blank">  <button> View Project </button> </a> </div>
 
     </div>
   )
@@ -285,7 +285,9 @@ export default function MyApp() {
             description=" SkyCompass is a web based application that allows users to monitor up to date weather patterns across the globe. 
             It utilises multiple APIs to create a dashboard displaying weather maps, 
             as well a forecast page that predicts weather for up to 7 days."
+            link="https://github.com/DanielSteele1/COMP3000"
 
+          
           />
 
         </div>
@@ -297,6 +299,7 @@ export default function MyApp() {
             description="EarthSim is a project that I had built in C++ for my Game development class, 
             using OpenGL and various libraries to create a 3D environrment, with the goal of simulating our local system of planets,  
             exposing me to core game development principles and GLSL."
+            link="https://github.com/DanielSteele1/COMP3016_2"
 
           />
         </div>
@@ -334,6 +337,7 @@ export default function MyApp() {
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            link="https://github.com/DanielSteele1/COMP3016_1"
 
           />
         </div>
