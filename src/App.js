@@ -60,8 +60,9 @@ function Profile() {
       className="profile"
       src="Kam_Tree.jpg"
       alt="profile"
-      width={180}
-      height={180}
+      height={200}
+      width={200}
+
     />
 
   )
@@ -212,8 +213,8 @@ export default function MyApp() {
 
         <div class="stack-desc-container">
           <div class="stack-desc">
-
              Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development. 
+             <br></br> <br></br>
               Although I have knowledge of Javascript, React, MongoDB / MySql and have worked with different web API's in the past, I still thrive to teach myself new technologies and libraries in the field.
               As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.  
           </div>
