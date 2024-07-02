@@ -24,7 +24,7 @@ let mailVariables = {
 from: email, 
 to: 'Dsteele1906@gmail.com',
 subject: 'WEBSITE - NEW MESSAGE',
-text: message
+text: message,
 
 };
 

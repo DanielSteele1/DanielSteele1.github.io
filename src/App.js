@@ -75,7 +75,7 @@ function Navigation() {
     <div class="navigation">
 
       <div class="nav-item">
-        <h1 class="nav-heading"> <a href="#about"> About </a>  </h1> 
+        <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
 
       <div class="nav-item">
@@ -91,7 +91,7 @@ function Navigation() {
   )
 }
 
-function Project_card({ src, description, heading, link}) {
+function Project_card({ src, description, heading, link }) {
   return (
 
     <div class="Project_card">
@@ -109,7 +109,7 @@ function ContactForm() {
   return (
 
     <form className="contactForm">
-            <div id="contact"> </div>
+      <div id="contact"> </div>
 
       <div class="heading"> <h1> Get In Touch </h1>  </div>
       <h2> Have a question or enquiry? Send me your details below <br></br> and i'll be happy to get back to you as soon as possible. </h2>
@@ -127,7 +127,7 @@ function ContactForm() {
           Hello
         </div>
 
-        <button type="submit" class="submit"> SUBMIT </button>
+        <button type="submit" class="submit"> SEN </button>
       </div>
 
     </form>
@@ -143,12 +143,12 @@ function Footer() {
 
       <div class="footer-item">
 
-        <div class="item-link1"> 
-        <Picture6 />
+        <div class="item-link1">
+          <Picture6 />
         </div>
 
         <div class="item-link2">
-        <Picture5 />
+          <Picture5 />
         </div>
       </div>
 
@@ -159,7 +159,7 @@ function Footer() {
   )
 }
 
-function StackCard({src, description}) {
+function StackCard({ src, description }) {
 
   return (
     <div className="stack-card">
@@ -213,10 +213,10 @@ export default function MyApp() {
 
         <div class="stack-desc-container">
           <div class="stack-desc">
-             Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development. 
-             <br></br> <br></br>
-              Although I have knowledge of Javascript, React, MongoDB / MySql and have worked with different web API's in the past, I still thrive to teach myself new technologies and libraries in the field.
-              As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.  
+            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development.
+            <br></br> <br></br>
+            Although I have knowledge of Javascript, React, MongoDB / MySql and have worked with different web API's in the past, I still thrive to teach myself new technologies and libraries in the field.
+            As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
           </div>
         </div>
 
@@ -224,49 +224,49 @@ export default function MyApp() {
 
         <div class="stack-img-container">
 
-         <div class="stack-img-row">
-          <StackCard
-            src="HTML.png"
-            description="HTML"
-          />
-          <StackCard
-            src="Figma.png"
-            description="Figma"
-          />
-          <StackCard
-            src="Node.png"
-            description="NodeJS"
-          />
+          <div class="stack-img-row">
+            <StackCard
+              src="HTML.png"
+              description="HTML"
+            />
+            <StackCard
+              src="Figma.png"
+              description="Figma"
+            />
+            <StackCard
+              src="Node.png"
+              description="NodeJS"
+            />
           </div>
 
           <div class="stack-img-row">
-          <StackCard
-            src="CSS.png"
-            description="CSS"
-          />
-          <StackCard
-            src="express.png"
-            description="Express.js"
-          />
-          <StackCard
-            src="mongoDB.png"
-            description="MongoDB"
-          />
+            <StackCard
+              src="CSS.png"
+              description="CSS"
+            />
+            <StackCard
+              src="express.png"
+              description="Express.js"
+            />
+            <StackCard
+              src="mongoDB.png"
+              description="MongoDB"
+            />
           </div>
-          
+
           <div class="stack-img-row">
-          <StackCard
-            src="JS.png"
-            description="JavaScript"
-          />
-          <StackCard
-            src="React.png"
-            description="React.js"
-          />
-          <StackCard
-            src="git.png"
-            description="Git"
-          />
+            <StackCard
+              src="JS.png"
+              description="JavaScript"
+            />
+            <StackCard
+              src="React.png"
+              description="React.js"
+            />
+            <StackCard
+              src="git.png"
+              description="Git"
+            />
           </div>
 
         </div>
@@ -287,7 +287,7 @@ export default function MyApp() {
             as well a forecast page that predicts weather for up to 7 days."
             link="https://github.com/DanielSteele1/COMP3000"
 
-          
+
           />
 
         </div>
@@ -352,11 +352,9 @@ export default function MyApp() {
 
           />
         </div>
-
       </div>
 
       <ContactForm />
-
       <Footer />
 
     </div>
