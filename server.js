@@ -12,9 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post('/send-email', (req, res) => {
-    console.log(req.body); // Log the entire request body
     const { name, email, message } = req.body;
-    console.log(`Name: ${name}, Email: ${email}, Message: ${message}`); // Log destructured variables
     // transporter object
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -47,10 +45,9 @@ app.post('/send-email', (req, res) => {
     });
 });
 
-// Error handling middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.status(500).send('Something broke!');
+    res.status(500).send('error');
 });
 
 app.listen(PORT, '0.0.0.0', () => {
