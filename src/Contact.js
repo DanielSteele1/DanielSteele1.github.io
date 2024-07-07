@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 
 
 function ContactForm() {
-
-
-
      const [formData, setFormData] = useState({
 
        name: '',
@@ -26,7 +23,7 @@ function ContactForm() {
 
         e.preventDefault();
         try {
-          const response = await fetch('http://localhost:5000/send-email', { // Adjust URL/path as necessary
+          const response = await fetch('http://localhost:3001/send-email', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -35,6 +32,8 @@ function ContactForm() {
           });
           const responseData = await response.text();
           console.log('Success:', responseData);
+          //window.location.reload();
+
           // Handle success (e.g., showing a success message)
         } catch (error) {
           console.error('Error:', error);
@@ -42,7 +41,6 @@ function ContactForm() {
         }
 
     }
-
 
     return (
     
@@ -55,9 +53,9 @@ function ContactForm() {
         <h2> If preferred, you can message me via my LinkedIn page as i check it regularly. </h2>
         <h2>  Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h2>
     
-        <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange}/>
-        <input type="email" name="email"  placeholder="Email" value={formData.email} onChange={handleChange} />
-        <textarea name="message"  placeholder="Message"  value={formData.message} onChange={handleChange} />
+        <input type="text" name="name"  placeholder="Name" value={formData.name} onChange={handleChange} required/>
+        <input type="email" name="email"  placeholder="Email" value={formData.email} onChange={handleChange} required />
+        <textarea name="message"  placeholder="Message"  value={formData.message} onChange={handleChange} required />
     
         <div class="error-container">
     
