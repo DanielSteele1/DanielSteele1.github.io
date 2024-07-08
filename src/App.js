@@ -318,11 +318,12 @@ export default function MyApp() {
       </div>
 
       <div class="heading"> <h1> Get In Touch </h1>  </div>
-        <h2> Have a question or enquiry? Send me your details below <br></br> and i'll be happy to get back to you as soon as possible. </h2>
+
+        <h1> Have a question or enquiry? Send me your details below <br></br> and i'll be happy to get back to you as soon as possible. </h1>
     
-        <h2> If preferred, you can message me via my LinkedIn page as i check it regularly. </h2>
-        <h2>  Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h2>
-        
+        <h1> If preferred, you can message me via my LinkedIn page as i check it regularly. </h1>
+        <h1>  Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h1>
+
         
       
       <Footer />
