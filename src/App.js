@@ -319,7 +319,7 @@ export default function MyApp() {
 
       <div class="heading"> <h1> Get In Touch </h1>  </div>
 
-        <h1 class="description"> Have a question or enquiry? Send me your details below <br></br> and i'll be happy to get back to you as soon as possible.
+        <h1 id="description"> Have a question or enquiry? Send me your details below <br></br> and i'll be happy to get back to you as soon as possible.
     
          If preferred, you can message me via my LinkedIn page as i check it regularly. 
          Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h1>
