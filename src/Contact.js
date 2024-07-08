@@ -53,7 +53,7 @@ function ContactForm() {
         <h2> If preferred, you can message me via my LinkedIn page as i check it regularly. </h2>
         <h2>  Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </h2>
     
-        <input type="text" name="name"  placeholder="Name" value={formData.name} onChange={handleChange} required/>
+        <input type="text" name="name"  placeholder="Name" value={formData.name} onChange={handleChange} required/> 
         <input type="email" name="email"  placeholder="Email" value={formData.email} onChange={handleChange} required />
         <textarea name="message"  placeholder="Message"  value={formData.message} onChange={handleChange} required />
     
