@@ -279,9 +279,7 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            description=" Ongoing Project "
 
           />
         </div>
@@ -294,9 +292,7 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            description=" Ongoing Project "
 
           />
         </div>
@@ -305,9 +301,7 @@ export default function MyApp() {
           <Project_card
             heading="Knights Adventure"
             src="KnightsAdventure.png"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            description="Knights Adventure is coded using C++. It's a console based game I created for my Game Development class"
             link="https://github.com/DanielSteele1/COMP3016_1"
 
           />
@@ -317,9 +311,7 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            description=" Ongoing Project "
 
           />
         </div>
