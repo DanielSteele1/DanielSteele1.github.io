@@ -321,8 +321,9 @@ export default function MyApp() {
 
         <h1 id="description"> 
           
-          Have a question or enquiry? Send me your details below and i'll be happy to get back to you as soon as possible.
-         If preferred, you can message me via my LinkedIn page as i check it regularly. Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
+          Have a question or enquiry? Send me your details below and i'll be happy to get back to you as soon as possible. <br></br>
+          If preferred, you can message me via my LinkedIn page as i check it regularly. <br> </br>
+          Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
          </h1>
 
       <Footer />
