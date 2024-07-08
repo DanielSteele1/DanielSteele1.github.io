@@ -205,7 +205,7 @@ export default function MyApp() {
               description="Figma"
             />
             <StackCard
-              src="Node.png"
+              src="node.png"
               description="NodeJS"
             />
           </div>
@@ -231,7 +231,7 @@ export default function MyApp() {
               description="JavaScript"
             />
             <StackCard
-              src="React.png"
+              src="react.png"
               description="React.js"
             />
             <StackCard
