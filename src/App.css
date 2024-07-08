@@ -225,12 +225,24 @@ body {
 
 }
 
+.nav-logo-heading {
+
+  display: flex;
+  margin-left: 80px;
+  font-family: 'Overpass', sans-serif;
+  width: fit-content;
+  justify-content: flex-start;
+
+}
+
+
 .nav-item {
 
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  justify-content: flex-start;
 }
 
 #navigation-line {

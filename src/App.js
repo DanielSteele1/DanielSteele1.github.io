@@ -75,6 +75,11 @@ function Navigation() {
 
     <div class="navigation">
 
+
+      <div class="nav-item">
+        <h1 class="nav-heading"> <img src="download-img.png" />  </h1>
+      </div>
+
       <div class="nav-item">
         <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
@@ -86,6 +91,7 @@ function Navigation() {
       <div class="nav-item">
         <h1 class="nav-heading">  <a href="#contact">Contact</a> </h1>
       </div>
+
 
     </div>
 
