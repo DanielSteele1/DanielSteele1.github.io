@@ -75,7 +75,6 @@ function Navigation() {
 
     <div class="navigation">
 
-
       <div class="nav-item">
         <h1 class="nav-heading"> <img src="download-img.png" />  </h1>
       </div>
