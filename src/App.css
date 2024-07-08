@@ -253,6 +253,20 @@ body {
 
 }
 
+.contact-desc {
+
+    color: #61dafb;
+    font-family: 'Overpass', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 5px;
+    
+}
+
 .stack {
 
   display: flex;

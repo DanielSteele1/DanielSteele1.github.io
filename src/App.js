@@ -317,14 +317,14 @@ export default function MyApp() {
         </div>
       </div>
 
-      <div class="heading"> <h1> Get In Touch </h1>  </div>
+      <div id="contact" class="heading"> <h1> Get In Touch </h1>  </div>
 
-        <h1 id="description"> 
+        <div class="contact-desc"> 
           
-          Have a question or enquiry? Send me your details below and i'll be happy to get back to you as soon as possible. <br></br>
-          If preferred, you can message me via my LinkedIn page as i check it regularly. <br></br>
-          Or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
-         </h1>
+          Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible. <br></br>
+          If preferred, you can also message me via my LinkedIn page as i check it regularly. <br></br>
+           <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
+         </div>
 
       <Footer />
 
