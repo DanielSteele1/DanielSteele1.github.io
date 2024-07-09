@@ -115,8 +115,26 @@ body {
 
 }
 
+.projects {
 
-@media screen and (max-width: 1000px) {
+  display:grid;
+  grid-template-columns: repeat(3, 0.3fr);
+  overflow:hidden;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+@media (max-width: 1200px) {
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    overflow:hidden;
+    gap: 10px;
+  }
 
   .heading {
 
@@ -125,8 +143,8 @@ body {
     align-items: center;
     color: #61dafb;
     font-family: 'Overpass', sans-serif;
-    margin: 5% 10%;
-    padding: auto 10%;
+    padding: auto;
+    margin: 0 auto;
 
   }
 
@@ -135,10 +153,13 @@ body {
     justify-content: center;
     height: auto;
     width:100%;
-    padding: 5px 6%;
+    margin: 0 auto;
   }
 
   .nav-heading a {
+    margin-right: 0 !important;
+    justify-content: center;
+    margin: 0 auto;
     text-align:center;
     font-family: 'Overpass', sans-serif;
   }
@@ -147,7 +168,7 @@ body {
 
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 10 auto;
     margin-bottom: 50px;
 
   }
@@ -162,6 +183,7 @@ body {
 
   .picture {
 
+    margin: 0 auto;
     flex-direction: column;
 
   }
@@ -173,16 +195,8 @@ body {
 
   }
 
-  .Project_card {
-
-    margin: 10px auto;
-    max-height: auto;
-    max-width: 90%;
-  }
-
   .Project_card img {
 
-    width: 100;
     margin: 0 auto;
   }
 
@@ -217,11 +231,11 @@ body {
 .nav-heading {
 
   display: flex;
+  text-align: center;
   margin-right: 80px;
   font-family: 'Overpass', sans-serif;
   width: fit-content;
   font-size: 15px;
-  position: relative;
 
 }
 
@@ -450,8 +464,7 @@ body {
   color: #61dafb;
   font-family: 'Overpass', sans-serif;
   margin: 0 auto;
-  width: fit-content;
-  position: relative;
+  text-align: center;
 }
 
 .heading::after,
@@ -483,15 +496,6 @@ body {
 
 }
 
-.projects {
-
-display:grid;
-grid-template-columns: repeat(3, 0.3fr);
-overflow:hidden;
-justify-content: center;
-align-items: center;
-}
-
 .Project_card {
 
   display: flex;
@@ -504,7 +508,7 @@ align-items: center;
 
 @media (max-width: 768px) {
   .projects {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 0.6fr); 
   }
 
   .heading {
@@ -517,7 +521,6 @@ align-items: center;
     font-family: 'Overpass', sans-serif;
     margin: 0 13%;
   }
-
 
   .profile_Desc {
 
@@ -553,6 +556,14 @@ align-items: center;
 
   }
 
+  .nav-heading a {
+
+    margin-right: 0 !important;
+    justify-content: center;
+    text-align:center;
+    margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
+  }
 }
 
 

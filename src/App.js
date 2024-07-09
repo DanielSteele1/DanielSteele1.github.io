@@ -289,10 +289,6 @@ export default function MyApp() {
           />
         </div>
 
-      </div>
-
-      <div class="projects">
-
         <div class="project4" >
           <Project_card
             heading="Ongoing Project"
