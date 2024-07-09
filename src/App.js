@@ -59,10 +59,8 @@ function Profile() {
 
     <img
       className="profile"
-      src="Kam_Tree.jpg"
+      src="Kam_Tree-cropped.jpg"
       alt="profile"
-      height={200}
-      width={200}
 
     />
 
@@ -75,9 +73,9 @@ function Navigation() {
 
     <div class="navigation">
 
-      <div class="nav-item">
+      {/* <div class="nav-item">
         <h1 class="nav-heading"> <img src="download-img.png" />  </h1>
-      </div>
+      </div> */}
 
       <div class="nav-item">
         <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
@@ -163,8 +161,8 @@ export default function MyApp() {
         <Profile />
 
         <div class="profile_Desc">
-          I'm Daniel Steele, A Full Stack Engineer
-          That's recently graduated with a degree
+          I'm Daniel Steele, a Full Stack Engineer
+          that's recently graduated with a degree
           from the University of Plymouth, UK.
           <br></br>
           <br></br>
@@ -189,9 +187,14 @@ export default function MyApp() {
 
         <div class="stack-desc-container">
           <div class="stack-desc">
-            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to advance myself in the world of Full Stack Development.
-            <br></br> <br></br>
-            Although I have knowledge of Javascript, React, MongoDB / MySql and have worked with different web API's in the past, I still thrive to teach myself new technologies and libraries in the field.
+            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to immerse myself in the world of full stack evelopment.
+            <br></br> 
+            <br></br>
+            At my time at university, I've learnt to code with technologies such as Javascript, React, MongoDB & MySql. I've also created a variety of projects with different public web API's, which you can view below this page. 
+            <br></br> 
+            <br></br> 
+            I thrive to teach myself new technologies and libraries in the field. 
+
             As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
           </div>
         </div>
@@ -323,7 +326,8 @@ export default function MyApp() {
         <div class="contact-desc"> 
           
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible. <br></br>
-          If preferred, you can also message me via my LinkedIn page as i check it regularly. <br></br>
+          If preferred, you can also message me via my LinkedIn page, where i'd be happy to connect with you. <br></br>
+          <br></br>
            <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
          </div>
 
