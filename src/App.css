@@ -79,6 +79,7 @@ body {
   font-family: 'Overpass', sans-serif;
   font-size: 25px;
   text-decoration: none;
+  position:relative;
 
 }
 
@@ -162,6 +163,8 @@ body {
     margin: 0 auto;
     text-align:center;
     font-family: 'Overpass', sans-serif;
+    position:relative;
+
   }
 
   .profile {
@@ -184,6 +187,9 @@ body {
   .picture {
 
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
     flex-direction: column;
 
   }
@@ -236,6 +242,7 @@ body {
   font-family: 'Overpass', sans-serif;
   width: fit-content;
   font-size: 15px;
+  position:relative;
 
 }
 
@@ -275,7 +282,6 @@ body {
   align-items: center;
   border: 2px solid transparent;
   user-select: none;
-  
 
 }
 
@@ -465,6 +471,8 @@ body {
   font-family: 'Overpass', sans-serif;
   margin: 0 auto;
   text-align: center;
+  position:relative;
+  width:fit-content;
 }
 
 .heading::after,
@@ -519,7 +527,8 @@ body {
     font-size: 15px;
     color: #61dafb;
     font-family: 'Overpass', sans-serif;
-    margin: 0 13%;
+    margin: 0 15%;
+    position:relative;
   }
 
   .profile_Desc {
@@ -563,6 +572,8 @@ body {
     text-align:center;
     margin: 0 auto;
     font-family: 'Overpass', sans-serif;
+    position:relative;
+
   }
 }
 
