@@ -162,8 +162,8 @@ export default function MyApp() {
 
         <div class="profile_Desc">
           I'm Daniel Steele, a Full Stack Engineer
-          that's recently graduated with a degree
-          from the University of Plymouth, UK.
+          that's recently graduated with a bachelors 
+          degree from the University of Plymouth, UK.
           <br></br>
           <br></br>
           I love to code, and I'm looking for
@@ -195,7 +195,7 @@ export default function MyApp() {
             <br></br> 
             I thrive to teach myself new technologies and libraries in the field. 
 
-            As an occasional hobby, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
+            As an occasional hobby in my free time, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
           </div>
         </div>
 
