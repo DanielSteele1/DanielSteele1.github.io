@@ -163,6 +163,25 @@ body {
   
 }
 
+@media (min-width: 1200px) {
+
+
+  .nav-heading {
+
+    display: flex;
+    text-align: center;
+    margin-right: 80px;
+    font-family: 'Overpass', sans-serif;
+    width: fit-content;
+    font-size: 15px;
+    position:relative;
+  
+  }
+
+}
+
+
+
 @media (max-width: 1200px) {
 
   .projects {
@@ -192,7 +211,6 @@ body {
   }
 
   .nav-heading a {
-    margin-right: 0 !important;
     justify-content: center;
     margin: 0 auto;
     text-align:center;
@@ -272,11 +290,11 @@ body {
 
   display: flex;
   text-align: center;
-  margin-right: 80px;
   font-family: 'Overpass', sans-serif;
   width: fit-content;
   font-size: 15px;
   position:relative;
+  
 
 }
 
@@ -453,7 +471,7 @@ body {
 
   .Project_card img {
 
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin: 0 auto;
   }
@@ -581,7 +599,6 @@ body {
     margin: 0 auto;
    }
 
-
   .projects {
     grid-template-columns: 1fr;
   }
@@ -601,14 +618,38 @@ body {
 
   .nav-heading a {
 
-    margin-right: 0 !important;
     justify-content: center;
     text-align:center;
     margin: 0 auto;
+    font-size: 18px;
     font-family: 'Overpass', sans-serif;
     position:relative;
 
   }
+
+  .Project_card img {
+
+    width: 380px;
+    height: auto;
+
+  }
+
+
+
+.heading {
+
+  margin: 0 auto;
+}
+
+ .contact-desc {
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+ }
+
+
 }
 
 
@@ -636,7 +677,7 @@ body {
 
 .Project_card img {
 
-  height: 250px;
+  height: 230px;
   border: 2px solid transparent;
   justify-content: center;
   align-items: center;
