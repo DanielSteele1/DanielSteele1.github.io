@@ -287,7 +287,8 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description=" Ongoing Project "
+            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 
           />
         </div>
@@ -303,10 +304,9 @@ export default function MyApp() {
 
         <div class="project5" >
           <Project_card
-            heading="Knights Adventure"
-            src="KnightsAdventure.png"
-            description="Knights Adventure is coded using C++. It's a console based game I created for my Game Development class"
-            link="https://github.com/DanielSteele1/COMP3016_1"
+            heading="Ongoing Project"
+            src="coming_soon.png"
+            description="Ongoing Project"
 
           />
         </div>
@@ -321,8 +321,10 @@ export default function MyApp() {
         </div>
       </div>
 
+    
       <div id="contact" class="heading"> <h1> Get In Touch </h1>  </div>
 
+       <div class="contact-desc-container">
         <div class="contact-desc"> 
           
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible. <br></br>
@@ -330,6 +332,7 @@ export default function MyApp() {
           <br></br>
            <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
          </div>
+       </div>
 
       <Footer />
 

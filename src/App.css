@@ -155,16 +155,24 @@ body {
   display:grid;
   grid-template-columns: repeat(3, 0.3fr);
   overflow:hidden;
-  gap: 10px;
+  gap: 40px;
   align-items: start;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   
 }
 
-@media (min-width: 1200px) {
+.project1, .project2, .project3, .project4, .project5, .project6 {
 
+ background-color:  rgba(32, 31, 31, 0.6);
+  border-radius: 15px;
+  height: 95%;
+
+}
+
+
+@media (min-width: 1200px) {
 
   .nav-heading {
 
@@ -179,7 +187,6 @@ body {
   }
 
 }
-
 
 
 @media (max-width: 1200px) {
@@ -223,7 +230,7 @@ body {
 
     align-items: center;
     justify-content: center;
-    margin: 0 auto 50px;
+    margin: 0 auto 10px;
 
   }
 
@@ -362,6 +369,22 @@ body {
   width: 80%;
 }
 
+.stack-desc-container {
+
+   background-color:  rgba(32, 31, 31, 0.5);
+   border-radius: 15px;
+   padding: 10px;
+
+}
+
+.contact-desc-container {
+  background-color:  rgba(32, 31, 31, 0.6);
+  border-radius: 15px;
+  padding: 5px;
+  margin: 3%;
+}
+
+
 .stack-desc {
 
   font-size: 25px;
@@ -437,7 +460,9 @@ body {
   margin: 0 auto;
 }
 
+
 }
+
 @media (max-width: 480px) {
 
   .stack img {
@@ -496,7 +521,7 @@ body {
   align-items: center;
   border-radius: 75%;
   justify-content: center;
-  margin: 0px auto 50px;
+  margin: 0px auto 0px;
   border: 2px solid transparent;
 
 }
@@ -567,6 +592,13 @@ body {
   
 }
 
+.Project_card #heading{
+
+  margin: 10px;
+
+}
+
+
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 0.6fr); 
@@ -588,6 +620,12 @@ body {
 
     font-size: 20px;
     max-width: 100%;
+
+  }
+
+  .profile {
+
+    margin: 0 auto 30px;
 
   }
 }
