@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "homepage": "https://danielsteele1.github.io",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "main -d build"
   },
   "eslintConfig": {
     "extends": [
