@@ -161,7 +161,7 @@ export default function MyApp() {
         <Profile />
 
         <div class="profile_Desc">
-          I'm Daniel Steele, a Full Stack Engineer
+          I'm Daniel Steele, a Full Stack Developer
           that's recently graduated with a bachelors 
           degree from the University of Plymouth, UK.
           <br></br>
