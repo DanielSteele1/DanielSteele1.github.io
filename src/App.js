@@ -59,7 +59,7 @@ function Profile() {
 
     <img
       className="profile"
-      src="Kam_Tree-cropped.jpg"
+      src="Daniel Steele profile picture.jpg"
       alt="profile"
 
     />
