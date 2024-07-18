@@ -187,7 +187,7 @@ export default function MyApp() {
 
         <div class="stack-desc-container">
           <div class="stack-desc">
-            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to immerse myself in the world of full stack evelopment.
+            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to immerse myself in the world of full stack development.
             <br></br> 
             <br></br>
             At my time at university, I've learnt to code with technologies such as Javascript, React, MongoDB & MySql. I've also created a variety of projects with different public web API's, which you can view below this page. 
