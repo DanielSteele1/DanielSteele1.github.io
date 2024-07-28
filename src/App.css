@@ -384,7 +384,6 @@ body {
   margin: 3%;
 }
 
-
 .stack-desc {
 
   font-size: 25px;
@@ -587,7 +586,9 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
   align-items: center;
   overflow: hidden;
   
@@ -793,7 +794,12 @@ body {
 .contactForm button,
 .Project_card button {
 
-  margin: 15px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-decoration: none;
   padding: 10px;
   border: 2px solid;
   border-color: #61dafb;
@@ -809,6 +815,8 @@ body {
 
   box-shadow: #61dafb 0px 1px 10px;
   transition: 0.10;
+  text-decoration: none;
+  outline: none;
 
 }
 

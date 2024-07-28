@@ -11,7 +11,7 @@ function Picture5() {
 
   const handleLinkedinClick = () => {
 
-    window.location.href = "https://www.linkedin.com/in/daniel-steele-b06443198/"
+    window.location.href = "https://www.linkedin.com/in/daniel-steele1/"
 
   };
 
@@ -287,8 +287,8 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+            description=" Ongoing Project "
+            
 
           />
         </div>
