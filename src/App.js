@@ -59,7 +59,8 @@ function Profile() {
 
     <img
       className="profile"
-      src="Daniel Steele profile picture.png"
+      // src="Daniel Steele profile picture.png"
+      src="Sunglasses.jpg"
       alt="profile"
 
     />
