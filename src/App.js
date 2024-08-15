@@ -261,7 +261,7 @@ export default function MyApp() {
 
           <Project_card
             heading="SkyCompass"
-            src="SkyCompass.png"
+            src="SkyCompass.gif"
             description=" SkyCompass is a web based application that allows users to monitor up to date weather patterns across the globe. 
             It utilises multiple APIs to create a dashboard displaying weather maps, 
             as well a forecast page that predicts weather for up to 7 days."
