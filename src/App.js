@@ -275,7 +275,7 @@ export default function MyApp() {
         <div class="project2">
           <Project_card
             heading="EarthSim"
-            src="EarthSIm.png"
+            src="EarthSim.gif"
             description="EarthSim is a project that I had built in C++ for my Game development class, 
             using OpenGL and various libraries to create a 3D environrment, with the goal of simulating our local system of planets,  
             exposing me to core game development principles and GLSL."
