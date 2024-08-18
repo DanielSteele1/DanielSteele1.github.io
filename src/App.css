@@ -111,7 +111,7 @@ body {
 .nav-heading a {
   color: #61dafb;
   font-family: 'Overpass', sans-serif;
-  font-size: 25px;
+  font-size: 23px;
   text-decoration: none;
   position:relative;
 
@@ -204,7 +204,6 @@ body {
     align-items: center;
     color: #61dafb;
     font-family: 'Overpass', sans-serif;
-    padding: auto;
     margin: 0 auto;
 
   }
@@ -249,7 +248,6 @@ body {
     align-items: center;
     margin-bottom: 50px;
     flex-direction: column;
-
 
   }
 
@@ -350,8 +348,8 @@ body {
     font-family: 'Overpass', sans-serif;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    margin: 10px auto;
+    margin: 0 auto;
+    font-size: 20px;
     text-align: center;
     line-height: 1.5;
     padding: 5px;
@@ -378,15 +376,19 @@ body {
 }
 
 .contact-desc-container {
+  display: flex;
   background-color:  rgba(32, 31, 31, 0.6);
   border-radius: 15px;
-  padding: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
   margin: 3%;
 }
 
 .stack-desc {
 
-  font-size: 25px;
+  font-size: 23px;
   display: flex;
   max-width: fit-content;
   justify-content: center;
@@ -543,13 +545,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 17px;
   color: #61dafb;
   font-family: 'Overpass', sans-serif;
   margin: 0 auto;
   text-align: center;
   position:relative;
   width:fit-content;
+  height:fit-content;
+  
 }
 
 .heading::after,
@@ -579,6 +583,12 @@ body {
   justify-content: center;
   border: 2px solid transparent;
 
+}
+
+.picture:hover {
+
+cursor: pointer;
+
 
 }
 
@@ -588,7 +598,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 20px;
+  padding: 8px;
   align-items: center;
   overflow: hidden;
   
@@ -596,7 +606,7 @@ body {
 
 .Project_card #heading{
 
-  margin: 10px;
+  margin-bottom: 5px;
 
 }
 
@@ -709,7 +719,7 @@ body {
 
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 27px;
   padding: 10px;
   color: #61dafb;
   font-family: 'Poppins', sans-serif;
@@ -717,25 +727,27 @@ body {
 
 .Project_card img {
 
-  height: 230px;
+  height: 237px;
   border: 2px solid transparent;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 .Project_card img:hover {
 
   border: 2px solid;
   border-color: #61dafb;
-  box-shadow: #61dafb 0px 1px 10px;
+  box-shadow: #61dafb 0px 3px 10px;
+  border-radius: 5px;
   transition: 0.10s;
 }
 
 .socials {
   display: flex;
   width: fit-content;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
   border: 2px solid transparent;
   align-items: center;
@@ -761,6 +773,7 @@ body {
   border-color: #61dafb;
   transition: 0.10s;
   box-shadow: #61dafb 0px 1px 10px;
+  cursor: pointer;
 
 }
 
@@ -795,7 +808,6 @@ body {
 .Project_card button {
 
   display: flex;
-
   justify-content: center;
   align-items: center;
   outline: none;
@@ -817,13 +829,12 @@ body {
   transition: 0.10;
   text-decoration: none;
   outline: none;
-
 }
 
 #img src {
 
   border-radius: 50%;
-  margin: 10px;
+  margin: 10px;  
 
 }
 
@@ -879,7 +890,7 @@ body {
   text-align: center;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   color: #61dafb;
 
 }
@@ -928,7 +939,6 @@ body {
 }
 
 .back-to-top {
-
 
   background-color: #61dafb;
 

@@ -22,8 +22,8 @@ function Picture5() {
         src="linkedin.png"
         alt="picture"
         style={({ borderRadius: '75%' })}
-        width={55}
-        height={55}
+        width={50}
+        height={50}
         onClick={handleLinkedinClick}
       />
     </div>
@@ -45,8 +45,8 @@ function Picture6() {
       src="github-logo.png"
       alt="picture"
       style={({ borderRadius: '75%' })}
-      width={55}
-      height={55}
+      width={50}
+      height={50}
       onClick={handleGithubClick}
 
     />
@@ -163,7 +163,7 @@ export default function MyApp() {
 
         <div class="profile_Desc">
           I'm Daniel Steele, a Full Stack Developer
-          that's recently graduated with a bachelors 
+          that's recently graduated with a bachelors
           degree from the University of Plymouth, UK.
           <br></br>
           <br></br>
@@ -189,12 +189,12 @@ export default function MyApp() {
         <div class="stack-desc-container">
           <div class="stack-desc">
             Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to immerse myself in the world of full-stack development.
-            <br></br> 
             <br></br>
-            At my time at university, I've learnt to code with technologies such as Javascript, React, MongoDB & MySQL. I've also created a variety of projects with different public web APIs, which you can view below this page. 
-            <br></br> 
-            <br></br> 
-            I strive to teach myself new technologies and libraries in the field. 
+            <br></br>
+            At my time at university, I've learnt to code with technologies such as Javascript, React, MongoDB & MySQL. I've also created a variety of projects with different public web APIs, which you can view below this page.
+            <br></br>
+            <br></br>
+            I strive to teach myself new technologies and libraries in the field.
 
             As an occasional hobby in my free time, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
           </div>
@@ -289,7 +289,6 @@ export default function MyApp() {
             heading="Ongoing Project"
             src="coming_soon.png"
             description=" Ongoing Project "
-            
 
           />
         </div>
@@ -322,18 +321,21 @@ export default function MyApp() {
         </div>
       </div>
 
-    
-      <div id="contact" class="heading"> <h1> Get In Touch </h1>  </div>
 
-       <div class="contact-desc-container">
-        <div class="contact-desc"> 
-          
-          Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible. <br></br>
-          If preferred, you can also message me via my LinkedIn page, where i'd be happy to connect with you. <br></br>
+      <div id="contact" class="heading"> <h1> Get in Touch </h1>  </div>
+
+      <div class="contact-desc-container">
+        <div class="contact-desc">
+
+          Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.
           <br></br>
-           <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> 
-         </div>
-       </div>
+          Feel free to connect with me on linkedin
+          <br></br>
+          <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a>
+          <br></br>
+
+        </div>
+      </div>
 
       <Footer />
 
