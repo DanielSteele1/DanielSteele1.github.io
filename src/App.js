@@ -78,6 +78,11 @@ function Navigation() {
         <h1 class="nav-heading"> <img src="download-img.png" />  </h1>
       </div> */}
 
+
+        <div class="nav-logo-heading">
+          <h1> Daniel Steele - Full Stack Developer  </h1>
+        </div>
+
       <div class="nav-item">
         <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
@@ -90,19 +95,18 @@ function Navigation() {
         <h1 class="nav-heading">  <a href="#contact">Contact</a> </h1>
       </div>
 
-
     </div>
 
   )
 }
 
-function Project_card({ src, description, heading, link }) {
+function Project_card({ src, children, heading, link }) {
   return (
 
     <div class="Project_card">
       <div id="heading"> {heading} </div>
       <img src={src} />
-      <div id="description" class="noselect"> {description} </div>
+      <div id="description" class="noselect"> <p>{children}</p> </div>
       <div id="button" > <a href={link} target="_blank">  <button> View Project </button> </a> </div>
 
     </div>
@@ -156,20 +160,19 @@ export default function MyApp() {
 
       <div id="navigation-line"> </div>
       <div id="about"> </div>
-      <div class="heading"> <h1> Daniel Steele - Full Stack Developer  </h1>  </div>
 
       <div class="profile-container">
         <Profile />
 
         <div class="profile_Desc">
-          I'm Daniel Steele, a Full Stack Developer
-          that's recently graduated with a bachelors
-          degree from the University of Plymouth, UK.
-          <br></br>
-          <br></br>
+          <p>
+          I'm Daniel Steele, a <span class="highlight"> Full Stack Developer </span>
+          that's recently graduated with <span class="highlight"> a bachelors
+          degree from the University of Plymouth, UK. </span>
           I love to code, and I'm looking for
           oppurtunities in the UK to
           show off my development skills.
+          </p>
         </div>
 
         <div class="socials">
@@ -188,15 +191,16 @@ export default function MyApp() {
 
         <div class="stack-desc-container">
           <div class="stack-desc">
-            Having recently graduated from the University of Plymouth in 2024, and with a passion for creativity, I'm eager to immerse myself in the world of full-stack development.
-            <br></br>
-            <br></br>
-            At my time at university, I've learnt to code with technologies such as Javascript, React, MongoDB & MySQL. I've also created a variety of projects with different public web APIs, which you can view below this page.
-            <br></br>
-            <br></br>
-            I strive to teach myself new technologies and libraries in the field.
-
-            As an occasional hobby in my free time, I like to code passion projects with OpenGL (C++). I also have an interest in PC hardware.
+            <p>
+            Having recently graduated from the <span class="highlight">  University of Plymouth in 2024,</span> and with a passion for creativity, I'm eager to immerse myself in the world of <span class="highlight">full-stack development. </span>
+            
+            At my time at university, I've learnt to code with web technologies such as <span class="highlight"> Javascript, React, MongoDB & MySQL. </span>I've also created a variety of <span class="highlight"> projects with different public web APIs, </span> which you can view below this page.
+            <br></br> <br></br>
+            I'm always looking to expand on my current knowledge and teach myself new techologies in and around web developement. <span class="highlight">Learning different approches keeps me motivated and excited to code.</span>
+            <br></br> <br></br>
+            As an occasional hobby in my free time, I like to mess around with<span class="highlight"> coding passion projects in OpenGL (C++). </span> I have an interest in computer hardware, and also enjoy playing video games with friends to unwind after a long day.
+            <br></br> <br></br>
+            If you would like to keep up with some of my work and what i'm getting up to, you should <span className="highlight">connect with me on LinkedIn and Github.</span></p>
           </div>
         </div>
 
@@ -262,26 +266,26 @@ export default function MyApp() {
           <Project_card
             heading="SkyCompass"
             src="SkyCompass.gif"
-            description=" SkyCompass is a web based application that allows users to monitor up to date weather patterns across the globe. 
-            It utilises multiple APIs to create a dashboard displaying weather maps, 
-            as well a forecast page that predicts weather for up to 7 days."
             link="https://github.com/DanielSteele1/COMP3000"
+            > 
+            <span className="highlight"> Skycompass is a web based application </span>
+            that allows users to monitor up to date weather patterns across the globe. 
+            It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps, 
+            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span>
 
-
-          />
-
+            </Project_card>
         </div>
 
         <div class="project2">
           <Project_card
             heading="EarthSim"
             src="EarthSim.gif"
-            description="EarthSim is a project that I had built in C++ for my Game development class, 
-            using OpenGL and various libraries to create a 3D environrment, with the goal of simulating our local system of planets,  
-            exposing me to core game development principles and GLSL."
             link="https://github.com/DanielSteele1/COMP3016_2"
-
-          />
+          >
+            <span className="highlight">EarthSim </span> is a project that I had built in C++ for my Game development class, 
+            <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environrment, with the goal of simulating our <span className="highlight"> local system of planets, </span>  
+            exposing me to core <span className="highlight">game development principles and GLSL.</span>
+          </Project_card>
         </div>
 
         <div class="project3">
@@ -329,7 +333,7 @@ export default function MyApp() {
 
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.
           <br></br>
-          Also, feel free to connect and chat with me on linkedin. 
+          Also, feel free to connect and chat with me on linkedin.
           <br></br>
           <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a>
           <br></br>

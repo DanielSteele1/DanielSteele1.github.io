@@ -34,7 +34,6 @@
   text-decoration: none;
 }
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 /* html::-webkit-scrollbar {
   display: none;
@@ -43,7 +42,7 @@
 /* Hide scrollbar for IE, Edge, and Firefox */
 /* html {
   -ms-overflow-style: none;  /* IE and Edge */
- /* scrollbar-width: none;  /* Firefox 
+/* scrollbar-width: none;  /* Firefox 
 }  */
 
 
@@ -71,7 +70,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #48a5be;
+  background-color: #9546fc;
 }
 
 /* For IE and Edge */
@@ -81,7 +80,7 @@
 
 
 .App-link {
-  color: #61dafb;
+  color: #9546fc;
 }
 
 @keyframes App-logo-spin {
@@ -96,7 +95,7 @@
 
 a {
 
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
@@ -108,12 +107,20 @@ body {
   background-color: #141313;
 }
 
+.highlight {
+
+  color: #9546fc;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+
 .nav-heading a {
-  color: #61dafb;
+  color: #9546fc;
   font-family: 'Overpass', sans-serif;
   font-size: 23px;
   text-decoration: none;
-  position:relative;
+  position: relative;
 
 }
 
@@ -142,7 +149,7 @@ body {
   font-family: 'Overpass', sans-serif;
   height: 68px;
   background-color: #201e1e;
-  color: #61dafb;
+  color: #9546fc;
   position: sticky;
   text-align: center;
   top: 0;
@@ -152,21 +159,27 @@ body {
 
 .projects {
 
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 0.3fr);
-  overflow:hidden;
+  overflow: hidden;
   gap: 40px;
   align-items: start;
   justify-content: center;
   margin: 0 auto;
-  
+
 }
 
-.project1, .project2, .project3, .project4, .project5, .project6 {
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
 
- background-color:  rgba(32, 31, 31, 0.6);
- border-radius: 10px;
- height: 95%;
+  background-color: rgba(32, 31, 31, 0.6);
+  border-radius: 10px;
+  margin: 10px;
+  height: 95%;
 
 }
 
@@ -181,9 +194,16 @@ body {
     font-family: 'Overpass', sans-serif;
     width: fit-content;
     font-size: 15px;
-    position:relative;
-  
+    position: relative;
+
   }
+
+  .nav-logo-heading {
+
+    margin-right: 35%;
+
+  }
+
 
 }
 
@@ -192,7 +212,7 @@ body {
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
-    overflow:hidden;
+    overflow: hidden;
     gap: 10px;
   }
 
@@ -201,7 +221,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #61dafb;
+    color: #9546fc;
     font-family: 'Overpass', sans-serif;
     margin: 0 auto;
 
@@ -211,16 +231,16 @@ body {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .nav-heading a {
     justify-content: center;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
     font-family: 'Overpass', sans-serif;
-    position:relative;
+    position: relative;
 
   }
 
@@ -237,6 +257,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
+
 
   }
 
@@ -265,28 +286,29 @@ body {
   .stack-desc {
 
     font-size: 10px;
-   }
+  }
 
-  .stack img{
+  .stack img {
 
     height: 50px;
-    width:  50px;
-    margin:0 auto;
+    width: 50px;
+    margin: 0 auto;
 
   }
 
- .contactForm, .contactForm input, .contactForm textarea{
+  .contactForm,
+  .contactForm input,
+  .contactForm textarea {
     width: fit-content;
     max-width: 80%;
 
- }
+  }
 
- .contactForm .error-container
- {
+  .contactForm .error-container {
 
-  font-size:14px;
-  max-width: 80%;
- }
+    font-size: 14px;
+    max-width: 80%;
+  }
 
 }
 
@@ -297,18 +319,19 @@ body {
   font-family: 'Overpass', sans-serif;
   width: fit-content;
   font-size: 15px;
-  position:relative;
-  
+  position: relative;
+
 
 }
 
 .nav-logo-heading {
 
   display: flex;
-  margin-left: 80px;
   font-family: 'Overpass', sans-serif;
   width: fit-content;
-  justify-content: flex-start;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -332,7 +355,7 @@ body {
 
 #description {
 
-  color: #61dafb;
+  color: white;
   font-family: 'Overpass', sans-serif;
   justify-content: center;
   align-items: center;
@@ -343,13 +366,13 @@ body {
 
 .contact-desc {
 
-    color: #61dafb;
-    font-family: 'Overpass', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.7;
-    padding: 5px;
-    
+  color: #9546fc;
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+  padding: 5px;
+
 }
 
 .stack {
@@ -365,15 +388,19 @@ body {
 
 .stack-desc-container {
 
-   background-color:  rgba(32, 31, 31, 0.5);
-   border-radius: 15px;
-   padding: 10px;
-
+  background-color: rgba(32, 31, 31, 0.5);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .contact-desc-container {
   display: flex;
-  background-color:  rgba(32, 31, 31, 0.6);
+  background-color: rgba(32, 31, 31, 0.6);
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -383,24 +410,24 @@ body {
 
 .stack-desc {
 
-  font-size: 23px;
+  font-size: 20px;
   display: flex;
   max-width: fit-content;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
-  color: #61dafb;
+  color: white;
   font-family: 'Overpass', sans-serif;
   margin: 10px;
   text-align: center;
-  
+
 }
 
 .stack-desc h1 {
 
   font-size: 25px;
   line-height: 1.5;
-  color: #61dafb;
+  color: #9546fc;
   font-family: 'Overpass', sans-serif;
   margin: 0 20%;
   margin-bottom: 10px;
@@ -419,7 +446,7 @@ body {
 .stack-img-row {
 
   margin: 10px;
-  color: #61dafb;
+  color: white;
 
 }
 
@@ -430,84 +457,121 @@ body {
   align-items: center;
   height: 80px;
   width: 80px;
-  margin:auto;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
 
-.stack-img-container {
+  .stack-img-container {
 
-  width:fit-content;
-  height:auto;
-  margin: 0 10%;
-  padding: 10px;
+    width: fit-content;
+    height: auto;
+    margin: 0 10%;
+    padding: 10px;
 
-}
+  }
 
-.stack img {
+  .stack img {
 
-  height: 50%;
-  width: 50%;
-  margin:auto;
-}
+    height: 50%;
+    width: 50%;
+    margin: auto;
+  }
 
-.Project_card img {
+  .Project_card img {
 
-  margin: 0 auto;
-}
+    margin: 0 auto;
+  }
 
+  .nav-logo-heading {
+
+    margin-right: 0%;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+  }
 
 }
 
 @media (max-width: 480px) {
 
   .stack img {
-  
+
     height: 40px;
     width: 40px;
-    margin:auto;
+    margin: auto;
   }
 
   .stack-desc {
 
     font-size: 16px;
-   }
+  }
 
-   .profile-container {
+  .profile-container {
     margin: 0 auto;
     padding: 10px;
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    width: 100%; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .profile_Desc {
 
     font-size: 18px;
     max-width: 70%;
-   
+
   }
 
   .Project_card img {
 
-    width: 95%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
   }
+
+  .profile {
+
+    margin: 0 auto 30px;
+
+  }
+  .Project_card {
+
+    width:fit-content;
+    margin: 10 auto;
+  }
+
+  .projects {
+
+    margin: 10 auto;
+  }
+  
+  p {
+      
+      font-size: 15px;
+  }
+
+
+.nav-logo-heading {
+
+  font-size: 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
 
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
   align-items: center;
   width: 65%;
   margin: 10px auto;
+  margin-top: 50px;
+  background-color: rgba(32, 31, 31, 0.6);
+  border-radius: 15px;
 }
-
 
 .profile {
 
@@ -519,7 +583,8 @@ body {
   justify-content: center;
   margin: 0px auto 0px;
   border: 2px solid transparent;
-  object-fit:cover;
+  object-fit: cover;
+  opacity: 1.0;
 
 }
 
@@ -528,11 +593,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 1.35;
-  color: #61dafb;
+  color: white;
   font-family: 'Overpass', sans-serif;
   max-width: 60%;
+  opacity: 1.0;
 }
 
 .heading {
@@ -540,18 +606,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
-  color: #61dafb;
+  font-size: 15px;
+  color: #9546fc;
   font-family: 'Overpass', sans-serif;
   margin: 0 auto;
   text-align: center;
-  position:relative;
-  width:fit-content;
-  height:fit-content;
-  
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+
 }
 
-.heading::after,
+
 .nav-heading::after {
 
   content: '';
@@ -560,12 +626,12 @@ body {
   left: 0;
   width: 0;
   border-bottom: 0.5px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   transition: width 0.5s;
 
 }
 
-.heading:hover::after,
+
 .nav-heading:hover::after {
 
   width: 100%;
@@ -582,7 +648,7 @@ body {
 
 .picture:hover {
 
-cursor: pointer;
+  cursor: pointer;
 
 
 }
@@ -593,13 +659,13 @@ cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 8px;
+  padding: 9px;
   align-items: center;
   overflow: hidden;
-  
+
 }
 
-.Project_card #heading{
+.Project_card #heading {
 
   margin-bottom: 5px;
 
@@ -608,7 +674,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
   .projects {
-    grid-template-columns: repeat(1, 0.6fr); 
+    grid-template-columns: repeat(1, 0.6fr);
   }
 
   .heading {
@@ -617,10 +683,10 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: #61dafb;
+    color: #9546fc;
     font-family: 'Overpass', sans-serif;
     margin: 0 15%;
-    position:relative;
+    position: relative;
   }
 
   .profile_Desc {
@@ -639,10 +705,10 @@ cursor: pointer;
 
 @media (max-width: 480px) {
 
-   .socials {
+  .socials {
 
     margin: 0 auto;
-   }
+  }
 
   .projects {
     grid-template-columns: 1fr;
@@ -654,7 +720,7 @@ cursor: pointer;
     max-width: 100%;
 
   }
- 
+
   .profile {
 
     margin: 0 auto 50px;
@@ -664,35 +730,41 @@ cursor: pointer;
   .nav-heading a {
 
     justify-content: center;
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     font-size: 18px;
     font-family: 'Overpass', sans-serif;
-    position:relative;
+    position: relative;
 
   }
 
   .Project_card img {
 
-    width: 380px;
-    height: auto;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
 
   }
 
 
+   .project1,.project2,.project3,.project4,.project5,.project6 {
+      
+      width: 90%;
+      margin: 0px auto;
+   }
 
-.heading {
+  .heading {
 
-  margin: 0 auto;
-}
+    margin: 0 auto;
+  }
 
- .contact-desc {
+  .contact-desc {
     font-size: 18px;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
     line-height: 1.5;
- }
+  }
 
 
 }
@@ -704,7 +776,7 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
   font-size: 20px;
-  color: #61dafb;
+  color: white;
   font-family: 'Overpass', sans-serif;
   margin: 10px;
 
@@ -716,7 +788,7 @@ cursor: pointer;
   justify-content: center;
   font-size: 27px;
   padding: 10px;
-  color: #61dafb;
+  color: #9546fc;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -733,8 +805,8 @@ cursor: pointer;
 .Project_card img:hover {
 
   border: 2px solid;
-  border-color: #61dafb;
-  box-shadow: #61dafb 0px 3px 10px;
+  border-color: #9546fc;
+  box-shadow: #9546fc 0px 3px 10px;
   border-radius: 5px;
   transition: 0.10s;
 }
@@ -749,7 +821,8 @@ cursor: pointer;
   justify-content: center;
 }
 
-.socials1, .socials2 {
+.socials1,
+.socials2 {
 
   margin: 10px;
 }
@@ -757,17 +830,17 @@ cursor: pointer;
 .socials img:hover,
 .profile:hover {
   border: 2px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   transition: 0.10s;
-  box-shadow: #61dafb 0px 1px 10px;
+  box-shadow: #9546fc 0px 1px 10px;
 }
 
 .Icons:hover {
 
   border: 1px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   transition: 0.10s;
-  box-shadow: #61dafb 0px 1px 10px;
+  box-shadow: #9546fc 0px 1px 10px;
   cursor: pointer;
 
 }
@@ -781,7 +854,7 @@ cursor: pointer;
   flex-direction: column;
   margin: 10px auto;
   font-family: 'Overpass', sans-serif;
-  color: #61dafb;
+  color: #9546fc;
   width: 100%;
 }
 
@@ -790,10 +863,10 @@ cursor: pointer;
   margin: 10px;
   padding: 10px;
   border: 1px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   border-radius: 5px;
   background-color: #201e1e;
-  color: #61dafb;
+  color: #9546fc;
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
 
@@ -809,10 +882,10 @@ cursor: pointer;
   text-decoration: none;
   padding: 10px;
   border: 2px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   background-color: #201e1e;
   border-radius: 5px;
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
@@ -820,16 +893,17 @@ cursor: pointer;
 .contactForm input:hover,
 .Project_card button:hover {
 
-  box-shadow: #61dafb 0px 1px 10px;
+  box-shadow: #9546fc 0px 1px 10px;
   transition: 0.10;
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 #img src {
 
   border-radius: 50%;
-  margin: 10px;  
+  margin: 10px;
 
 }
 
@@ -840,10 +914,10 @@ cursor: pointer;
   margin: 10px;
   padding: 10px;
   border: 1px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   background-color: #201e1e;
   border-radius: 5px;
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
@@ -854,18 +928,18 @@ cursor: pointer;
   margin: 10px;
   padding: 10px;
   border: 1px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   background-color: #201e1e;
   font-family: 'Overpass', sans-serif;
   border-radius: 5px;
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
 .contactForm h2 {
 
   font-family: 'Overpass', sans-serif;
-  color: #61dafb;
+  color: #9546fc;
   font-size: 25px;
 
 }
@@ -886,11 +960,12 @@ cursor: pointer;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   font-size: 10px;
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
-.item-link1, .item-link2 {
+.item-link1,
+.item-link2 {
 
   flex: 0;
   padding: 10px;
@@ -913,10 +988,10 @@ cursor: pointer;
   margin: 10px;
   padding: 10px;
   border: 2px solid;
-  border-color: #61dafb;
+  border-color: #9546fc;
   background-color: #201e1e;
   border-radius: 5px;
-  color: #61dafb;
+  color: #9546fc;
 
 }
 
@@ -935,6 +1010,6 @@ cursor: pointer;
 
 .back-to-top {
 
-  background-color: #61dafb;
+  background-color: #9546fc;
 
 }

@@ -13,21 +13,21 @@ function CanvasBackground() {
 
         // Create particles
         const particlesArray = [];
-        const numberOfParticles = 30;
+        const numberOfParticles = 50;
 
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 0.0 + 1;
+                this.size = Math.random() * 0.0 + 3;
                 this.speedX = Math.random() * 1 - 0.0;
                 this.speedY = Math.random() * 1 - 0.0;
             }
 
             // Method to draw individual particle
             draw() {
-                context.fillStyle = '#00FFFF';
-                context.strokeStyle = '#00FFFF';
+                context.fillStyle = '#9546fc';
+                context.strokeStyle = '#9546fc';
                 context.lineWidth = 1;
                 context.beginPath();
                 context.lineTo(this.x, this.y);
