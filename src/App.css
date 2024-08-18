@@ -395,6 +395,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 75%;
   
 }
 
@@ -505,6 +506,14 @@ body {
   .stack-desc {
 
     font-size: 16px;
+  }
+
+  .heading h1{
+
+    margin: 10 auto;
+    margin: 10px;
+    font-size: 25px;
+
   }
 
   .profile-container {
