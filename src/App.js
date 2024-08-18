@@ -329,7 +329,7 @@ export default function MyApp() {
 
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.
           <br></br>
-          Feel free to connect with me on linkedin
+          Also, feel free to connect and chat with me on linkedin. 
           <br></br>
           <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a>
           <br></br>
