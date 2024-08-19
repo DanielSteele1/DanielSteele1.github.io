@@ -109,11 +109,10 @@ body {
 
 .highlight {
 
-  color: #9546fc;
+  color: #9d4edd;
   font-family: 'Overpass', sans-serif;
 
 }
-
 
 .nav-heading a {
   color: #9546fc;
@@ -327,7 +326,7 @@ body {
 .nav-logo-heading {
 
   display: flex;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'montserrat', sans-serif;
   width: fit-content;
   font-size: 12px;
   justify-content: center;
@@ -380,6 +379,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   margin: 10px auto;
   height: fit-content;
@@ -390,12 +390,11 @@ body {
 
   background-color: rgba(32, 31, 31, 0.5);
   border-radius: 15px;
-  padding: 10px;
-  margin: 10px auto;
+  margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 75%;
+  max-width: 80%;
   
 }
 
@@ -413,7 +412,7 @@ body {
 
   font-size: 20px;
   display: flex;
-  max-width: fit-content;
+  max-width: 75%;
   justify-content: center;
   align-items: center;
   line-height: 1.5;
@@ -754,7 +753,6 @@ body {
     margin: 10 auto;
 
   }
-
 
    .project1,.project2,.project3,.project4,.project5,.project6 {
       

@@ -41,7 +41,7 @@ function CanvasBackground() {
                 this.x += this.speedX;
                 this.y += this.speedY;
 
-                if (this.size > 1.10) this.size -= 0.1;
+                if (this.size > 1.0) this.size -= 0.1;
                 if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
                 if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
             }
