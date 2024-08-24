@@ -198,9 +198,9 @@ export default function MyApp() {
             <br></br> <br></br>
             I'm always looking to expand on my current knowledge and teach myself new techologies in and around web developement. <span class="highlight">Learning different approches keeps me motivated and excited to code.</span>
             <br></br> <br></br>
-            As an occasional hobby in my free time, I like to mess around with<span class="highlight"> coding passion projects in OpenGL (C++). </span> I have an interest in computer hardware, and also enjoy playing video games with friends to unwind after a long day.
+            As an occasional hobby in my free time, I like to mess around with <span class="highlight"> coding passion projects in OpenGL (C++), </span> And have a keen interest in computer hardware. To unwind, I like to play video games with freinds.
             <br></br> <br></br>
-            If you would like to keep up with some of my work and what i'm getting up to, you should <span className="highlight">connect with me on LinkedIn and Github.</span></p>
+            If you would like to keep up with some of my work and what i'm getting up to, you should <span className="highlight">connect with me on <a className="link" href="https://www.linkedin.com/in/daniel-steele-b06443198/"> LinkedIn</a> and on <a className="link" href="https://github.com/DanielSteele1"> Github.</a></span></p>
           </div>
         </div>
 

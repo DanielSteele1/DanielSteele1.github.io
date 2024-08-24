@@ -95,9 +95,47 @@
 
 a {
 
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  color: #9546fc;
+}
+
+a:hover {
+
+  text-decoration: underline;
   color: #9546fc;
 
 }
+
+
+.link {
+  display: inline-block;
+  color: #ffffff; /* Fallback color */
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  height: auto;
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(90deg, #b6b6b6, #9546fc);
+  box-shadow: 0px 4px 15px rgba(149, 70, 252, 0.5);
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link:hover {
+  background-image: linear-gradient(90deg, #b6b6b6, #9546fc);
+  box-shadow: 0px 4px 20px rgba(149, 70, 252, 0.7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -657,7 +695,7 @@ body {
 .picture:hover {
 
   cursor: pointer;
-
+  transform: translateY(-2px);
 
 }
 
@@ -840,6 +878,9 @@ body {
   border-color: #9546fc;
   transition: 0.10s;
   box-shadow: #9546fc 0px 1px 10px;
+  transform: translateY(-2px); /* This creates the bounce effect */
+  transition: all 0.3s ease;
+
 }
 
 .Icons:hover {
