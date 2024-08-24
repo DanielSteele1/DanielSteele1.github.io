@@ -72,27 +72,27 @@ function Navigation() {
 
   return (
 
-    <div class="navigation">
+    <div className="navigation">
 
       {/* <div class="nav-item">
         <h1 class="nav-heading"> <img src="download-img.png" />  </h1>
       </div> */}
 
 
-        <div class="nav-logo-heading">
+        <div className="nav-logo-heading">
           <h1> Daniel Steele - Full Stack Developer  </h1>
         </div>
 
-      <div class="nav-item">
-        <h1 class="nav-heading"> <a href="#about"> About </a>  </h1>
+      <div className="nav-item">
+        <h1 className="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
 
-      <div class="nav-item">
-        <h1 class="nav-heading"> <a href="#projects">  Projects  </a> </h1>
+      <div className="nav-item">
+        <h1 className="nav-heading"> <a href="#projects">  Projects  </a> </h1>
       </div>
 
-      <div class="nav-item">
-        <h1 class="nav-heading">  <a href="#contact">Contact</a> </h1>
+      <div className="nav-item">
+        <h1 className="nav-heading">  <a href="#contact">Contact</a> </h1>
       </div>
 
     </div>
@@ -103,10 +103,10 @@ function Navigation() {
 function Project_card({ src, children, heading, link }) {
   return (
 
-    <div class="Project_card">
+    <div className="Project_card">
       <div id="heading"> {heading} </div>
       <img src={src} />
-      <div id="description" class="noselect"> <p>{children}</p> </div>
+      <div id="description" className="noselect"> <p>{children}</p> </div>
       <div id="button" > <a href={link} target="_blank">  <button> View Project </button> </a> </div>
 
     </div>
@@ -118,20 +118,20 @@ function Footer() {
 
   return (
 
-    <div class="footer">
+    <div className="footer">
 
-      <div class="footer-item">
+      <div className="footer-item">
 
-        <div class="item-link1">
+        <div className="item-link1">
           <Picture6 />
         </div>
 
-        <div class="item-link2">
+        <div className="item-link2">
           <Picture5 />
         </div>
       </div>
 
-      <div class="footer-item">
+      <div className="footer-item">
         <h2> Daniel Steele ©2024 </h2>
       </div>
     </div>
@@ -161,13 +161,13 @@ export default function MyApp() {
       <div id="navigation-line"> </div>
       <div id="about"> </div>
 
-      <div class="profile-container">
+      <div className="profile-container">
         <Profile />
 
-        <div class="profile_Desc">
+        <div className="profile_Desc">
           <p>
-          I'm Daniel Steele, a <span class="highlight"> Full Stack Developer </span>
-          that's recently graduated with <span class="highlight"> a bachelors
+          I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
+          that's recently graduated with <span className="highlight"> a bachelors
           degree from the University of Plymouth, UK. </span>
           I love to code, and I'm looking for
           oppurtunities in the UK to
@@ -175,40 +175,40 @@ export default function MyApp() {
           </p>
         </div>
 
-        <div class="socials">
-          <div class="socials1">
+        <div className="socials">
+          <div className="socials1">
             <Picture6 />
           </div>
-          <div class="socials2">
+          <div className="socials2">
             <Picture5 />
           </div>
         </div>
       </div>
 
-      <div class="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
+      <div className="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
 
-      <div class="stack">
+      <div className="stack">
 
-        <div class="stack-desc-container">
-          <div class="stack-desc">
+        <div className="stack-desc-container">
+          <div className="stack-desc">
             <p>
-            Having recently graduated from the <span class="highlight">  University of Plymouth in 2024,</span> and with a passion for creativity, I'm eager to immerse myself in the world of <span class="highlight">full-stack development. </span>
+            Having recently graduated from the <span className="highlight">  University of Plymouth in 2024,</span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
             
-            At my time at university, I've learnt to code with web technologies such as <span class="highlight"> Javascript, React, MongoDB & MySQL. </span>I've also created a variety of <span class="highlight"> projects with different public web APIs, </span> which you can view below this page.
+            At my time at university, I've learnt to code with web technologies such as <span className="highlight"> Javascript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
             <br></br> <br></br>
-            I'm always looking to expand on my current knowledge and teach myself new techologies in and around web developement. <span class="highlight">Learning different approches keeps me motivated and excited to code.</span>
+            I'm always looking to expand on my current knowledge and teach myself new techologies in and around web developement. <span className="highlight">Learning different approches keeps me motivated and excited to code.</span>
             <br></br> <br></br>
-            As an occasional hobby in my free time, I like to mess around with <span class="highlight"> coding passion projects in OpenGL (C++), </span> And have a keen interest in computer hardware. To unwind, I like to play video games with freinds.
+            As an occasional hobby in my free time, I like to mess around with <span className="highlight"> coding passion projects in OpenGL (C++), </span> And have a keen interest in computer hardware. To unwind, I like to play video games with freinds.
             <br></br> <br></br>
             If you would like to keep up with some of my work and what i'm getting up to, you should <span className="highlight">connect with me on <a className="link" href="https://www.linkedin.com/in/daniel-steele-b06443198/"> LinkedIn</a> and on <a className="link" href="https://github.com/DanielSteele1"> Github.</a></span></p>
           </div>
         </div>
 
-        <div class="heading"> <h1> My Tech Stack: </h1> </div>
+        <div className="heading"> <h1> My Tech Stack: </h1> </div>
 
-        <div class="stack-img-container">
+        <div className="stack-img-container">
 
-          <div class="stack-img-row">
+          <div className="stack-img-row">
             <StackCard
               src="HTML.png"
               description="HTML"
@@ -223,7 +223,7 @@ export default function MyApp() {
             />
           </div>
 
-          <div class="stack-img-row">
+          <div className="stack-img-row">
             <StackCard
               src="CSS.png"
               description="CSS"
@@ -238,7 +238,7 @@ export default function MyApp() {
             />
           </div>
 
-          <div class="stack-img-row">
+          <div className="stack-img-row">
             <StackCard
               src="JS.png"
               description="JavaScript"
@@ -258,10 +258,10 @@ export default function MyApp() {
 
       <div id="projects"> </div>
 
-      <div class="heading"> <h1> My recent projects: </h1> </div>
-      <div class="projects">
+      <div className="heading"> <h1> My recent projects: </h1> </div>
+      <div className="projects">
 
-        <div class="project1">
+        <div className="project1">
 
           <Project_card
             heading="SkyCompass"
@@ -276,7 +276,7 @@ export default function MyApp() {
             </Project_card>
         </div>
 
-        <div class="project2">
+        <div className="project2">
           <Project_card
             heading="EarthSim"
             src="EarthSim.gif"
@@ -288,7 +288,7 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div class="project3">
+        <div className="project3">
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
@@ -297,7 +297,7 @@ export default function MyApp() {
           />
         </div>
 
-        <div class="project4" >
+        <div className="project4" >
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
@@ -306,7 +306,7 @@ export default function MyApp() {
           />
         </div>
 
-        <div class="project5" >
+        <div className="project5" >
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
@@ -315,7 +315,7 @@ export default function MyApp() {
           />
         </div>
 
-        <div class="project6" >
+        <div className="project6" >
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
@@ -326,10 +326,10 @@ export default function MyApp() {
       </div>
 
 
-      <div id="contact" class="heading"> <h1> Get in Touch </h1>  </div>
+      <div id="contact" className="heading"> <h1> Get in Touch </h1>  </div>
 
-      <div class="contact-desc-container">
-        <div class="contact-desc">
+      <div className="contact-desc-container">
+        <div className="contact-desc">
 
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.
           <br></br>
