@@ -310,6 +310,7 @@ export default function MyApp() {
           <Project_card
             heading="Developer Portfolio"
             src="Portfolio.gif"
+            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
           > 
              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using <span className="highlight"> React.js, HTML, CSS and some Javascript, </span> I use it to showcase some of the work i'm most proud of creating. <span className="highlight"> Click below to view the source code. </span>
           
