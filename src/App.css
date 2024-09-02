@@ -398,7 +398,6 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
-  user-select: none;
 
 }
 
@@ -853,7 +852,7 @@ body {
 
 .Project_card img {
 
-  height: 237px;
+  height: 240px;
   border: 2px solid transparent;
   justify-content: center;
   align-items: center;
@@ -867,7 +866,7 @@ body {
   border-color: #9546fc;
   box-shadow: #9546fc 0px 3px 10px;
   border-radius: 5px;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .socials {
@@ -939,16 +938,19 @@ body {
 .Project_card button {
 
   display: flex;
+  font-family: 'Overpass', sans-serif;
+  font-size: 17px;
   justify-content: center;
   align-items: center;
-  outline: none;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 50px;
   border: 2px solid;
-  border-color: #9546fc;
-  background-color: #201e1e;
   border-radius: 5px;
   color: #9546fc;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: #201e1e !important;
 
 }
 
@@ -957,7 +959,7 @@ body {
 .Project_card button:hover {
 
   box-shadow: #9546fc 0px 1px 10px;
-  transition: 0.2s;
+  transition: 0.5s;
   text-decoration: none;
   outline: none;
   cursor: pointer;
