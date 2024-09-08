@@ -283,7 +283,7 @@ export default function MyApp() {
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
             <span className="highlight">EarthSim </span> is a project that I had built in C++ for my Game development class, 
-            <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environrment, with the goal of simulating our <span className="highlight"> local system of planets, </span>  
+            <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environment, with the goal of simulating our <span className="highlight"> local system of planets, </span>  
             exposing me to core <span className="highlight">game development principles and GLSL.</span>
           </Project_card>
         </div>
@@ -320,11 +320,14 @@ export default function MyApp() {
 
         <div className="project6" >
           <Project_card
-            heading="Ongoing Project"
-            src="coming_soon.png"
-            description=" Ongoing Project "
+            heading="DoodlePallete"
+            src="drawing-app.gif"
+            link="https://github.com/DanielSteele1/Drawing-App"
+            >
+            
+            <span className="highlight">  DoodlePallete </span> is a somewhat simpler project than the rest, purely intended to reinforce <span className="highlight"> my core javsacript skills. </span> It's a drawing app that consists of most features you would expect, such as a <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also <span className="highlight"> draw shapes, or save the image as a png. </span>
 
-          />
+          </Project_card>
         </div>
       </div>
 
