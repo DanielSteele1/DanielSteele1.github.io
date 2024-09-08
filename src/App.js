@@ -271,7 +271,8 @@ export default function MyApp() {
             <span className="highlight"> Skycompass is a web based application </span>
             that allows users to monitor up to date weather patterns across the globe. 
             It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps, 
-            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span>
+            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span> Using <span className="highlight">MongoDB & Bycrpt </span> hashing for security,
+            users can favourite locations for a more personalised experience. 
 
             </Project_card>
         </div>
@@ -324,7 +325,7 @@ export default function MyApp() {
             src="drawing-app.gif"
             link="https://github.com/DanielSteele1/Drawing-App"
             >
-            
+
             <span className="highlight">  DoodlePallete </span> is a somewhat simpler project than the rest, purely intended to reinforce <span className="highlight"> my core javsacript skills. </span> It's a drawing app that consists of most features you would expect, such as a <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also <span className="highlight"> draw shapes, or save the image as a png. </span>
 
           </Project_card>
