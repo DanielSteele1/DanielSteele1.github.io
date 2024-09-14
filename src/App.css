@@ -108,6 +108,20 @@ a:hover {
 }
 
 
+.heading h1 {
+
+  font-family: 'Overpass', sans-serif;
+  color: gradient(90deg, #b6b6b6, #9546fc);
+  font-style: bold;
+  margin: 0 auto;
+  margin: 10px;
+  padding: 10px;
+  font-size: 35px;
+
+}
+
+
+
 .link {
   display: inline-block;
   color: #ffffff;
@@ -186,7 +200,7 @@ body {
   justify-content: flex-end;
   font-family: 'Overpass', sans-serif;
   height: 68px;
-  background-color: #201e1e;
+  background-color: rgba(32, 31, 31, 0.6);
   color: #9546fc;
   position: sticky;
   text-align: center;
@@ -214,9 +228,9 @@ body {
 .project5,
 .project6 {
 
-  background-color: rgba(32, 31, 31, 0.6);
-  border-radius: 10px;
-  margin: 10px;
+  background-color: rgba(32, 31, 31, 0.3);
+  border-radius: 15px;
+  margin: 5px;
   height: 95%;
 
 }
@@ -417,16 +431,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   margin: 10px auto;
   height: fit-content;
-  width: 80%;
+  width: 83%;
 }
 
 .stack-desc-container {
 
-  background-color: rgba(32, 31, 31, 0.5);
+  background-color: rgba(32, 31, 31, 0.3);
   border-radius: 15px;
   margin: 0px auto;
   display: flex;
@@ -438,7 +451,7 @@ body {
 
 .contact-desc-container {
   display: flex;
-  background-color: rgba(32, 31, 31, 0.6);
+  background-color: rgba(32, 31, 31, 0.3);
   padding: 10px;
   align-items: center;
   justify-content: center;
@@ -542,11 +555,18 @@ body {
 
   .stack-desc {
 
-    font-size: 16px;
-  }
+    font-size: 16px;}
+
+    .stack {
+
+      width: 450px;
+    }
+
 
   .heading h1 {
 
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
     margin: 10 auto;
     margin: 10px;
     font-size: 25px;
@@ -559,7 +579,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    width: 100%;
+    width: 450px;
     box-sizing: border-box;
   }
 
@@ -616,7 +636,7 @@ body {
   width: 65%;
   margin: 10px auto;
   margin-top: 50px;
-  background-color: rgba(32, 31, 31, 0.6);
+  background-color: rgba(32, 31, 31, 0.3);
   border-radius: 15px;
 }
 
@@ -653,8 +673,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
-  color: #9546fc;
+  color: #9d4edd;
   font-family: 'Overpass', sans-serif;
   margin: 0 auto;
   text-align: center;
@@ -672,7 +691,7 @@ body {
   left: 0;
   width: 0;
   border-bottom: 0.5px solid;
-  border-color: #9546fc;
+  border-color: #9d4edd;
   transition: width 0.5s;
 
 }
@@ -1013,7 +1032,7 @@ body {
 .footer {
 
   height: fit-content;
-  background-color: #201e1e;
+  background-color: rgba(32, 31, 31, 0.45);
 
 }
 
