@@ -325,7 +325,7 @@ export default function MyApp() {
 
         <div className="project6" >
           <Project_card
-            heading="DoodlePallete"
+            heading="DoodlePalette"
             src="drawing-app.gif"
             link="https://github.com/DanielSteele1/Drawing-App"
             >
