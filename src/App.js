@@ -105,10 +105,14 @@ function Project_card({ src, children, heading, link }) {
 
     <div className="Project_card">
       <div id="heading"> {heading} </div>
+      <div class="image">
       <img src={src} />
+      </div>
       <div id="description" className="noselect"> <p>{children}</p> </div>
-      <div id="button" > <a href={link} target="_blank">  <button> View Project </button> </a> </div>
 
+      <div class="button-contianer">
+      <div id="button" > <a href={link} target="_blank">  <button> View Project </button> </a> </div>
+      </div>
     </div>
   )
 }
@@ -271,7 +275,7 @@ export default function MyApp() {
             <span className="highlight"> Skycompass is a web based application </span>
             that allows users to monitor up to date weather patterns across the globe. 
             It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps, 
-            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span> Using <span className="highlight">MongoDB & Bycrpt </span> hashing for security,
+            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span> Using <span className="highlight">MongoDB & Bcrypt </span> hashing for security,
             users can favourite locations for a more personalised experience. 
 
             </Project_card>

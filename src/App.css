@@ -120,8 +120,6 @@ a:hover {
 
 }
 
-
-
 .link {
   display: inline-block;
   color: #ffffff;
@@ -150,7 +148,6 @@ a:hover {
   transform: translateY(-2px);
   text-decoration: none;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -215,12 +212,16 @@ body {
 .projects {
 
   display: grid;
-  grid-template-columns: repeat(3, 0.3fr);
-  overflow: hidden;
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   align-items: start;
   justify-content: center;
   margin: 0 auto;
+  padding: 2%;
+  margin: 0 auto;
+  width: 100%;
+  size: 16px;
+  box-sizing: border-box;
 
 }
 
@@ -233,13 +234,19 @@ body {
 
   background-color: rgba(32, 31, 31, 0.3);
   border-radius: 15px;
-  margin: 5px;
-  height: 95%;
+  padding-bottom: 7px;
+  height: fit-content;
 
 }
 
-
 @media (min-width: 1200px) {
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    margin:5px;
+    gap:20px;
+    
+  }
 
   .nav-heading {
 
@@ -259,16 +266,13 @@ body {
 
   }
 
-
 }
-
 
 @media (max-width: 1200px) {
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
-    gap: 10px;
+    gap: 20px;
   }
 
   .heading {
@@ -336,6 +340,7 @@ body {
   .Project_card img {
 
     margin: 0 auto;
+    object-fit: contain;
   }
 
 
@@ -377,7 +382,6 @@ body {
   font-size: 15px;
   position: relative;
 
-
 }
 
 .nav-logo-heading {
@@ -390,7 +394,6 @@ body {
   align-items: center;
 
 }
-
 
 .nav-item {
 
@@ -415,6 +418,7 @@ body {
   font-family: 'Overpass', sans-serif;
   justify-content: center;
   align-items: center;
+  font-size: 10px;
   border: 2px solid transparent;
 
 }
@@ -517,6 +521,7 @@ body {
   margin: auto;
 }
 
+
 @media (max-width: 768px) {
 
   .stack-img-container {
@@ -535,17 +540,25 @@ body {
     margin: auto;
   }
 
-  .Project_card img {
-
-    margin: 0 auto;
-  }
-
   .nav-logo-heading {
 
     margin-right: 0%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+  }
+
+  .projects {
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    
+  }
+
+  .Project_card {
+
+      width: fit-content;
+      margin: 10 auto;
   }
 
 }
@@ -595,7 +608,6 @@ body {
 
     }
 
-
   .heading h1 {
 
     font-family: 'Overpass', sans-serif;
@@ -625,7 +637,9 @@ body {
 
   .Project_card img {
 
-    height: auto;
+    height: 100px;
+    padding: 1px;
+    object-fit: contain;
     margin: 0 auto;
   }
 
@@ -643,14 +657,15 @@ body {
 
   .projects {
 
-    margin: 10 auto;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
   }
 
   p {
 
     font-size: 15px;
   }
-
 
   .nav-logo-heading {
 
@@ -729,7 +744,6 @@ body {
 
 }
 
-
 .nav-heading:hover::after {
 
   width: 100%;
@@ -757,10 +771,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 9px;
+  padding: 8px;
   align-items: center;
-  overflow: hidden;
-
 }
 
 
@@ -774,13 +786,39 @@ body {
 .Project_card #heading {
 
   margin-bottom: 5px;
+  font-size: 27px;
+  padding: 10px;
+  color: #9546fc;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 
 }
+
+.Project_card #description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 19px;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  margin: 10px;
+  width: fit-content;
+  flex-grow:1;
+}
+
+.Project_card .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
 
 
 @media (max-width: 768px) {
   .projects {
-    grid-template-columns: repeat(1, 0.6fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .heading {
@@ -847,8 +885,9 @@ body {
   .Project_card img {
 
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin: 10 auto;
+    object-fit:contain;
 
   }
 
@@ -904,12 +943,13 @@ body {
 
 .Project_card img {
 
-  height: 240px;
+  width: 100%;
+  height: 250px;
   border: 2px solid transparent;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 5px;
+  object-fit:cover;
 }
 
 .Project_card img:hover {
@@ -995,12 +1035,11 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 10px 50px;
+  padding: 10px 55px;
   border: 2px solid;
   border-radius: 5px;
   color: #9546fc;
   text-align: center;
-  text-decoration: none;
   transition: all 0.3s ease;
   background-color: #201e1e !important;
 
@@ -1015,6 +1054,8 @@ body {
   text-decoration: none;
   outline: none;
   cursor: pointer;
+  transform: translateY(-2px);
+
 
 }
 
