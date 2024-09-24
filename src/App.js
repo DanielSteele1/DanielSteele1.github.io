@@ -305,7 +305,7 @@ export default function MyApp() {
 
         <div className="project4" >
           <Project_card
-            heading="TravelTracker.io"
+            heading="TravelTracker.io (ongoing)"
             src="coming_soon.png"
             > 
             <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
@@ -346,7 +346,6 @@ export default function MyApp() {
           </Project_card>
         </div>
       </div>
-
 
       <div id="contact" className="heading"> <h1> Get in Touch </h1>  </div>
 
