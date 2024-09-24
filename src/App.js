@@ -305,11 +305,15 @@ export default function MyApp() {
 
         <div className="project4" >
           <Project_card
-            heading="Ongoing Project"
+            heading="TravelTracker.io"
             src="coming_soon.png"
-            description=" Ongoing Project "
+            > 
+            <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
+            It's a full stack application that will allow for users to track where they've been on holiday around the globe. 
+            They will be able to add photos and descriptions of each trip, view a photo book tied to thier account, view potential next holiday destinations,
+            and even share thier trips with family & friends. <span className="highlight"> Built using React Node Express and MongoDB. </span>
 
-          />
+          </Project_card>
         </div>
 
         <div className="project5" >
@@ -334,7 +338,7 @@ export default function MyApp() {
             link="https://github.com/DanielSteele1/Drawing-App"
             >
 
-            <span className="highlight">  DoodlePallete </span> is a somewhat simpler project than the rest, purely intended to reinforce 
+            <span className="highlight">  DoodlePalette </span> is a somewhat simpler project than the rest, purely intended to reinforce 
             <span className="highlight"> my core javsacript skills. </span> It's a drawing app that consists of most features you would expect, such as a 
             <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also 
             <span className="highlight"> draw shapes, or save the image as a png. </span>
