@@ -110,13 +110,13 @@ a:hover {
 
 .heading h1 {
 
-  font-family: 'Overpass', sans-serif;
-  color: gradient(90deg, #b6b6b6, #9546fc);
+  font-family: 'Nunito', sans-serif;
+  color: gradient(90deg, #b6b6b6, #c47dff);
   font-style: bold;
   margin: 0 auto;
   margin: 10px;
   padding: 10px;
-  font-size: 35px;
+  font-size: 40px;
 
 }
 
@@ -132,7 +132,7 @@ a:hover {
   margin-top: 10px;
   border: 2px solid transparent;
   border-radius: 25px;
-  background-image: linear-gradient(90deg, #b6b6b6, #9546fc);
+  background-image: linear-gradient(90deg, #b6b6b6,#c47dff );
   box-shadow: 0px 4px 15px rgba(149, 70, 252, 0.5);
   text-align: center;
   transition: all 0.3s ease;
@@ -141,7 +141,7 @@ a:hover {
 }
 
 .link:hover {
-  background-image: linear-gradient(90deg, #b6b6b6, #9546fc);
+  background-image: linear-gradient(90deg, #b6b6b6,#c47dff );
   box-shadow: 0px 4px 20px rgba(149, 70, 252, 0.7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -162,14 +162,14 @@ body {
 
 .highlight {
 
-  color: #9d4edd;
-  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
 
 }
 
 .nav-heading a {
-  color: #9546fc;
-  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
   font-size: 23px;
   text-decoration: none;
   position: relative;
@@ -253,7 +253,7 @@ body {
     display: flex;
     text-align: center;
     margin-right: 80px;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Nunito', sans-serif;
     width: fit-content;
     font-size: 15px;
     position: relative;
@@ -280,8 +280,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #9546fc;
-    font-family: 'Overpass', sans-serif;
+    color: #c47dff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
     margin: 0 auto;
 
   }
@@ -298,7 +299,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Nunito', sans-serif;
     position: relative;
 
   }
@@ -377,7 +378,7 @@ body {
 
   display: flex;
   text-align: center;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   width: fit-content;
   font-size: 15px;
   position: relative;
@@ -387,9 +388,11 @@ body {
 .nav-logo-heading {
 
   display: flex;
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   width: fit-content;
-  font-size: 12px;
+  color: #c47dff;
+  font-size: 14px;
+  padding: 2px;
   justify-content: center;
   align-items: center;
 
@@ -415,7 +418,7 @@ body {
 #description {
 
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
   font-size: 10px;
@@ -425,8 +428,8 @@ body {
 
 .contact-desc {
 
-  color: #9546fc;
-  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
   text-align: center;
   line-height: 1.7;
@@ -476,7 +479,7 @@ body {
   align-items: center;
   line-height: 1.5;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 10px;
   text-align: center;
 
@@ -486,8 +489,8 @@ body {
 
   font-size: 25px;
   line-height: 1.5;
-  color: #9546fc;
-  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
   margin: 0 20%;
   margin-bottom: 10px;
   width: 95%;
@@ -506,7 +509,7 @@ body {
 
   margin: 0px;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   text-align:center;
 
 }
@@ -610,7 +613,7 @@ body {
 
   .heading h1 {
 
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-style: normal;
     margin: 10 auto;
     margin: 10px;
@@ -721,9 +724,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #9d4edd;
-  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
   margin: 0 auto;
+  font-weight: 200;
   text-align: center;
   position: relative;
   width: fit-content;
@@ -761,7 +764,6 @@ body {
 .picture:hover {
 
   cursor: pointer;
-  transform: translateY(-2px);
 
 }
 
@@ -787,9 +789,8 @@ body {
 
   margin-bottom: 5px;
   font-size: 27px;
-  padding: 10px;
-  color: #9546fc;
-  font-family: 'Poppins', sans-serif;
+  padding: 10px; color: #c47dff;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
 
 }
@@ -800,7 +801,7 @@ body {
   justify-content: center;
   font-size: 19px;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 10px;
   width: fit-content;
   flex-grow:1;
@@ -827,8 +828,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: #9546fc;
-    font-family: 'Overpass', sans-serif;
+    color: #c47dff;
+    font-family: 'Nunito', sans-serif;
     margin: 0 15%;
     position: relative;
   }
@@ -877,7 +878,7 @@ body {
     text-align: center;
     margin: 0 auto;
     font-size: 18px;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Nunito', sans-serif;
     position: relative;
 
   }
@@ -926,7 +927,7 @@ body {
   justify-content: center;
   font-size: 20px;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 10px;
 
 }
@@ -983,8 +984,6 @@ body {
   border-color: #9546fc;
   transition: 0.10s;
   box-shadow: #9546fc 0px 1px 10px;
-  transform: translateY(-2px);
-  /* This creates the bounce effect */
   transition: all 0.3s ease;
 
 }
@@ -1117,8 +1116,8 @@ body {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
-  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
   color: #9546fc;
 
 }
