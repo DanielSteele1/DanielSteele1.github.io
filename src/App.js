@@ -208,7 +208,7 @@ export default function MyApp() {
           </div>
         </div>
 
-        <div className="heading"> <h1> My Tech Stack: </h1> </div>
+        <div className="heading"> <h1> My Tech Stack </h1> </div>
 
         <div className="stack-img-container">
 
@@ -262,7 +262,7 @@ export default function MyApp() {
 
       <div id="projects"> </div>
 
-      <div className="heading"> <h1> My recent projects: </h1> </div>
+      <div className="heading"> <h1> My recent projects </h1> </div>
       <div className="projects">
 
         <div className="project1">
