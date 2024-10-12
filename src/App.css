@@ -34,6 +34,11 @@
   text-decoration: none;
 }
 
+.nav-item img:hover {
+
+  border: none;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 /* html::-webkit-scrollbar {
   display: none;
@@ -79,7 +84,6 @@
 }
 
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -101,6 +105,43 @@ a:hover {
 
   text-decoration: underline;
   color: #c47dff;
+
+}
+
+#download img {
+
+  height: 50px;
+  width: 70px;
+  display: flex;
+  margin: 10 auto;
+  border: 1px transparent;
+  border-radius: 15px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 110px;
+  background-color: rgba(32, 31, 31, 0.9);
+  color: #c47dff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 0;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  left: 1260px;
+  top: 65px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+}
+
+#download img:hover {
+
+  transform: translateY(-2px);
+  transition: all 0.6s ease;
 
 }
 
@@ -129,7 +170,7 @@ a:hover {
   margin-top: 10px;
   border: 2px solid transparent;
   border-radius: 25px;
-  background-image: linear-gradient(90deg, #b6b6b6,#c47dff );
+  background-image: linear-gradient(90deg, #b6b6b6, #c47dff);
   box-shadow: 0px 4px 15px rgba(149, 70, 252, 0.5);
   text-align: center;
   transition: all 0.3s ease;
@@ -138,7 +179,7 @@ a:hover {
 }
 
 .link:hover {
-  background-image: linear-gradient(90deg, #b6b6b6,#c47dff );
+  background-image: linear-gradient(90deg, #b6b6b6, #c47dff);
   box-shadow: 0px 4px 20px rgba(149, 70, 252, 0.7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -239,10 +280,11 @@ body {
 @media (min-width: 1200px) {
 
   .projects {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    margin:5px;
-    gap:20px;
-    
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    margin: 5px;
+    gap: 20px;
+
   }
 
   .nav-heading {
@@ -507,7 +549,7 @@ body {
   margin: 0px;
   color: white;
   font-family: 'Nunito', sans-serif;
-  text-align:center;
+  text-align: center;
 
 }
 
@@ -552,13 +594,13 @@ body {
 
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
-    
+
   }
 
   .Project_card {
 
-      width: fit-content;
-      margin: 10 auto;
+    width: fit-content;
+    margin: 10 auto;
   }
 
 }
@@ -580,11 +622,11 @@ body {
   }
 
   .stack-desc-container {
-      
-      overflow-x: hidden;
+
+    overflow-x: hidden;
   }
 
-  .navigation{
+  .navigation {
     background-color: rgba(32, 31, 31, 1.0);
 
   }
@@ -602,11 +644,11 @@ body {
 
   }
 
-    .stack {
+  .stack {
 
-      width: 380px;
+    width: 380px;
 
-    }
+  }
 
   .heading h1 {
 
@@ -659,7 +701,7 @@ body {
 
     grid-template-columns: 1fr;
     gap: 10px;
-    
+
   }
 
   p {
@@ -775,7 +817,12 @@ body {
 }
 
 
-.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover {
 
   transform: translateY(-5px);
   transition: all 0.5s ease;
@@ -786,7 +833,8 @@ body {
 
   margin-bottom: 5px;
   font-size: 27px;
-  padding: 10px; color: #c47dff;
+  padding: 10px;
+  color: #c47dff;
   font-family: 'Nunito', sans-serif;
   text-align: center;
 
@@ -801,7 +849,7 @@ body {
   font-family: 'Nunito', sans-serif;
   margin: 10px;
   width: fit-content;
-  flex-grow:1;
+  flex-grow: 1;
 }
 
 .Project_card .button-container {
@@ -885,7 +933,7 @@ body {
     width: 100%;
     height: auto;
     margin: 10 auto;
-    object-fit:contain;
+    object-fit: contain;
 
   }
 
@@ -947,7 +995,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .Project_card img:hover {
