@@ -432,10 +432,10 @@ body {
   font-family: 'Nunito', sans-serif;
   width: fit-content;
   color: #c47dff;
-  font-size: 14px;
-  padding: 2px;
+  font-size: 12px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
 }
 
