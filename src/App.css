@@ -206,11 +206,13 @@ body {
 }
 
 .nav-heading a {
+  display: flex;
   color: #c47dff;
   font-family: 'Nunito', sans-serif;
   font-size: 23px;
   text-decoration: none;
   position: relative;
+  margin: 0 auto;
 
 }
 
@@ -443,7 +445,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  justify-content: flex-start;
+  margin: 10 auto;
+
 }
 
 #navigation-line {
