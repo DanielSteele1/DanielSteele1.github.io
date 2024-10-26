@@ -92,7 +92,7 @@ function Navigation() {
       <div class="nav-item">
         <div class="tooltip">
           <h1 class="nav-heading" id="download">  <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
-            <img src="downloadFile.png" />  </a> 
+            <img src="downloadFile.png" />  </a>
           </h1>
           <span class="tooltiptext">View my CV</span>
         </div>
@@ -231,45 +231,69 @@ export default function MyApp() {
               src="HTML.png"
               description="HTML"
             />
-            <StackCard
-              src="Figma.png"
-              description="Figma"
-            />
-            <StackCard
-              src="node.png"
-              description="NodeJS"
-            />
-          </div>
 
-          <div className="stack-img-row">
             <StackCard
               src="CSS.png"
               description="CSS"
             />
-            <StackCard
-              src="express.png"
-              description="Express.js"
-            />
-            <StackCard
-              src="mongoDB.png"
-              description="MongoDB"
-            />
-          </div>
 
-          <div className="stack-img-row">
             <StackCard
               src="JS.png"
               description="JavaScript"
             />
+
+          </div>
+
+          <div className="stack-img-row">
+
+            <div id="react-logo">
+              <StackCard
+                src="react.png"
+                description="React.js"
+              />
+            </div>
+
             <StackCard
-              src="react.png"
-              description="React.js"
+              src="express.png"
+              description="Express.js"
             />
+
+            <StackCard
+              src="node.png"
+              description="NodeJS"
+            />
+
+            <StackCard
+              src="mongoDB.png"
+              description="MongoDB"
+            />
+
+          </div>
+
+          <div className="stack-img-row">
+            <StackCard
+              src="Figma.png"
+              description="Figma"
+            />
+
             <StackCard
               src="git.png"
               description="Git"
             />
+
+            <StackCard
+              src="MaterialUI.png"
+              description="MaterialUI"
+            />
+
           </div>
+
+          <div className="stack-img-row">
+
+
+          </div>
+
+
 
         </div>
       </div>
