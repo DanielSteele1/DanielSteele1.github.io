@@ -336,7 +336,7 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description=" Ongoing Project "
+            description="Ongoing Project"
 
           />
         </div>
@@ -345,6 +345,7 @@ export default function MyApp() {
           <Project_card
             heading="TravelTracker.io (ongoing)"
             src="coming_soon.png"
+
             link="https://github.com/DanielSteele1/TravelTracker.io"
           >
             <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
