@@ -74,6 +74,10 @@ function Navigation() {
 
     event.preventDefault()
 
+    // log event to simple analytics
+    window.sa_event('cv_downloaded');
+
+    // download and view document
     const link = document.createElement('a');
     link.href = '/Daniel Steele - Full Stack Dev (CV).pdf';
     link.download = 'Daniel Steele - Full Stack Dev (CV).pdf';
@@ -125,8 +129,11 @@ function Project_card({ src, children, heading, link }) {
       </div>
       <div id="description" className="noselect"> <p>{children}</p> </div>
 
-      <div class="button-contianer">
-        <div id="button" > <a href={link} target="_blank">  <button> View Project Repo </button> </a> </div>
+      <div class="button-container">
+        <div id="button" onClick={() => window.sa_event('btn_clicked')}>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <button> View Project Repo </button> </a>
+        </div>
       </div>
     </div>
   )
