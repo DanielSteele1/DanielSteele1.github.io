@@ -11,6 +11,7 @@ function Picture5() {
 
   const handleLinkedinClick = () => {
 
+    window.sa_event('linkedin_clicked');
     window.location.href = "https://www.linkedin.com/in/daniel-steele1/"
 
   };
@@ -34,6 +35,7 @@ function Picture6() {
 
   const handleGithubClick = () => {
 
+    window.sa_event('github_clicked');
     window.location.href = "https://github.com/DanielSteele1"
 
   };
