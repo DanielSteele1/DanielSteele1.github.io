@@ -16,7 +16,7 @@ function Picture5() {
     window.location.href = "https://www.linkedin.com/in/daniel-steele1/"
 
   };
-  
+
   return (
     <div>
       <img
@@ -105,7 +105,7 @@ function Navigation() {
 
             <DownloadOutlined fontSize="large" />
           </div>
-          <span class="tooltiptext">View my CV</span>
+         <span class="tooltiptext">View my CV</span>
         </div>
       </div>
 
@@ -118,7 +118,7 @@ function Navigation() {
       </div>
 
       <div className="nav-item">
-        <h1 className="nav-heading">  <a href="#contact">Contact</a> </h1>
+        <h1 className="nav-heading">  <a href="#contact"> Contact </a> </h1>
       </div>
 
     </div>
