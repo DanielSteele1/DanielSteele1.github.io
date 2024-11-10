@@ -262,31 +262,560 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: start;
+  gap: 10px;
   justify-content: center;
-  margin: 0 auto;
-  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5px;
   margin: 0 auto;
   width: 100%;
-  size: 16px;
   box-sizing: border-box;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  width: 65%;
+  margin: 10px auto;
+  margin-top: 50px;
+  background-color: rgba(32, 31, 31, 0.3);
+  border-radius: 15px;
+}
+
+.profile {
+
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  border-radius: 75%;
+  justify-content: center;
+  margin: 0px auto 0px;
+  border: 2px solid transparent;
+  object-fit: cover;
+  opacity: 1.0;
 
 }
 
-.project1,
-.project2,
-.project3,
-.project4,
-.project5,
-.project6 {
+.profile_Desc {
 
-  background-color: rgba(32, 31, 31, 0.3);
-  border-radius: 15px;
-  padding-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1.35;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  max-width: 60%;
+  opacity: 1.0;
+}
+
+.heading {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c47dff;
+  margin: 0 auto;
+  font-weight: 200;
+  text-align: center;
+  position: relative;
+  width: fit-content;
   height: fit-content;
 
 }
+
+.nav-heading::after {
+
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 0.5px solid;
+  border-color: #c47dff;
+  transition: width 0.5s;
+
+}
+
+.nav-heading:hover::after {
+
+  width: 100%;
+
+}
+
+.picture {
+
+  margin: 10px auto;
+  justify-content: center;
+  border: 2px solid transparent;
+
+}
+
+.picture:hover {
+
+  cursor: pointer;
+
+}
+
+.Project_card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 540px;
+  align-items: center;
+  background-color: rgba(32, 31, 31, 0.3);
+  border-radius: 15px;
+
+}
+
+.project-description{
+
+  width:fit-content;
+  height:fit-content;
+  margin-left: 30px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: flex-start;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.Project_card:hover {
+
+  transform: translateY(-5px);
+  transition: all 0.5s ease;
+  max-width:fit-content;
+
+}
+
+.Project_card #heading {
+
+  margin-bottom: 5px;
+  font-size: 29px;
+  padding: 10px;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+
+}
+
+.Project_card .button-container {
+  display: flex;
+  width:fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.Project_card img {
+
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 3px solid transparent;
+  
+}
+
+.Project_card img:hover {
+
+  border-color: #c47dff;
+  box-shadow: #c47dff 0px 3px 10px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+
+.nav-heading {
+
+  display: flex;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  width: fit-content;
+  font-size: 15px;
+  position: relative;
+
+}
+
+.nav-logo-heading {
+
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  width: fit-content;
+  color: #c47dff;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.nav-item {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10 auto;
+
+}
+
+#navigation-line {
+
+  height: 2px;
+  background-color: #141313;
+  box-shadow: #141313 0px 1px 10px;
+
+}
+
+#description {
+
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid transparent;
+
+}
+
+
+#description:hover {
+  color: #c47dff;
+  transition: ease 0.3s;
+
+}
+
+.contact-desc {
+
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.7;
+  padding: 5px;
+
+}
+
+.stack {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  height: fit-content;
+  width: 83%;
+}
+
+.stack-desc-container {
+
+  background-color: rgba(32, 31, 31, 0.3);
+  border-radius: 15px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+
+}
+
+.contact-desc-container {
+  display: flex;
+  background-color: rgba(32, 31, 31, 0.3);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+
+}
+
+.stack-desc {
+
+  font-size: 20px;
+  display: flex;
+  max-width: 73%;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  margin: 10px;
+  text-align: center;
+
+}
+
+.stack-desc h1 {
+
+  font-size: 25px;
+  line-height: 1.5;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+  margin: 0 20%;
+  margin-bottom: 10px;
+  width: 95%;
+
+}
+
+.stack-img-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.stack-img-row {
+  display: flex;
+  margin: 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+
+}
+
+.stack img {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+
+#heading {
+
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  padding: 10px;
+  color: #c47dff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.socials {
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials1,
+.socials2 {
+
+  margin: 10px;
+}
+
+.socials img:hover,
+.profile:hover {
+  border: 2px solid;
+  border-color: #c47dff;
+  transition: 0.10s;
+  box-shadow: #c47dff 0px 1px 10px;
+  transition: all 0.3s ease;
+
+}
+
+.Icons:hover {
+
+  border: 1px solid;
+  border-color: #c47dff;
+  transition: 0.10s;
+  box-shadow: #c47dff 0px 1px 10px;
+  cursor: pointer;
+
+}
+
+.contactForm {
+
+  display: flex;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px auto;
+  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  width: 100%;
+}
+
+.contactForm input {
+
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #c47dff;
+  border-radius: 5px;
+  background-color: #201e1e;
+  color: #c47dff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+
+}
+
+.Project_card button {
+
+  display: flex;
+  font-family: 'Overpass', sans-serif;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 55px;
+  margin-bottom:10px;
+  border: 2px solid;
+  border-radius: 5px;
+  color: #c47dff;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #201e1e !important;
+
+}
+
+.Project_card button:hover {
+
+  box-shadow: #c47dff 0px 1px 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transform: translateY(-2px);
+
+
+}
+
+#img src {
+
+  border-radius: 50%;
+  margin: 10px;
+
+}
+
+.contactForm input {
+
+  height: 30px;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #9546fc;
+  background-color: #201e1e;
+  border-radius: 5px;
+  color: #9546fc;
+
+}
+
+.contactForm textarea {
+
+  height: 80px;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #9546fc;
+  background-color: #201e1e;
+  font-family: 'Overpass', sans-serif;
+  border-radius: 5px;
+  color: #9546fc;
+
+}
+
+.contactForm h2 {
+
+  font-family: 'Overpass', sans-serif;
+  color: #c47dff;
+  font-size: 25px;
+
+}
+
+.footer {
+
+  height: fit-content;
+  background-color: rgba(32, 31, 31, 0.45);
+
+}
+
+.footer-item {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: #c47dff;
+
+}
+
+.item-link1,
+.item-link2 {
+
+  flex: 0;
+  padding: 10px;
+
+}
+
+.error-container {
+
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.contactForm button {
+
+  order: 2;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid;
+  border-color: #c47dff;
+  background-color: #201e1e;
+  border-radius: 5px;
+  color: #c47dff;
+
+}
+
+#error-check {
+
+  order: 1;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  margin: 10px auto;
+  color: #fc0000;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+.back-to-top {
+
+  background-color: #c47dff;
+
+}
+
 
 @media (min-width: 1200px) {
 
@@ -423,163 +952,6 @@ body {
   }
 
 }
-
-.nav-heading {
-
-  display: flex;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  width: fit-content;
-  font-size: 15px;
-  position: relative;
-
-}
-
-.nav-logo-heading {
-
-  display: flex;
-  font-family: 'Nunito', sans-serif;
-  width: fit-content;
-  color: #c47dff;
-  font-size: 12px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-
-}
-
-.nav-item {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  margin: 10 auto;
-
-}
-
-#navigation-line {
-
-  height: 2px;
-  background-color: #141313;
-  box-shadow: #141313 0px 1px 10px;
-
-}
-
-#description {
-
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
-  border: 2px solid transparent;
-
-}
-
-.contact-desc {
-
-  color: #c47dff;
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.7;
-  padding: 5px;
-
-}
-
-.stack {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-  height: fit-content;
-  width: 83%;
-}
-
-.stack-desc-container {
-
-  background-color: rgba(32, 31, 31, 0.3);
-  border-radius: 15px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
-
-}
-
-.contact-desc-container {
-  display: flex;
-  background-color: rgba(32, 31, 31, 0.3);
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  margin: 0px auto;
-
-}
-
-.stack-desc {
-
-  font-size: 20px;
-  display: flex;
-  max-width: 73%;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  margin: 10px;
-  text-align: center;
-
-}
-
-.stack-desc h1 {
-
-  font-size: 25px;
-  line-height: 1.5;
-  color: #c47dff;
-  font-family: 'Nunito', sans-serif;
-  margin: 0 20%;
-  margin-bottom: 10px;
-  width: 95%;
-
-}
-
-.stack-img-container {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
-}
-
-.stack-img-row {
-  display: flex;
-  margin: 0px;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  text-align: center;
-
-}
-
-.stack img {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 80px;
-  width: 80px;
-  margin: auto;
-}
-
 
 @media (max-width: 768px) {
 
@@ -735,150 +1107,6 @@ body {
 
 }
 
-.profile-container {
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  align-items: center;
-  width: 65%;
-  margin: 10px auto;
-  margin-top: 50px;
-  background-color: rgba(32, 31, 31, 0.3);
-  border-radius: 15px;
-}
-
-.profile {
-
-  width: 180px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  border-radius: 75%;
-  justify-content: center;
-  margin: 0px auto 0px;
-  border: 2px solid transparent;
-  object-fit: cover;
-  opacity: 1.0;
-
-}
-
-.profile_Desc {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  line-height: 1.35;
-  color: white;
-  font-family: 'Overpass', sans-serif;
-  max-width: 60%;
-  opacity: 1.0;
-}
-
-.heading {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #c47dff;
-  margin: 0 auto;
-  font-weight: 200;
-  text-align: center;
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-
-}
-
-.nav-heading::after {
-
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  border-bottom: 0.5px solid;
-  border-color: #c47dff;
-  transition: width 0.5s;
-
-}
-
-.nav-heading:hover::after {
-
-  width: 100%;
-
-}
-
-.picture {
-
-  margin: 10px auto;
-  justify-content: center;
-  border: 2px solid transparent;
-
-}
-
-.picture:hover {
-
-  cursor: pointer;
-
-}
-
-.Project_card {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 8px;
-  align-items: center;
-}
-
-
-.project1:hover,
-.project2:hover,
-.project3:hover,
-.project4:hover,
-.project5:hover,
-.project6:hover {
-
-  transform: translateY(-5px);
-  transition: all 0.5s ease;
-
-}
-
-.Project_card #heading {
-
-  margin-bottom: 5px;
-  font-size: 27px;
-  padding: 10px;
-  color: #c47dff;
-  font-family: 'Nunito', sans-serif;
-  text-align: center;
-
-}
-
-.Project_card #description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 19px;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  margin: 10px;
-  width: fit-content;
-  flex-grow: 1;
-}
-
-.Project_card .button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-}
-
-
-
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: repeat(1, 1fr);
@@ -978,258 +1206,5 @@ body {
     line-height: 1.5;
   }
 
-
-}
-
-
-#description {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 20px;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  margin: 10px;
-
-}
-
-#heading {
-
-  display: flex;
-  justify-content: center;
-  font-size: 27px;
-  padding: 10px;
-  color: #c47dff;
-  font-family: 'Poppins', sans-serif;
-}
-
-.Project_card img {
-
-  width: 100%;
-  height: 250px;
-  border: 2px solid transparent;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
-.Project_card img:hover {
-
-  border: 2px solid;
-  border-color: #c47dff;
-  box-shadow: #c47dff 0px 3px 10px;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-.socials {
-  display: flex;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 15px;
-  border: 2px solid transparent;
-  align-items: center;
-  justify-content: center;
-}
-
-.socials1,
-.socials2 {
-
-  margin: 10px;
-}
-
-.socials img:hover,
-.profile:hover {
-  border: 2px solid;
-  border-color: #c47dff;
-  transition: 0.10s;
-  box-shadow: #c47dff 0px 1px 10px;
-  transition: all 0.3s ease;
-
-}
-
-.Icons:hover {
-
-  border: 1px solid;
-  border-color: #c47dff;
-  transition: 0.10s;
-  box-shadow: #c47dff 0px 1px 10px;
-  cursor: pointer;
-
-}
-
-.contactForm {
-
-  display: flex;
-  flex: auto;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 10px auto;
-  font-family: 'Overpass', sans-serif;
-  color: #c47dff;
-  width: 100%;
-}
-
-.contactForm input {
-
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #c47dff;
-  border-radius: 5px;
-  background-color: #201e1e;
-  color: #c47dff;
-  font-family: 'Overpass', sans-serif;
-  font-size: 15px;
-
-}
-
-.contactForm button,
-.Project_card button {
-
-  display: flex;
-  font-family: 'Overpass', sans-serif;
-  font-size: 17px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 55px;
-  border: 2px solid;
-  border-radius: 5px;
-  color: #c47dff;
-  text-align: center;
-  transition: all 0.3s ease;
-  background-color: #201e1e !important;
-
-}
-
-.contactForm button:hover,
-.contactForm input:hover,
-.Project_card button:hover {
-
-  box-shadow: #c47dff 0px 1px 10px;
-  transition: 0.5s;
-  text-decoration: none;
-  outline: none;
-  cursor: pointer;
-  transform: translateY(-2px);
-
-
-}
-
-#img src {
-
-  border-radius: 50%;
-  margin: 10px;
-
-}
-
-.contactForm input {
-
-  height: 30px;
-  width: 400px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #9546fc;
-  background-color: #201e1e;
-  border-radius: 5px;
-  color: #9546fc;
-
-}
-
-.contactForm textarea {
-
-  height: 80px;
-  width: 400px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #9546fc;
-  background-color: #201e1e;
-  font-family: 'Overpass', sans-serif;
-  border-radius: 5px;
-  color: #9546fc;
-
-}
-
-.contactForm h2 {
-
-  font-family: 'Overpass', sans-serif;
-  color: #c47dff;
-  font-size: 25px;
-
-}
-
-.footer {
-
-  height: fit-content;
-  background-color: rgba(32, 31, 31, 0.45);
-
-}
-
-.footer-item {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  font-family: 'Nunito', sans-serif;
-  font-size: 12px;
-  color: #c47dff;
-
-}
-
-.item-link1,
-.item-link2 {
-
-  flex: 0;
-  padding: 10px;
-
-}
-
-.error-container {
-
-  width: 440px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.contactForm button {
-
-  order: 2;
-  flex: 1;
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid;
-  border-color: #c47dff;
-  background-color: #201e1e;
-  border-radius: 5px;
-  color: #c47dff;
-
-}
-
-#error-check {
-
-  order: 1;
-  flex: 1;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  margin: 10px auto;
-  color: #fc0000;
-  font-family: 'Overpass', sans-serif;
-
-}
-
-.back-to-top {
-
-  background-color: #c47dff;
 
 }

@@ -4,7 +4,8 @@ import React from 'react';
 //import Carousel from './Carousel.js';
 import Canvas from './Canvas.js';
 //import ContactForm from './Contact.js';
-
+import DownloadIcon from '@mui/icons-material/Download';
+import { DownloadOutlined } from '@mui/icons-material';
 //socials 
 
 function Picture5() {
@@ -15,7 +16,7 @@ function Picture5() {
     window.location.href = "https://www.linkedin.com/in/daniel-steele1/"
 
   };
-
+  
   return (
     <div>
       <img
@@ -97,9 +98,13 @@ function Navigation() {
 
       <div class="nav-item">
         <div class="tooltip">
-          <h1 class="nav-heading" id="download">  <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
-            <img src="downloadFile.png" />  </a>
-          </h1>
+          <div class="nav-heading" id="download">
+
+            <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
+            </a>
+
+            <DownloadOutlined fontSize="large" />
+          </div>
           <span class="tooltiptext">View my CV</span>
         </div>
       </div>
@@ -125,11 +130,10 @@ function Project_card({ src, children, heading, link }) {
   return (
 
     <div className="Project_card">
+
+      <img id="image" src={src} />
       <div id="heading"> {heading} </div>
-      <div class="image">
-        <img src={src} />
-      </div>
-      <div id="description" className="noselect"> <p>{children}</p> </div>
+      <div id="project-description" > <p>{children}</p> </div>
 
       <div class="button-container">
         <div id="button" onClick={() => window.sa_event('btn_clicked')}>
@@ -319,11 +323,13 @@ export default function MyApp() {
             src="SkyCompass.gif"
             link="https://github.com/DanielSteele1/COMP3000"
           >
-            <span className="highlight"> Skycompass is a web-based application </span>
-            that allows users to monitor up-to-date weather patterns across the globe.
-            It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps,
-            as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span> Using <span className="highlight">MongoDB & Bcrypt </span> hashing for security,
-            users can favourite locations for a more personalised experience.
+            <div className="project-description">
+              <span className="highlight"> Skycompass is a web-based application </span>
+              that allows users to monitor up-to-date weather patterns across the globe.
+              It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps,
+              as well a forecast page that <span className="highlight">predicts weather for up to 7 days.</span> Using <span className="highlight">MongoDB & Bcrypt </span> hashing for security,
+              users can favourite locations for a more personalised experience.
+            </div>
 
           </Project_card>
         </div>
@@ -334,10 +340,12 @@ export default function MyApp() {
             src="EarthSim.gif"
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
-            <span className="highlight">EarthSim </span> is a project that I built in C++ for my Game development class,
-            <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environment, with the goal of simulating our
-            <span className="highlight"> local system of planets, </span>
-            exposing me to core <span className="highlight">game development principles and GLSL.</span>
+            <div className="project-description">
+              <span className="highlight">EarthSim </span> is a project that I built in C++ for my Game development class,
+              <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environment, with the goal of simulating our
+              <span className="highlight"> local system of planets, </span>
+              exposing me to core <span className="highlight">game development principles and GLSL.</span>
+            </div>
           </Project_card>
         </div>
 
@@ -345,9 +353,13 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
-            description="Ongoing Project"
+          >
 
-          />
+
+            <div className="project-description">
+              Ongoing project
+            </div>
+          </Project_card>
         </div>
 
         <div className="project4" >
@@ -357,10 +369,12 @@ export default function MyApp() {
 
             link="https://github.com/DanielSteele1/TravelTracker.io"
           >
-            <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
-            It's a full-stack application that will allow for users to track where they've been on holiday around the globe.
-            They will be able to add photos and descriptions of each trip, view a photo book tied to their account, view potential next holiday destinations,
-            and even share their trips with family & friends. <span className="highlight"> Built using React, Node, Express and MongoDB. </span>
+            <div className="project-description">
+              <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
+              It's a full-stack application that will allow for users to track where they've been on holiday around the globe.
+              They will be able to add photos and descriptions of each trip, view a photo book tied to their account, view potential next holiday destinations,
+              and even share their trips with family & friends. <span className="highlight"> Built using React, Node, Express and MongoDB. </span>
+            </div>
 
           </Project_card>
         </div>
@@ -371,26 +385,33 @@ export default function MyApp() {
             src="Portfolio.gif"
             link="https://github.com/DanielSteele1/DanielSteele1.github.io"
           >
-            <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
-            <span className="highlight"> React.js, HTML, CSS and some Javascript,
-            </span> I use it to showcase some of the work I'm most proud of creating.
-            <span className="highlight"> Click below to view the source code. </span>
+            <div className="project-description">
+              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
+              <span className="highlight"> React.js, HTML, CSS and some Javascript,
+              </span> I use it to showcase some of the work I'm most proud of creating.
+              <span className="highlight"> Click below to view the source code. </span>
+            </div>
 
           </Project_card>
 
         </div>
 
-        <div className="project6" >
+        <div className="project6">
+
           <Project_card
             heading="DoodlePalette"
             src="drawing-app.gif"
             link="https://github.com/DanielSteele1/Drawing-App"
           >
 
-            <span className="highlight">  DoodlePalette </span> is a somewhat simpler project than the rest, purely intended to reinforce
-            <span className="highlight"> my core Javascript skills. </span> It's a drawing app that consists of most features you would expect, such as a
-            <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also
-            <span className="highlight"> draw shapes, or save the image as a png. </span>
+            <div className="project-description">
+
+              <span className="highlight">  DoodlePalette </span> is a somewhat simpler project than the rest, purely intended to reinforce
+              <span className="highlight"> my core Javascript skills. </span> It's a drawing app that consists of most features you would expect, such as a
+              <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also
+              <span className="highlight"> draw shapes, or save the image as a png. </span>
+
+            </div>
 
           </Project_card>
         </div>
