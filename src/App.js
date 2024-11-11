@@ -97,17 +97,15 @@ function Navigation() {
       </div>
 
       <div class="nav-item">
-        <div class="tooltip">
+        
           <div class="nav-heading" id="download">
-
             <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
             </a>
 
             <DownloadOutlined fontSize="large" />
           </div>
-         <span class="tooltiptext">View my CV</span>
         </div>
-      </div>
+      
 
       <div className="nav-item">
         <h1 className="nav-heading"> <a href="#about"> About </a>  </h1>
