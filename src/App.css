@@ -435,7 +435,6 @@ body {
   transition: 0.3s ease;
 }
 
-
 .nav-heading {
 
   display: flex;
@@ -443,6 +442,9 @@ body {
   font-family: 'Nunito', sans-serif;
   width: 100%;
   font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -895,6 +897,7 @@ body {
     position: relative;
     margin: 0 auto;
     margin: 5px;
+    padding: 5px;
 
   }
 
@@ -942,6 +945,7 @@ body {
     text-align: center;
     font-family: 'Nunito', sans-serif;
     position: relative;
+    padding: 5px;
 
   }
 
@@ -1062,6 +1066,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 
+
   }
 
   .stack-desc-container {
@@ -1180,6 +1185,8 @@ body {
 
   .nav-heading {
     margin: 0px;
+    padding: 0px;
+
   }
 
   .heading {

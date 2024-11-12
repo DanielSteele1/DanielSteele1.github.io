@@ -100,9 +100,9 @@ function Navigation() {
         
           <div class="nav-heading" id="download">
             <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
+            <DownloadOutlined fontSize="large" />
             </a>
 
-            <DownloadOutlined fontSize="large" />
           </div>
         </div>
       
