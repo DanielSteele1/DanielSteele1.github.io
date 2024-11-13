@@ -82,7 +82,7 @@ function Navigation() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/Daniel Steele - Full Stack Dev (CV).pdf';
+    link.href = '/CV (updated Nov24).pdf';
     link.download = 'Daniel Steele - Full Stack Dev (CV).pdf';
     link.click();
 
@@ -106,7 +106,6 @@ function Navigation() {
           </div>
         </div>
       
-
       <div className="nav-item">
         <h1 className="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
