@@ -82,8 +82,8 @@ function Navigation() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV (updated Nov24).pdf';
-    link.download = 'Daniel Steele - Full Stack Dev (CV).pdf';
+    link.href = '/CV (updated Nov24).pdf'; 
+    link.download = 'CV (updated Nov24).pdf';
     link.click();
 
   };
@@ -124,8 +124,8 @@ function Navigation() {
 }
 
 function Project_card({ src, children, heading, link }) {
-  return (
 
+  return (
     <div className="Project_card">
 
       <img id="image" src={src} />
@@ -133,7 +133,7 @@ function Project_card({ src, children, heading, link }) {
       <div id="project-description" > <p>{children}</p> </div>
 
       <div class="button-container">
-        <div id="button" onClick={() => window.sa_event('btn_clicked')}>
+        <div id="button" onClick={() => window.sa_event('project_viewed')}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <button> View Project Repo </button> </a>
         </div>
