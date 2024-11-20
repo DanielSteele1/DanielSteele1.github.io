@@ -82,8 +82,8 @@ function Navigation() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV (updated Nov24).pdf'; 
-    link.download = 'CV (updated Nov24).pdf';
+    link.href = '/CV__updated_Nov24_.pdf'; 
+    link.download = 'CV__updated_Nov24_.pdf';
     link.click();
 
   };
