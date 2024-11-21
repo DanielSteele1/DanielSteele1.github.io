@@ -4,9 +4,10 @@ import React from 'react';
 //import Carousel from './Carousel.js';
 import Canvas from './Canvas.js';
 //import ContactForm from './Contact.js';
-import DownloadIcon from '@mui/icons-material/Download';
-import { DownloadOutlined } from '@mui/icons-material';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+//import { DownloadIcon } from '@mui/icons-material';
 //socials 
+import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone';
 
 function Picture5() {
 
@@ -82,7 +83,7 @@ function Navigation() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV__updated_Nov24_.pdf'; 
+    link.href = '/CV__updated_Nov24_.pdf';
     link.download = 'CV__updated_Nov24_.pdf';
     link.click();
 
@@ -97,15 +98,15 @@ function Navigation() {
       </div>
 
       <div class="nav-item">
-        
-          <div class="nav-heading" id="download">
-            <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
-            <DownloadOutlined fontSize="large" />
-            </a>
 
-          </div>
+        <div class="nav-heading" id="download">
+          <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
+            <FileDownloadIcon fontSize="large" />
+          </a>
+
         </div>
-      
+      </div>
+
       <div className="nav-item">
         <h1 className="nav-heading"> <a href="#about"> About </a>  </h1>
       </div>
@@ -167,18 +168,24 @@ function Footer() {
   )
 }
 
-function StackCard({ src, description }) {
-
+function StackCard({ src, description, title }) {
   return (
     <div className="stack-card">
-
-      <img src={src} />
-      <div id="description"> {description} </div>
-
+      <div id="stack-heading">
+        {/* Check if src is a string or JSX element */}
+        <div>
+          {typeof src === 'string' ? (
+            <img src={src} alt={title} />
+          ) : (
+            src
+          )}
+        </div>
+        <h1>{title}</h1>
+      </div>
+      <div id="description">{description}</div>
     </div>
-  )
+  );
 }
-
 export default function MyApp() {
 
   return (
@@ -215,10 +222,10 @@ export default function MyApp() {
 
       <div className="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
 
-      <div className="stack">
+      <div className="main-content">
 
-        <div className="stack-desc-container">
-          <div className="stack-desc">
+        <div className="content-desc-container">
+          <div className="content-desc">
             <p>
               Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
 
@@ -232,85 +239,94 @@ export default function MyApp() {
           </div>
         </div>
 
-        <div className="heading"> <h1> My Tech Stack </h1> </div>
+      </div>
 
-        <div className="stack-img-container">
+      <div className="heading"> <h1> My Skills and Experience </h1> </div>
 
-          <div className="stack-img-row">
-            <StackCard
-              src="HTML.png"
-              description="HTML"
-            />
+      <div className="stack-card-container">
+        <StackCard
 
-            <StackCard
-              src="CSS.png"
-              description="CSS"
-            />
+          title="HTML5"
+          src="html.png"
+          description="Full understanding and experience in the best practices of HTML."
 
-            <StackCard
-              src="JS.png"
-              description="JavaScript"
-            />
+        />
 
-          </div>
+        <StackCard
 
-          <div className="stack-img-row">
+          title="CSS"
+          src="css.png"
+          description="Mastered the basics of CSS in order to create beautiful UI elements."
 
-            <div id="react-logo">
-              <StackCard
-                src="react.png"
-                description="React.js"
-              />
-            </div>
+        />
+        <StackCard
+          title="JavaScript"
+          src="JS.png"
+          description="Experience using JavaScript in both frontend & backend to create interactive web applications."
 
-            <StackCard
-              src="express.png"
-              description="Express.js"
-            />
+        />
+        <div id="react-logo">
+          <StackCard
+            title="React"
+            src="React.png"
+            description="Expertise with using react with JSX to create resuable components."
 
-            <StackCard
-              src="node.png"
-              description="NodeJS"
-            />
-
-            <StackCard
-              src="mongoDB.png"
-              description="MongoDB"
-            />
-
-          </div>
-
-          <div className="stack-img-row">
-            <StackCard
-              src="Figma.png"
-              description="Figma"
-            />
-
-            <StackCard
-              src="git.png"
-              description="Git"
-            />
-
-            <StackCard
-              src="MaterialUI.png"
-              description="MaterialUI"
-            />
-
-          </div>
-
-          <div className="stack-img-row">
-
-
-          </div>
-
-
-
+          />
         </div>
+        <StackCard
+          title="Node"
+          src="Node.png"
+          description="Knowledge in leveraging NodeJS in order to build server-side applications."
+
+        />
+        <StackCard
+          title="MongoDB"
+          src="MongoDB.png"
+          description="Knowledge of creating and querying NoSQL databases with MongoDB to store application data."
+
+        />
+
+        <StackCard
+          title="Git"
+          src="git.png"
+          description="Proficient in making use of version control systems like git and github with all of my projects."
+
+        />
+
+        <StackCard
+          src="figma.png"
+          title="Figma"
+          description="Extensive knowledge of using Figma to design and prototype ideas and wireframes for my projects."
+
+        />
+
+        <StackCard
+          title="MaterialUI"
+          src="MaterialUI.png"
+          description="Experience in leveraging Material-UI to create modern & clean looking UI components."
+
+        />
+
+        <StackCard
+          title="C++"
+          src="c++.png"
+          description="One of my hobbies is coding with C# and C++. I like to create scenes and games with OpenGL. "
+
+        />
+
+        <StackCard
+          title="TypeScript & TailwindCSS"
+          src={<ImportContactsTwoToneIcon id="BookIcon" fontSize="large" />}
+          description="Currently, I'm also in the process of experimenting with TypeScript and TailwindCSS to level up my dev skills."
+
+        />
+
+
       </div>
 
       <div id="projects"> </div>
 
-      <div className="heading"> <h1> My recent projects </h1> </div>
+      <div className="heading"> <h1> Some of my recent projects </h1> </div>
       <div className="projects">
 
         <div className="project1">
@@ -415,8 +431,8 @@ export default function MyApp() {
       </div>
 
       <div id="contact" className="heading"> <h1> Get in Touch </h1>  </div>
-
       <div className="contact-desc-container">
+
         <div className="contact-desc">
 
           Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.

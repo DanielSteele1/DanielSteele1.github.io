@@ -161,7 +161,7 @@ a:hover {
   color: gradient(90deg, #b6b6b6, #c47dff);
   font-style: bold;
   margin: 0 auto;
-  margin: 5px;
+  margin: 10px;
   padding: 10px;
   font-size: 35px;
 
@@ -267,9 +267,8 @@ body {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5px;
   margin: 0 auto;
-  width: 100%;
+  width: 70%;
   box-sizing: border-box;
 }
 
@@ -281,6 +280,7 @@ body {
   width: 65%;
   margin: 10px auto;
   margin-top: 50px;
+  border: rgb(46, 44, 44) 1px solid;
   background-color: rgba(32, 31, 31, 0.3);
   border-radius: 15px;
 }
@@ -365,24 +365,30 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: auto;
   width: 540px;
   margin: 10px;
   align-items: center;
+  border: rgb(46, 44, 44) 1px solid;
   background-color: rgba(32, 31, 31, 0.3);
   border-radius: 15px;
 
+}
+
+.Project_card:hover {
+  border-color:#c47dff;
+  transition: 0.3s;
 }
 
 .project-description {
 
   width: fit-content;
   height: fit-content;
-  margin-left: 30px;
-  padding: 8px;
+  padding: 15px;
   font-size: 18px;
-  text-align: flex-start;
+  align-items: flex-start;
+  justify-content:flex-start;
   color: white;
   font-family: 'Nunito', sans-serif;
 
@@ -398,7 +404,6 @@ body {
 
 .Project_card #heading {
 
-  margin-bottom: 5px;
   font-size: 29px;
   padding: 10px;
   color: #c47dff;
@@ -425,14 +430,6 @@ body {
   border-top-right-radius: 15px;
   border: 3px solid transparent;
 
-}
-
-.Project_card img:hover {
-
-  border-color: #c47dff;
-  box-shadow: #c47dff 0px 3px 10px;
-  border-radius: 15px;
-  transition: 0.3s ease;
 }
 
 .nav-heading {
@@ -490,8 +487,9 @@ body {
   font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   border: 2px solid transparent;
+  margin: 1px;
 
 }
 
@@ -502,18 +500,8 @@ body {
 
 }
 
-.contact-desc {
 
-  color: #c47dff;
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.7;
-  padding: 5px;
-
-}
-
-.stack {
+.main-content {
 
   display: flex;
   flex-direction: column;
@@ -524,9 +512,10 @@ body {
   width: 83%;
 }
 
-.stack-desc-container {
+.content-desc-container {
 
   background-color: rgba(32, 31, 31, 0.3);
+  border: rgb(46, 44, 44) 1px solid;
   border-radius: 15px;
   margin: 0px auto;
   display: flex;
@@ -536,24 +525,14 @@ body {
 
 }
 
-.contact-desc-container {
-  display: flex;
-  background-color: rgba(32, 31, 31, 0.3);
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-  margin: 0px auto;
+.content-desc {
 
-}
-
-.stack-desc {
-
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   max-width: 73%;
   justify-content: center;
   align-items: center;
-  line-height: 1.5;
+  line-height: 1.4;
   color: white;
   font-family: 'Nunito', sans-serif;
   margin: 10px;
@@ -561,7 +540,7 @@ body {
 
 }
 
-.stack-desc h1 {
+.content-desc h1 {
 
   font-size: 25px;
   line-height: 1.5;
@@ -573,48 +552,74 @@ body {
 
 }
 
-.stack-img-container {
 
-  display: flex;
-  flex-direction: column;
+.stack-card-container {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  margin: 0px auto;
+  margin: 0 auto;
+  height: fit-content;
+  font-family: 'Poppins', sans-serif;
+  width: 83%;
 }
 
-.stack-img-row {
-  display: flex;
-  margin: 0px;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  text-align: center;
+.stack-card {
 
-}
-
-.stack img {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  height: 80px;
-  width: 80px;
-  margin: auto;
-}
-
-
-#heading {
-
-  display: flex;
-  justify-content: center;
   font-size: 27px;
-  padding: 10px;
+  margin: 0 auto;
+  height: fit-content;
+  width: fit-content;
+  padding: 15px;
+  border-radius:8px;
+  border: rgb(46, 44, 44) 1px solid;
+  justify-content: center;
+  align-items: center;
   color: #c47dff;
   font-family: 'Poppins', sans-serif;
+  background-color:rgba(32, 31, 31, 0.3);
+  margin: 10px;
+
 }
+
+.stack-card:hover {
+  border:#9546fc 1px solid;
+  transition: 0.3s;
+}
+
+.stack-card h1 {
+
+  font-size: 23px;
+  color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.stack-card img {
+
+  height: 50px;
+  width: auto;
+  padding-right: 10px;
+  margin: 10px;
+
+}
+
+#stack-heading {
+
+  display:flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: row;
+  margin: 5px;
+}
+
+#BookIcon {
+
+  padding: 10px;
+}
+
 
 .socials {
   display: flex;
@@ -664,6 +669,28 @@ body {
   color: #c47dff;
   width: 100%;
 }
+
+.contact-desc-container {
+  display: flex;
+  background-color: rgba(32, 31, 31, 0.3);
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+
+}
+
+.contact-desc {
+  font-size: 20px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+
 
 .contactForm input {
 
@@ -828,8 +855,8 @@ body {
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    gap: 15px;
+    width: 70%;
+    gap: 10px;
     /* Adjust gap as needed */
     margin: 0 auto;
   }
@@ -857,6 +884,34 @@ body {
     margin: 0 auto;
     padding: 10px;
     margin: 10px;
+
+  }
+
+  .stack-card-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    width: 83%;
+
+  }
+
+  .stack-card {
+
+    height: 170px;
+    overflow: none;
+    width:fit-content;
+    margin: 10px;
+  }
+
+  .stack-card #description {
+
+    padding: 10px;
+    justify-content: center;
 
   }
 
@@ -908,6 +963,33 @@ body {
 
   }
 
+  .stack-card-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    width: 83%;
+
+  }
+
+  .stack-card {
+
+    height: 170px;
+    overflow: none;
+    width:fit-content;
+    margin: 10px;
+  }
+
+  .stack-card #description {
+
+    padding: 10px;
+    justify-content: center;
+
+  }
 
 }
 
@@ -990,16 +1072,32 @@ body {
   }
 
 
-  .stack-desc {
+  .stack-card-container {
 
-    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    width: 83%;
+
   }
 
-  .stack img {
+  .stack-card {
 
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
+    height: 170px;
+    overflow: none;
+    width:fit-content;
+    margin: 10px;
+  }
+
+  .stack-card #description {
+
+    padding: 10px;
+    font-size: 16px;
+    justify-content: center;
 
   }
 
@@ -1020,7 +1118,6 @@ body {
 }
 
 @media (max-width: 100px) {
-
 
   .heading h1 {
 
@@ -1046,9 +1143,32 @@ body {
   }
 
 
+  .stack-card-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .stack-card {
+
+    height: fit-content;
+    width:fit-content;
+  }
+
+  .stack-card #description {
+
+    padding: 10px;
+    font-size: 16px;
+    justify-content: center;
+
+  }
 
 }
-
 
 
 @media (max-width: 480px) {
@@ -1065,8 +1185,19 @@ body {
   .contact-desc-container {
     max-width: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 
 
+  }
+
+
+  .content-desc-container {
+
+    max-width: 100%;
+  }
+
+  .content-desc { 
+    font-size: 14px;
   }
 
   .stack-desc-container {
@@ -1076,25 +1207,6 @@ body {
 
   .navigation {
     background-color: rgba(32, 31, 31, 1.0);
-
-  }
-
-  .stack img {
-
-    height: 40px;
-    width: 40px;
-    margin: auto;
-  }
-
-  .stack-desc {
-
-    font-size: 16px;
-
-  }
-
-  .stack {
-
-    width: 380px;
 
   }
 
@@ -1110,18 +1222,15 @@ body {
 
   .profile-container {
     margin: 0 auto;
-    padding: 10px;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
-    width: 450px;
+    width: 85%;
     box-sizing: border-box;
   }
 
   .profile_Desc {
 
-    font-size: 18px;
-    max-width: 70%;
+    font-size: 14px;
 
   }
 
@@ -1141,19 +1250,34 @@ body {
 
   .Project_card {
 
-    width: fit-content;
-    margin: 10 auto;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    
   }
 
+  .project-description  {
+
+   font-size: 14px;
+
+  }
+
+  .Project_card #heading {
+
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    padding: 0px;
+  }
+
+  
   .projects {
 
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  p {
-
-    font-size: 15px;
+    width: 100%;
+    
   }
 
   .nav-logo-heading {
@@ -1161,6 +1285,55 @@ body {
     font-size: 10px;
     justify-content: center;
     margin: 0 auto;
+  }
+
+  .stack-card-container {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: fit-content;
+    font-family: 'Nunito', sans-serif;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .stack-card {
+
+    height: fit-content;
+    overflow: none;
+    width:fit-content;
+    margin: 10px;
+  }
+
+  .stack-card h1 {
+
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .stack-card #description {
+
+    padding: 1px;
+    font-size: 14px;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+
+
+  }
+
+  #stack-heading img {
+    width: 35px; 
+    height: auto;
+  }
+
+  .Project_card button {
+
+    font-size: 14px;
   }
 
 }
@@ -1287,13 +1460,7 @@ body {
   }
 
   .contact-desc {
-    font-size: 18px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 10px;
-    line-height: 1.5;
+    font-size: 15px;
   }
-
-
 
 }
