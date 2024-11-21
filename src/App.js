@@ -247,7 +247,7 @@ export default function MyApp() {
         <StackCard
 
           title="HTML5"
-          src="html.png"
+          src="HTML.png"
           description="Full understanding and experience in the best practices of HTML."
 
         />
@@ -255,7 +255,7 @@ export default function MyApp() {
         <StackCard
 
           title="CSS"
-          src="css.png"
+          src="CSS.png"
           description="Mastered the basics of CSS in order to create beautiful UI elements."
 
         />
@@ -268,20 +268,20 @@ export default function MyApp() {
         <div id="react-logo">
           <StackCard
             title="React"
-            src="React.png"
+            src="react.png"
             description="Expertise with using react with JSX to create resuable components."
 
           />
         </div>
         <StackCard
           title="Node"
-          src="Node.png"
+          src="node.png"
           description="Knowledge in leveraging NodeJS in order to build server-side applications."
 
         />
         <StackCard
           title="MongoDB"
-          src="MongoDB.png"
+          src="mongoDB.png"
           description="Knowledge of creating and querying NoSQL databases with MongoDB to store application data."
 
         />
@@ -294,7 +294,7 @@ export default function MyApp() {
         />
 
         <StackCard
-          src="figma.png"
+          src="Figma.png"
           title="Figma"
           description="Extensive knowledge of using Figma to design and prototype ideas and wireframes for my projects."
 
