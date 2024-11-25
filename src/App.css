@@ -110,21 +110,19 @@ a {
   color: #c47dff;
 }
 
+li::marker {
+
+  color:#c47dff;
+  font-size:1.5rem;
+  content: none;
+}
+
+
 a:hover {
 
   text-decoration: underline;
   color: #c47dff;
 
-}
-
-#download img {
-
-  height: 50px;
-  width: 70px;
-  display: flex;
-  margin: 10 auto;
-  border: 1px transparent;
-  border-radius: 15px;
 }
 
 .tooltip .tooltiptext {
@@ -147,13 +145,6 @@ a:hover {
 
 }
 
-#download img:hover {
-
-  transform: translateY(-2px);
-  transition: all 0.6s ease;
-
-}
-
 
 .heading h1 {
 
@@ -169,34 +160,19 @@ a:hover {
 
 .link {
   display: inline-block;
-  color: #ffffff;
+  color: #c47dff;
   /* Fallback color */
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  height: auto;
-  width: auto;
-  padding: 5px 10px;
+  padding: 5px 5px;
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid transparent;
   border-radius: 25px;
-  background-image: linear-gradient(90deg, #b6b6b6, #c47dff);
-  box-shadow: 0px 4px 15px rgba(149, 70, 252, 0.5);
   text-align: center;
-  transition: all 0.3s ease;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.link:hover {
-  background-image: linear-gradient(90deg, #b6b6b6, #c47dff);
-  box-shadow: 0px 4px 20px rgba(149, 70, 252, 0.7);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  transform: translateY(-2px);
-  text-decoration: none;
-}
 
 html {
   scroll-behavior: smooth;
@@ -215,6 +191,13 @@ body {
   font-family: 'Nunito', sans-serif;
 
 }
+
+.MuiSvgIcon-root MuiSvgIcon {
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
 
 .nav-heading a {
   display: flex;
@@ -252,13 +235,137 @@ body {
   font-family: 'Overpass', sans-serif;
   height: 68px;
   background-color: rgba(32, 31, 31, 0.9);
-  color: #9546fc;
+  color: #c47dff;
   position: sticky;
   text-align: center;
   top: 0;
   z-index: 100;
 
 }
+
+.download-button-container {
+
+  display:flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.download-button {
+  display: flex;
+  margin: 0 auto;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 20px;   
+  height: fit-content;
+  width: fit-content;
+  color: #c47dff;
+  border: 3px #c47dff solid;
+  background-color: transparent;
+  border-radius: 35px;
+  cursor: pointer;     
+  transition: background-color 0.3s; 
+}
+
+.download-text {
+  display: flex;            
+  align-items: center;    
+  gap: 10px;                  
+  color: #c47dff;
+  font-size: 20px;
+  margin: 0;
+}
+
+.icon {
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #1c1c1c; ;  
+  text-decoration:none;
+}
+
+.download-text:hover{
+  text-decoration:none;
+}
+
+.landing-content-container {
+
+  width: 430px;
+  padding: 20px;
+}
+
+
+.landing-section-container {
+
+  display:flex;
+  width: 100%;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  padding: 10px;
+
+}
+
+
+.landing-title {
+padding: 10px;
+font-family: 'Nunito', sans-serif;
+align-items: center;
+justify-content: center;
+display:flex;
+color:#c47dff;
+
+}
+
+.landing-desc {
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fira Code', monospace;
+  font-size: 30px;
+  height: 30px;
+  width:fit-content;
+  margin: 0 auto;
+  color:#c47dff;
+}
+
+
+.landing-button-container {
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  color:#c47dff;
+}
+
+.landing-button {
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  margin-top: 280px; 
+  background: none;
+  border: 5px solid transparent;
+  color:#c47dff;
+  scroll-behavior: smooth;
+
+}
+
+.landing-button:hover {
+
+background-color:#282c34;
+border-radius: 50px;
+
+}
+
 
 .projects {
 
@@ -268,21 +375,18 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   margin: 0 auto;
-  width: 70%;
+  width: 95%;
   box-sizing: border-box;
 }
 
 .profile-container {
   display: flex;
   justify-content: center;
-  padding: 15px;
   align-items: center;
-  width: 65%;
-  margin: 10px auto;
-  margin-top: 50px;
-  border: rgb(46, 44, 44) 1px solid;
-  background-color: rgba(32, 31, 31, 0.3);
+  width: 70%;
+  margin: 0px auto;
   border-radius: 15px;
+
 }
 
 .profile {
@@ -296,7 +400,16 @@ body {
   margin: 0px auto 0px;
   border: 2px solid transparent;
   object-fit: cover;
-  opacity: 1.0;
+  border: 3px solid;
+  border-color: #c47dff;
+  box-shadow: #c47dff 0px 1px 20px;
+
+}
+
+.profile:hover {
+
+  box-shadow: #c47dff 0px 1px 30px;
+  transition: 0.10s ease;
 
 }
 
@@ -308,7 +421,7 @@ body {
   font-size: 20px;
   line-height: 1.35;
   color: white;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
   max-width: 60%;
   opacity: 1.0;
 }
@@ -517,11 +630,10 @@ body {
   background-color: rgba(32, 31, 31, 0.3);
   border: rgb(46, 44, 44) 1px solid;
   border-radius: 15px;
-  margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 75%;
 
 }
 
@@ -529,16 +641,24 @@ body {
 
   font-size: 20px;
   display: flex;
-  max-width: 73%;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.4;
+  max-width: 80%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.3;
   color: white;
-  font-family: 'Nunito', sans-serif;
   margin: 10px;
-  text-align: center;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  text-align: flex-start;
 
 }
+
+.content-desc-title {
+
+  font-size: 23px;
+  width: 100%;
+}
+
 
 .content-desc h1 {
 
@@ -561,7 +681,6 @@ body {
   align-items: center;
   margin: 0 auto;
   height: fit-content;
-  font-family: 'Poppins', sans-serif;
   width: 83%;
 }
 
@@ -577,14 +696,13 @@ body {
   justify-content: center;
   align-items: center;
   color: #c47dff;
-  font-family: 'Poppins', sans-serif;
   background-color:rgba(32, 31, 31, 0.3);
   margin: 10px;
 
 }
 
 .stack-card:hover {
-  border:#9546fc 1px solid;
+  border:#c47dff 1px solid;
   transition: 0.3s;
 }
 
@@ -635,16 +753,6 @@ body {
 .socials2 {
 
   margin: 10px;
-}
-
-.socials img:hover,
-.profile:hover {
-  border: 2px solid;
-  border-color: #c47dff;
-  transition: 0.10s;
-  box-shadow: #c47dff 0px 1px 10px;
-  transition: all 0.3s ease;
-
 }
 
 .Icons:hover {
@@ -860,6 +968,36 @@ body {
     /* Adjust gap as needed */
     margin: 0 auto;
   }
+
+
+  .landing-section-container {
+
+    height: 600px;
+  }
+
+  .landing-content-container {
+
+    width: 430px;
+    margin-top: 0px;
+    padding: 30px;
+  }
+
+  .landing-button {
+
+    margin-top: 40px;
+  }
+
+
+  .landing-title {
+    font-size: 40px;
+  }
+
+  .landing-desc {
+
+    font-size: 20px;
+  }
+
+
 
   .nav-item {
 
@@ -1394,6 +1532,55 @@ body {
 }
 
 @media (max-width: 480px) {
+
+
+
+  .profile {
+
+
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+
+  }
+
+  .content-desc-title {
+
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .landing-section-container {
+
+    height: 550px;
+    margin: 0 auto;
+  }
+
+  .landing-content-container {
+
+    width: 430px;
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  .landing-title {
+
+
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .landing-desc {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .landing-button {
+
+    display:none;
+    
+  }
+
 
   .nav-item {
 

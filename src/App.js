@@ -2,12 +2,18 @@
 import './App.css';
 import React from 'react';
 //import Carousel from './Carousel.js';
+import ReactTypingEffect from 'react-typing-effect';
+
 import Canvas from './Canvas.js';
 //import ContactForm from './Contact.js';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 //import { DownloadIcon } from '@mui/icons-material';
-//socials 
+
+
 import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone';
+import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 
 function Picture5() {
 
@@ -58,21 +64,7 @@ function Picture6() {
   )
 }
 
-function Profile() {
-  return (
-
-    <img
-      className="profile"
-      // src="Daniel Steele profile picture.png"
-      src="Sunglasses.jpg"
-      alt="profile"
-
-    />
-
-  )
-}
-
-function Navigation() {
+function LandingSection() {
 
   const handleDownloadAndView = (event) => {
 
@@ -90,6 +82,57 @@ function Navigation() {
   };
 
   return (
+    <div className="landing-content-container"> 
+
+      <Profile />
+
+      <p1 className="landing-title"> Daniel Steele </p1>
+
+      <div className="landing-desc">
+        <ReactTypingEffect
+          className="landing-desc"
+          text={["< Full Stack Engineer />", "< Passionate Developer />", "< Tech Enthusiast />"]}
+          speed={100}
+          eraseSpeed={50}
+          eraseDelay={10000}
+          typingDelay={90}
+        />
+      </div>
+
+      <div className="download-button-container">
+        <button className="download-button">
+          <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
+            <h1 className="download-text">
+              <FileDownloadIcon fontSize="large" sx={{ display: 'flex', color: '#c47dff', padding: '5px', }} />
+              Download Resume </h1>
+          </a>
+        </button>
+      </div>
+
+      <div className="landing-button-container">
+        <button className="landing-button"> <a href="#about">   <KeyboardDoubleArrowDownRoundedIcon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '70px' }} /> </a> </button>
+      </div>
+    </div >
+  )
+
+}
+
+function Profile() {
+  return (
+
+    <img
+      className="profile"
+      src="Sunglasses.jpg"
+      alt="profile"
+    />
+
+  )
+}
+
+function Navigation() {
+
+
+  return (
 
     <div className="navigation">
 
@@ -97,15 +140,6 @@ function Navigation() {
         <h1> Daniel Steele - Full Stack Developer  </h1>
       </div>
 
-      <div class="nav-item">
-
-        <div class="nav-heading" id="download">
-          <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
-            <FileDownloadIcon fontSize="large" />
-          </a>
-
-        </div>
-      </div>
 
       <div className="nav-item">
         <h1 className="nav-heading"> <a href="#about"> About </a>  </h1>
@@ -194,52 +228,61 @@ export default function MyApp() {
       <Canvas />
       <Navigation />
 
+      <div className="landing-section-container">
+
+        <LandingSection />
+
+      </div>
+
       <div id="about"> </div>
 
-      <div className="profile-container">
-        <Profile />
-
-        <div className="profile_Desc">
-          <p>
-            I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
-            that's recently graduated with <span className="highlight"> a bachelors
-              degree from the University of Plymouth, UK. </span>
-            I love to code, and I'm looking for
-            oppurtunities in the UK to
-            show off my development skills.
-          </p>
-        </div>
-
-        <div className="socials">
-          <div className="socials1">
-            <Picture6 />
-          </div>
-          <div className="socials2">
-            <Picture5 />
-          </div>
-        </div>
-      </div>
+      <br></br>
+      <br></br>
+      <br></br>
 
       <div className="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
 
       <div className="main-content">
 
         <div className="content-desc-container">
+
           <div className="content-desc">
-            <p>
-              Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
+            <ul style={{ padding: '10px' }}>
 
-              At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
-              <br></br> <br></br>
-              I'm always looking to expand on my current knowledge and teach myself new techologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
-              <br></br> <br></br>
-              As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
-              <br></br> <br></br>
-              If you would like to keep up with some of my work and what I'm getting up to, you should <span className="highlight">connect with me on <a className="link" href="https://www.linkedin.com/in/daniel-steele-b06443198/"> LinkedIn</a> and on <a className="link" href="https://github.com/DanielSteele1"> Github.</a></span></p>
-          </div>
-        </div>
+          <li className="content-desc-title"style={{ gap: '20px', padding: '5%', justifyContent: 'center' }}>
+            I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
+            that's recently graduated with <span className="highlight"> a bachelors
+            degree from the University of Plymouth, UK. </span>
+            I'm looking for
+            oppurtunities in the UK to
+            show off my development skills.
+          </li>
 
+          <li style={{ gap: '10px' }}>
+            <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
+            Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
+          </li>
+          <br></br>
+
+          <li style={{ gap: '10px' }}>
+            <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
+            At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
+          </li>
+          <br></br>
+          <li style={{ gap: '10px' }}>
+            <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
+            I'm always looking to expand on my current knowledge and teach myself new technologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
+          </li>
+          <br></br>
+          <li style={{ gap: '10px' }}>
+            <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
+            As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
+          </li>
+        </ul>
       </div>
+    </div>
+
+      </div >
 
       <div className="heading"> <h1> My Skills and Experience </h1> </div>
 
@@ -447,6 +490,6 @@ export default function MyApp() {
 
       <Footer />
 
-    </div>
+    </div >
   );
 }
