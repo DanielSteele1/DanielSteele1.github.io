@@ -772,20 +772,19 @@ border-radius: 50px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10px auto;
-  font-family: 'Overpass', sans-serif;
+  margin: 0px auto;
+  font-family: 'Nunito', sans-serif;
   color: #c47dff;
   width: 100%;
 }
 
 .contact-desc-container {
   display: flex;
-  background-color: rgba(32, 31, 31, 0.3);
   font-family: 'Nunito', sans-serif;
-  padding: 10px;
   align-items: center;
   justify-content: center;
   margin: 0px auto;
+  width: 70%;
 
 }
 
@@ -794,11 +793,8 @@ border-radius: 50px;
   margin: 0 auto;
   color: white;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
+  margin: 5px;
 }
-
-
 
 .contactForm input {
 
@@ -859,10 +855,10 @@ border-radius: 50px;
   margin: 10px;
   padding: 10px;
   border: 1px solid;
-  border-color: #9546fc;
+  border-color: #c47dff;
   background-color: #201e1e;
   border-radius: 5px;
-  color: #9546fc;
+  color: #c47dff;
 
 }
 
@@ -873,11 +869,11 @@ border-radius: 50px;
   margin: 10px;
   padding: 10px;
   border: 1px solid;
-  border-color: #9546fc;
+  border-color: #c47dff;
   background-color: #201e1e;
   font-family: 'Overpass', sans-serif;
   border-radius: 5px;
-  color: #9546fc;
+  color: #c47dff;
 
 }
 
@@ -926,7 +922,7 @@ border-radius: 50px;
 
 }
 
-.contactForm button {
+.contact-button {
 
   order: 2;
   flex: 1;
@@ -937,8 +933,24 @@ border-radius: 50px;
   background-color: #201e1e;
   border-radius: 5px;
   color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
 
 }
+
+.contact-Box {
+
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  border: 10px purple;
+
+
+}
+
 
 #error-check {
 
@@ -949,7 +961,7 @@ border-radius: 50px;
   display: flex;
   margin: 10px auto;
   color: #fc0000;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
 }
 
@@ -996,8 +1008,6 @@ border-radius: 50px;
 
     font-size: 20px;
   }
-
-
 
   .nav-item {
 

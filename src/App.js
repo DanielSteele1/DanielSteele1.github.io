@@ -5,11 +5,9 @@ import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
 import Canvas from './Canvas.js';
-//import ContactForm from './Contact.js';
+import ContactForm from './Contact.js';
+
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-//import { DownloadIcon } from '@mui/icons-material';
-
-
 import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
@@ -103,7 +101,7 @@ function LandingSection() {
         <button className="download-button">
           <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
             <h1 className="download-text">
-              <FileDownloadIcon fontSize="large" sx={{ display: 'flex', color: '#c47dff', padding: '5px', }} />
+              <FileDownloadIcon fontSize="large" sx={{ display: 'flex', color: '#c47dff', padding: '5px' }} />
               Download Resume </h1>
           </a>
         </button>
@@ -130,7 +128,6 @@ function Profile() {
 }
 
 function Navigation() {
-
 
   return (
 
@@ -220,6 +217,7 @@ function StackCard({ src, description, title }) {
     </div>
   );
 }
+
 export default function MyApp() {
 
   return (
@@ -397,10 +395,9 @@ export default function MyApp() {
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
             <div className="project-description">
-              <span className="highlight">EarthSim </span> is a project that I built in C++ for my Game development class,
+              <span className="highlight">EarthSim </span> is a project that I built in C++,
               <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environment, with the goal of simulating our
-              <span className="highlight"> local system of planets, </span>
-              exposing me to core <span className="highlight">game development principles and GLSL.</span>
+              <span className="highlight"> local system of planets, </span> exposing me to core <span className="highlight">game development principles and GLSL.</span>
             </div>
           </Project_card>
         </div>
@@ -410,8 +407,6 @@ export default function MyApp() {
             heading="Ongoing Project"
             src="coming_soon.png"
           >
-
-
             <div className="project-description">
               Ongoing project
             </div>
@@ -462,7 +457,7 @@ export default function MyApp() {
 
             <div className="project-description">
 
-              <span className="highlight">  DoodlePalette </span> is a somewhat simpler project than the rest, purely intended to reinforce
+              <span className="highlight"> DoodlePalette </span> is a somewhat simpler project than the rest, purely intended to reinforce
               <span className="highlight"> my core Javascript skills. </span> It's a drawing app that consists of most features you would expect, such as a
               <span className="highlight"> line width tool, or an undo/redo feature.</span> Users can also
               <span className="highlight"> draw shapes, or save the image as a png. </span>
@@ -473,21 +468,7 @@ export default function MyApp() {
         </div>
       </div>
 
-      <div id="contact" className="heading"> <h1> Get in Touch </h1>  </div>
-      <div className="contact-desc-container">
-
-        <div className="contact-desc">
-
-          Have a question or enquiry? You can contact me via email, and i'll be happy to get back to you as soon as possible.
-          <br></br>
-          Also, feel free to connect and chat with me on linkedin.
-          <br></br>
-          <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a>
-          <br></br>
-
-        </div>
-      </div>
-
+      <ContactForm />
       <Footer />
 
     </div >
