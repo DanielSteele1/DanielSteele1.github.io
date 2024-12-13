@@ -51,8 +51,7 @@ function ContactForm() {
       <form className="contactForm" onSubmit={handleSubmit}>
 
         <div className="contact-desc-container">
-          <span className="contact-desc"> Have a quetion or enquiry? Send me your details below and i'll be happy to get back to you as soon as possible.
-            <br></br> You can also Follow me on LinkedIn or, send me an email at <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com </a> </span>
+          <span className="contact-desc"> Have a question or enquiry? Send me your details below and i'll be happy to get back to you as soon as possible. </span>
         </div>
         <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
         <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
@@ -73,6 +72,5 @@ function ContactForm() {
 
   )
 }
-
 
 export default ContactForm;
