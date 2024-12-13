@@ -530,7 +530,9 @@ export default function MyApp() {
         </div>
       </div>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
+       <div id="contact" className="heading">  </div> {/* temporary div to ensure nav link isnt broken */}
+
       <Footer />
 
     </div >

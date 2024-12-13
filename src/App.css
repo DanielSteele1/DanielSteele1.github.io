@@ -1196,6 +1196,12 @@ body {
 @media (max-width: 800px) {
 
 
+  .nav-item {
+    margin: 5px;
+
+  }
+
+
   .landing-content-container {
 
     padding: 150px;
