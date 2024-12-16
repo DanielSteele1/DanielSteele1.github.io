@@ -406,8 +406,8 @@ body {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
+  gap: 10px;
   margin: 0 auto;
-  width: 95%;
   box-sizing: border-box;
 }
 
@@ -1653,7 +1653,7 @@ body {
     margin: 5px;
 
   }
-  
+
   @supports (-webkit-background-clip: text) {
     .nav-item {
       -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
