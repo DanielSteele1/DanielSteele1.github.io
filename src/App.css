@@ -643,9 +643,8 @@ body {
   font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   border: 2px solid transparent;
-  margin: 1px;
 
 }
 
@@ -732,20 +731,19 @@ body {
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 0 auto;
   height: fit-content;
-  width: 83%;
+  width: 80%;
 }
 
 .stack-card {
 
-  font-size: 27px;
   margin: 0 auto;
-  height: fit-content;
+  height: 160px;
   width: fit-content;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   border: rgb(46, 44, 44) 1px solid;
   justify-content: center;
