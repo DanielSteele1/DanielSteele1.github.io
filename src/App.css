@@ -1079,13 +1079,21 @@ body {
 @media (min-width: 1600px) {
 
   .nav-item {
-
     background: linear-gradient(90deg, #c47dff, #ff8dfc);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: #c47dff; /* Gradient for Chrome/Edge/Safari */
+    /* Ensures Firefox compatibility */
+    display: inline-block; /* Ensures proper rendering in all contexts */
   }
 
+
+  @supports (-webkit-background-clip: text) {
+    .nav-item {
+      -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
+    }
+  }
+  
 }
 
 @media (max-width: 1600px) and (min-width: 1200px) {
@@ -1137,6 +1145,12 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
     -webkit-mask-image: none;
+
+    @supports (-webkit-background-clip: text) {
+      .nav-item {
+        -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
+      }
+    }
 
   }
 
@@ -1191,14 +1205,24 @@ body {
     margin: 5px;
 
   }
+
+  @supports (-webkit-background-clip: text) {
+    .nav-item {
+      -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
+    }
+  }
 } 
 
 @media (max-width: 800px) {
 
-
   .nav-item {
     margin: 5px;
+  }
 
+  @supports (-webkit-background-clip: text) {
+    .nav-item {
+      -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
+    }
   }
 
 
@@ -1629,8 +1653,14 @@ body {
     margin: 5px;
 
   }
+  
+  @supports (-webkit-background-clip: text) {
+    .nav-item {
+      -webkit-text-fill-color: #c47dff; /* Only for WebKit browsers */
+    }
+  }
 
-
+  
   .heading h1 {
 
     font-family: 'Nunito', sans-serif;
