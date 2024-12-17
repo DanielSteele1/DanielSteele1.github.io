@@ -113,6 +113,11 @@ a {
 
 }
 
+a:visited, a:focus, a:active {
+  color: #c47dff;
+
+}
+
 li::marker {
 
   color: #c47dff;
