@@ -2,6 +2,7 @@
 import './App.css';
 import React from 'react';
 //import Carousel from './Carousel.js';
+import { useEffect } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
 import Canvas from './Canvas.js';
@@ -61,8 +62,8 @@ function LandingSection() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV__updated_Nov24_.pdf';
-    link.download = 'CV__updated_Nov24_.pdf';
+    link.href = '/CV__Daniel_Steele__updated_Dec24_.pdf';
+    link.download = '/CV__Daniel_Steele__updated_Dec24_.pdf';
     link.click();
 
   };
@@ -71,6 +72,7 @@ function LandingSection() {
     <div className="landing-content-container">
 
 
+       <span className="landing-greeting">Hi, my name is </span>
       <p1 className="landing-title">Daniel Steele</p1>
 
       <div className="landing-desc">
@@ -83,6 +85,9 @@ function LandingSection() {
           typingDelay={90}
         />
       </div>
+
+      <span className="landing-para"> If you’d like to collaborate on a project or have any questions, 
+      feel free to reach out. I’d be happy to connect with you! </span>
 
       <div className="download-button-container">
 
@@ -134,6 +139,34 @@ function Profile() {
 
 function Navigation() {
 
+  // useEffect(() => {
+  //   const navMenu = document.querySelector(".nav-menu");
+  //   const hamburger = document.querySelector(".hamburger");
+
+  //   hamburger.addEventListener("click", toggleMenu);
+
+  //   document.querySelectorAll(".nav-link").forEach((link) => {
+  //     link.addEventListener("click", closeMenu);
+  //   });
+
+  //   function toggleMenu() {
+  //     hamburger.classList.toggle("active");
+  //     navMenu.classList.toggle("active");
+  //   }
+
+  //   function closeMenu() {
+  //     hamburger.classList.remove("active");
+  //     navMenu.classList.remove("active");
+  //   }
+
+  //   return () => {
+  //     hamburger.removeEventListener("click", toggleMenu);
+  //     document.querySelectorAll(".nav-link").forEach((link) => {
+  //       link.removeEventListener("click", closeMenu);
+  //     });
+  //   };
+  // }, []);
+
   return (
 
     <div className="navigation">
@@ -169,10 +202,10 @@ function Project_card({ src, children, heading, link }) {
       <div id="heading"> {heading} </div>
       <div id="project-description" > <p>{children}</p> </div>
 
-      <div class="button-container">
-        <div id="button" onClick={() => window.sa_event('project_viewed')}>
+      <div className="Project_card-button-container">
+        <div className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button> View Project Repo </button> </a>
+            <span className="download-text"> View Project </span> </a>
         </div>
       </div>
     </div>
@@ -202,7 +235,7 @@ function Footer() {
           <span className="footer-title">Contact</span>
           <div className="footer-link">
             <span>
-            <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com (click here)</a> 
+              <a href="mailto:Dsteele1906@gmail.com"> Dsteele1906@gmail.com (click here)</a>
               <br></br>
               Location: Plymouth, United Kingdom
               <br></br>
@@ -218,11 +251,11 @@ function Footer() {
           <span className="footer-title">Connect</span>
           <div className="footer-connect">
             <a href="https://github.com/DanielSteele1" target="_blank" onClick={handleGithubClick} rel="noopener noreferrer">
-            <GithubIcon sx={{ fontSize: '35px', padding: '5px', color:'#c47dff' }} onClick={handleGithubClick} />
+              <GithubIcon sx={{ fontSize: '35px', padding: '5px', color: '#c47dff' }} onClick={handleGithubClick} />
             </a>
 
             <a onClick={handleLinkedinClick} href="https://www.linkedin.com/in/daniel-steele1/" target="_blank">
-              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px', color:'#c47dff' }} />
+              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px', color: '#c47dff' }} />
             </a>
           </div>
         </div>
@@ -531,7 +564,7 @@ export default function MyApp() {
       </div>
 
       {/* <ContactForm /> */}
-       <div id="contact" className="heading">  </div> {/* temporary div to ensure nav link isnt broken */}
+      <div id="contact" className="heading">  </div> {/* temporary div to ensure nav link isnt broken */}
 
       <Footer />
 
