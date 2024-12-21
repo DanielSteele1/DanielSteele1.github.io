@@ -18,7 +18,6 @@ function CanvasBackground() {
         const numberOfParticles = isMobile ? 10 : 40;
         const shadowBlur = isMobile ? 20 : 40;
 
-
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;

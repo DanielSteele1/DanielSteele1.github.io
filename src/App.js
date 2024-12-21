@@ -19,8 +19,6 @@ import GithubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-
-
 function Picture5() {
 
   return (
@@ -72,13 +70,13 @@ function LandingSection() {
     <div className="landing-content-container">
 
 
-       <span className="landing-greeting">Hi, my name is </span>
+      <span className="landing-greeting">Hi, my name is </span>
       <p1 className="landing-title">Daniel Steele</p1>
 
       <div className="landing-desc">
         <ReactTypingEffect
           className="landing-desc"
-          text={["< Full Stack Engineer />", "< Passionate Developer />", "< Tech Enthusiast />"]}
+          text={["< Full Stack Engineer />", "< Passionate Developer & Designer />", "< Tech Enthusiast />"]}
           speed={100}
           eraseSpeed={50}
           eraseDelay={10000}
@@ -86,8 +84,8 @@ function LandingSection() {
         />
       </div>
 
-      <span className="landing-para"> If you’d like to collaborate on a project or have any questions, 
-      feel free to reach out. I’d be happy to connect with you! </span>
+      <span className="landing-para"> If you’d like to collaborate on a project or have any questions,
+        feel free to reach out. I’d be happy to connect with you! </span>
 
       <div className="download-button-container">
 
@@ -194,26 +192,25 @@ function Navigation() {
 }
 
 function Project_card({ src, children, heading, link }) {
-
   return (
     <div className="Project_card">
-
-      <img id="image" src={src} />
-      <div id="heading"> {heading} </div>
-      <div id="project-description" > <p>{children}</p> </div>
-
-      <div className="Project_card-button-container">
-        <div className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>
+      <div className="Project_card-image">
+        <img src={src} alt={heading} />
+      </div>
+      <div className="Project_card-content">
+        <div className="Project_card-heading">{heading}</div>
+        <div className="Project_card-description">{children}</div>
+        <div className="Project_card-button-container">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <span className="download-text"> View Project </span> </a>
+            <button className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>View Project</button>
+          </a>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Footer() {
-
 
   const handleLinkedinClick = () => {
 
@@ -497,15 +494,21 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project3">
+        <div className="project3" >
           <Project_card
-            heading="Ongoing Project"
-            src="coming_soon.png"
+            heading="Developer Portfolio"
+            src="Portfolio.gif"
+            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
           >
             <div className="project-description">
-              Ongoing project
+              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
+              <span className="highlight"> React.js, HTML, CSS and some Javascript,
+              </span> I use it to showcase some of the work I'm most proud of creating.
+              <span className="highlight"> Click below to view the source code. </span>
             </div>
+
           </Project_card>
+
         </div>
 
         <div className="project4" >
@@ -525,24 +528,7 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project5" >
-          <Project_card
-            heading="Developer Portfolio"
-            src="Portfolio.gif"
-            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
-          >
-            <div className="project-description">
-              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
-              <span className="highlight"> React.js, HTML, CSS and some Javascript,
-              </span> I use it to showcase some of the work I'm most proud of creating.
-              <span className="highlight"> Click below to view the source code. </span>
-            </div>
-
-          </Project_card>
-
-        </div>
-
-        <div className="project6">
+        <div className="project5">
 
           <Project_card
             heading="DoodlePalette"
@@ -561,6 +547,20 @@ export default function MyApp() {
 
           </Project_card>
         </div>
+
+        <div className="project6">
+          <Project_card
+            heading="Ongoing Project"
+            src="coming_soon.png"
+          >
+            <div className="project-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </Project_card>
+        </div>
+
       </div>
 
       {/* <ContactForm /> */}
