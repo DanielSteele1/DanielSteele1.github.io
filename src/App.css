@@ -248,6 +248,40 @@ body {
 
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #c47dff;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-heading a {
+  text-decoration: none;
+  color: #c47dff;
+}
+
+
+
+
 .download-button-container {
 
   display: flex;
@@ -1080,12 +1114,9 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: #c47dff;
-    /* Gradient for Chrome/Edge/Safari */
     /* Ensures Firefox compatibility */
     display: inline-block;
-    /* Ensures proper rendering in all contexts */
   }
-
 
   @supports (-webkit-background-clip: text) {
     .nav-item {
@@ -1571,19 +1602,14 @@ body {
 
   }
 
-
 }
-
 
 @media (max-width: 480px) {
 
-  .navigation,
   .projects,
   .profile-container,
   .profile,
   .heading,
-  .nav-heading,
-  .nav-logo-heading,
   .socials,
   .stack,
   .contact-desc-container {
@@ -1592,12 +1618,65 @@ body {
     box-sizing: border-box;
   }
 
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+  }
+
+  .hamburger {
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: flex-end;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .nav-menu {
+    display:none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display:flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-logo-heading {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+  }
+
+  .nav-logo-heading span {
+    visibility: hidden;
+  }
+
+
+  .nav-heading a {
+    display: block;
+    padding: 5px 0;
+  }
 
   .landing-section-container {
 
     height: fit-content;
     padding: 0px;
   }
+  
 
   .landing-content-container {
 
@@ -1635,6 +1714,7 @@ body {
   .content-desc-container {
 
     max-width: 100%;
+    
   }
 
   .content-desc {

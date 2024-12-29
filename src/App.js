@@ -136,34 +136,33 @@ function Profile() {
 }
 
 function Navigation() {
+  useEffect(() => {
+    const navMenu = document.querySelector(".nav-menu");
+    const hamburger = document.querySelector(".hamburger");
 
-  // useEffect(() => {
-  //   const navMenu = document.querySelector(".nav-menu");
-  //   const hamburger = document.querySelector(".hamburger");
+    function toggleMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
 
-  //   hamburger.addEventListener("click", toggleMenu);
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
 
-  //   document.querySelectorAll(".nav-link").forEach((link) => {
-  //     link.addEventListener("click", closeMenu);
-  //   });
+    hamburger.addEventListener("click", toggleMenu);
 
-  //   function toggleMenu() {
-  //     hamburger.classList.toggle("active");
-  //     navMenu.classList.toggle("active");
-  //   }
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
 
-  //   function closeMenu() {
-  //     hamburger.classList.remove("active");
-  //     navMenu.classList.remove("active");
-  //   }
-
-  //   return () => {
-  //     hamburger.removeEventListener("click", toggleMenu);
-  //     document.querySelectorAll(".nav-link").forEach((link) => {
-  //       link.removeEventListener("click", closeMenu);
-  //     });
-  //   };
-  // }, []);
+    return () => {
+      hamburger.removeEventListener("click", toggleMenu);
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.removeEventListener("click", closeMenu);
+      });
+    };
+  }, []);
 
   return (
 
@@ -174,18 +173,23 @@ function Navigation() {
         <span> Daniel Steele - Full Stack Engineer  </span>
       </div>
 
-      <div className="nav-item">
-        <span className="nav-heading"> <a href="#about"> About </a>  </span>
+      <div className="hamburger">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
 
-      <div className="nav-item">
-        <span className="nav-heading"> <a href="#projects">  Projects  </a> </span>
+      <div className="nav-menu">
+        <div className="nav-item">
+          <span className="nav-heading nav-link"> <a href="#about"> About </a> </span>
+        </div>
+        <div className="nav-item">
+          <span className="nav-heading nav-link"> <a href="#projects"> Projects </a> </span>
+        </div>
+        <div className="nav-item">
+          <span className="nav-heading nav-link"> <a href="#contact"> Contact </a> </span>
+        </div>
       </div>
-
-      <div className="nav-item">
-        <span className="nav-heading">  <a href="#contact"> Contact </a> </span>
-      </div>
-
     </div>
 
   )
@@ -452,10 +456,7 @@ export default function MyApp() {
           description="Currently, I'm also in the process of experimenting with TypeScript and TailwindCSS to level up my dev skills."
 
         />
-
-
       </div>
-
 
       <div id="projects"> </div>
 
