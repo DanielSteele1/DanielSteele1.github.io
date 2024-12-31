@@ -55,14 +55,22 @@ function LandingSection() {
 
     event.preventDefault()
 
-    // log event to simple analytics
-    window.sa_event('cv_downloaded');
+    if(typeof window.sa_event ==='function') {
+
+      window.sa_event('cv_downloaded');
+    }
+    else {
+
+      console.error("Simple Analytics isn't loaded")
+    }
 
     // download and view document
     const link = document.createElement('a');
     link.href = '/CV__Daniel_Steele__updated_Dec24_.pdf';
     link.download = '/CV__Daniel_Steele__updated_Dec24_.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
 
   };
 
