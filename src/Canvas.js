@@ -2,21 +2,31 @@ import React, { useEffect, useRef } from 'react';
 
 function CanvasBackground() {
     const canvasRef = useRef(null);
+    const particlesArray = useRef([]);
+
 
     useEffect(() => {
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d');
 
-        // Set canvas dimensions
-        canvas.width = canvas.offsetWidth;
-        canvas.height = canvas.offsetHeight;
-
         const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
         // Create particles
-        const particlesArray = [];
         const numberOfParticles = isMobile ? 10 : 40;
         const shadowBlur = isMobile ? 20 : 40;
+
+        function setCanvasDimensions() {
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+        }
+
+        function createParticles() {
+            particlesArray.current = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.current.push(new Particle());
+            }
+        }
+
 
         class Particle {
             constructor() {
@@ -35,7 +45,7 @@ function CanvasBackground() {
                 context.shadowBlur = shadowBlur; // Adjust the blur radius for the glow effect
                 context.shadowColor = '#ff00ff'; // Color of the shadow (glow)
                 context.shadowOffsetX = 0;
-                context.shadowOffsetY = 0;        
+                context.shadowOffsetY = 0;
                 context.beginPath();
                 context.lineTo(this.x, this.y);
                 context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -64,23 +74,23 @@ function CanvasBackground() {
 
         // Initialize particles
         for (let i = 0; i < numberOfParticles; i++) {
-            particlesArray.push(new Particle());
+            particlesArray.current.push(new Particle());
         }
 
         function connectParticles() {
-            for (let a = 0; a < particlesArray.length; a++) {
-                for (let b = a; b < particlesArray.length; b++) {
+            for (let a = 0; a < particlesArray.current.length; a++) {
+                for (let b = a; b < particlesArray.current.length; b++) {
 
-                    const dx = particlesArray[a].x - particlesArray[b].x;
-                    const dy = particlesArray[a].y - particlesArray[b].y;
+                    const dx = particlesArray.current[a].x - particlesArray.current[b].x;
+                    const dy = particlesArray.current[a].y - particlesArray.current[b].y;
                     const distance = Math.sqrt(dx * dx + dy * dy);
 
                     if (distance < 150) {
                         context.strokeStyle = 'rgba(196, 125, 255, 0.2)';
                         context.lineWidth = 1;
                         context.beginPath();
-                        context.moveTo(particlesArray[a].x, particlesArray[a].y);
-                        context.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        context.moveTo(particlesArray.current[a].x, particlesArray.current[a].y);
+                        context.lineTo(particlesArray.current[b].x, particlesArray.current[b].y);
                         context.stroke();
                         context.closePath();
 
@@ -94,23 +104,31 @@ function CanvasBackground() {
         function animate() {
             context.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Draw and update particles
-            for (let i = 0; i < particlesArray.length; i++) {
-                particlesArray[i].draw();
-                particlesArray[i].update();
-            }
-
-            particlesArray.forEach(particle => {
+            particlesArray.current.forEach(particle => {
                 particle.update();
                 particle.draw();
             });
-
 
             connectParticles();
             requestAnimationFrame(animate);
         }
 
-        animate();
+
+            function handleResize() {
+                setCanvasDimensions();
+                createParticles();
+            }
+
+            setCanvasDimensions();
+            createParticles();
+            animate();
+
+            window.addEventListener('resize', handleResize);
+
+            return () => {
+
+                window.removeEventListener('resize', handleResize);
+            };
     }, []);
 
     return (
