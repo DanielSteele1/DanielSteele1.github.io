@@ -235,6 +235,8 @@ function Footer() {
 
   };
 
+  const currentYear = new Date().getFullYear(); 
+
   return (
     <div className="footer">
       {/* Contact Details */}
@@ -271,7 +273,7 @@ function Footer() {
 
       {/* Badge Section */}
       <div className="footer-strip">
-        <span className="footer-title">Daniel Steele ©2024</span>
+        <span className="footer-title">Daniel Steele ©{currentYear}</span>
         <div className="footer-badge">
 
           <a
