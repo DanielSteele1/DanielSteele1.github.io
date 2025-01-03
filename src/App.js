@@ -76,8 +76,6 @@ function LandingSection() {
 
   return (
     <div className="landing-content-container">
-
-
       <span className="landing-greeting">Hi, my name is </span>
       <p1 className="landing-title">Daniel Steele</p1>
 
@@ -138,6 +136,7 @@ function Profile() {
       className="profile"
       src="Sunglasses.jpg"
       alt="profile"
+      loading="lazy"
     />
 
   )
@@ -177,7 +176,7 @@ function Navigation() {
     <div className="navigation">
 
       <div className="nav-logo-heading">
-        <div id="nav-profile"> <img src="Sunglasses_mini.png" /> </div>
+        <div id="nav-profile"> <img src="Sunglasses_mini.png" loading="lazy" /> </div>
         <span> Daniel Steele - Full Stack Engineer  </span>
       </div>
 
@@ -207,7 +206,7 @@ function Project_card({ src, children, heading, link }) {
   return (
     <div className="Project_card">
       <div className="Project_card-image">
-        <img src={src} alt={heading} />
+        <img src={src} alt={heading} loading="lazy" />
       </div>
       <div className="Project_card-content">
         <div className="Project_card-heading">{heading}</div>
@@ -300,10 +299,10 @@ function StackCard({ src, description, title }) {
   return (
     <div className="stack-card">
       <div id="stack-heading">
-        {/* Check if src is a string or JSX element */}
+        { }
         <div>
           {typeof src === 'string' ? (
-            <img src={src} alt={title} />
+            <img src={src} alt={title}  loading="lazy" />
           ) : (
             src
           )}
@@ -407,7 +406,6 @@ export default function MyApp() {
           title="JavaScript"
           src="JS.png"
           description="Experience using JavaScript in both frontend & backend to create interactive web applications."
-
         />
         <div id="react-logo">
           <StackCard
@@ -475,7 +473,8 @@ export default function MyApp() {
 
           <Project_card
             heading="SkyCompass"
-            src="SkyCompass.gif"
+            src="SkyCompass.gif"  
+            loading="lazy"
             link="https://github.com/DanielSteele1/COMP3000"
           >
             <div className="project-description">
@@ -493,6 +492,7 @@ export default function MyApp() {
           <Project_card
             heading="EarthSim"
             src="EarthSim.gif"
+            loading="lazy"
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
             <div className="project-description">
@@ -507,6 +507,7 @@ export default function MyApp() {
           <Project_card
             heading="Developer Portfolio"
             src="Portfolio.gif"
+            loading="lazy"
             link="https://github.com/DanielSteele1/DanielSteele1.github.io"
           >
             <div className="project-description">
@@ -524,7 +525,7 @@ export default function MyApp() {
           <Project_card
             heading="TravelTracker.io (ongoing)"
             src="coming_soon.png"
-
+            loading="lazy"
             link="https://github.com/DanielSteele1/TravelTracker.io"
           >
             <div className="project-description">
@@ -542,6 +543,7 @@ export default function MyApp() {
           <Project_card
             heading="DoodlePalette"
             src="drawing-app.gif"
+            loading="lazy"
             link="https://github.com/DanielSteele1/Drawing-App"
           >
 
@@ -561,6 +563,7 @@ export default function MyApp() {
           <Project_card
             heading="Ongoing Project"
             src="coming_soon.png"
+            loading="lazy"
           >
             <div className="project-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

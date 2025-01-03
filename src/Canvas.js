@@ -12,8 +12,8 @@ function CanvasBackground() {
         const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
         // Create particles
-        const numberOfParticles = isMobile ? 10 : 40;
-        const shadowBlur = isMobile ? 20 : 40;
+        const numberOfParticles = isMobile ? 10 : 30;
+        const shadowBlur = isMobile ? 10 : 20;
 
         function setCanvasDimensions() {
             canvas.width = canvas.offsetWidth;
@@ -32,7 +32,7 @@ function CanvasBackground() {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 2;  // size of orbs
+                this.size = Math.random() * 0.5 + 0.5;  // size of orbs
                 this.speedX = Math.random() * 1 - 0.5;
                 this.speedY = Math.random() * 1 - 0.5;
             }
@@ -43,7 +43,7 @@ function CanvasBackground() {
                 context.strokeStyle = '#c47dff';
                 context.lineWidth = 1;
                 context.shadowBlur = shadowBlur; // Adjust the blur radius for the glow effect
-                context.shadowColor = '#ff00ff'; // Color of the shadow (glow)
+                context.shadowColor = '#0f0a13;'; // Color of the shadow (glow)
                 context.shadowOffsetX = 0;
                 context.shadowOffsetY = 0;
                 context.beginPath();
@@ -86,7 +86,7 @@ function CanvasBackground() {
                     const distance = Math.sqrt(dx * dx + dy * dy);
 
                     if (distance < 150) {
-                        context.strokeStyle = 'rgba(196, 125, 255, 0.2)';
+                        context.strokeStyle = 'rgba(196, 160, 2550, 0.4)';
                         context.lineWidth = 1;
                         context.beginPath();
                         context.moveTo(particlesArray.current[a].x, particlesArray.current[a].y);
@@ -112,7 +112,6 @@ function CanvasBackground() {
             connectParticles();
             requestAnimationFrame(animate);
         }
-
 
             function handleResize() {
                 setCanvasDimensions();
