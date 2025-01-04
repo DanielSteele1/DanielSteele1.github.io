@@ -53,6 +53,21 @@
   border: none;
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+li {
+  position: relative; 
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+
+}
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 /* html::-webkit-scrollbar {
   display: none;
@@ -452,23 +467,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 90px;
+  height: 65px;
+  width: 80px;
   margin-top: 200px;
   margin-bottom: 150px;
-  border: 5px solid transparent;
+  border: 1px solid transparent;
   scroll-behavior: smooth;
   background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-radius: 50px;
+  background-color: transparent;
+
 
 }
 
 .landing-button:hover {
 
-  background-color: #282c34;
+  background-color:#4b2669;
+  transform: translateY(10px);
+  transition: 0.3s ease;
   border-radius: 50px;
+  animation: float 0.5s;
 
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .projects {
@@ -590,7 +619,7 @@ body {
 }
 
 .Project_card-image img {
-  width: 85%;
+  width: 500px;
   height: auto;
 }
 

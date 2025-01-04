@@ -19,6 +19,13 @@ import GithubIcon from '@mui/icons-material/GitHub';
 import MailIcon from '@mui/icons-material/Mail';
 import PhoneIcon from '@mui/icons-material/Phone';
 
+import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
+import TerminalSharpIcon from '@mui/icons-material/TerminalSharp';
+import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+
+
+
 function Picture5() {
 
   return (
@@ -55,7 +62,7 @@ function LandingSection() {
 
     event.preventDefault()
 
-    if(typeof window.sa_event ==='function') {
+    if (typeof window.sa_event === 'function') {
 
       window.sa_event('cv_downloaded');
     }
@@ -235,7 +242,7 @@ function Footer() {
 
   };
 
-  const currentYear = new Date().getFullYear(); 
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="footer">
@@ -304,7 +311,7 @@ function StackCard({ src, description, title }) {
         { }
         <div>
           {typeof src === 'string' ? (
-            <img src={src} alt={title}  loading="lazy" />
+            <img src={src} alt={title} loading="lazy" />
           ) : (
             src
           )}
@@ -358,33 +365,32 @@ export default function MyApp() {
           </div>
 
           <div className="content-desc">
-            <ul style={{ padding: '10px' }}>
+            <ul>
 
+              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </CodeRoundedIcon>
               <li style={{ gap: '10px' }}>
-                <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
                 Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
               </li>
               <br></br>
 
-              <li style={{ gap: '10px' }}>
-                <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
+              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </SchoolRoundedIcon>
+              <li style={{ padding: '10px' }}>
                 At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
               </li>
               <br></br>
+              <TerminalSharpIcon style={{display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </TerminalSharpIcon>
               <li style={{ gap: '10px' }}>
-                <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
                 I'm always looking to expand on my current knowledge and teach myself new technologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
               </li>
               <br></br>
+              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </SportsEsportsRoundedIcon>
               <li style={{ gap: '10px' }}>
-                <KeyboardArrowRightRoundedIcon style={{ color: '#c47dff' }}> </KeyboardArrowRightRoundedIcon>
                 As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
               </li>
             </ul>
           </div>
         </div>
-      </div >
-
+      </div>
 
       <div className="heading"> <h1> My Skills and Experience </h1> </div>
 
@@ -475,7 +481,7 @@ export default function MyApp() {
 
           <Project_card
             heading="SkyCompass"
-            src="SkyCompass.gif"  
+            src="SkyCompass.gif"
             loading="lazy"
             link="https://github.com/DanielSteele1/COMP3000"
           >
@@ -490,7 +496,27 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project2">
+        <div className="project2" >
+          <Project_card
+            heading="Developer Portfolio"
+            src="Portfolio.gif"
+            loading="lazy"
+            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
+          >
+            <div className="project-description">
+              <span> You're on this site right now! </span>
+              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
+              <span className="highlight"> React, JavaScript and a lot of CSS,
+              </span> I use it to showcase some of my best work.
+              <span> I'm constantly tweaking the design of this project in order to give a great first impression, and it's truly something i'm proud of.</span>
+              <span className="highlight"> Click below if you'd like to view the source code. </span>
+            </div>
+
+          </Project_card>
+
+        </div>
+
+        <div className="project3">
           <Project_card
             heading="EarthSim"
             src="EarthSim.gif"
@@ -503,24 +529,6 @@ export default function MyApp() {
               <span className="highlight"> local system of planets, </span> exposing me to core <span className="highlight">game development principles and GLSL.</span>
             </div>
           </Project_card>
-        </div>
-
-        <div className="project3" >
-          <Project_card
-            heading="Developer Portfolio"
-            src="Portfolio.gif"
-            loading="lazy"
-            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
-          >
-            <div className="project-description">
-              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
-              <span className="highlight"> React.js, HTML, CSS and some Javascript,
-              </span> I use it to showcase some of the work I'm most proud of creating.
-              <span className="highlight"> Click below to view the source code. </span>
-            </div>
-
-          </Project_card>
-
         </div>
 
         <div className="project4" >
