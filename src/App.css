@@ -185,6 +185,22 @@ a:hover {
 
 }
 
+.heading-desc {
+
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  background: linear-gradient(90deg, #c47dff, #ff8dfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+
+}
+
 .link {
   display: inline-block;
   color: #c47dff;
@@ -1016,7 +1032,6 @@ body {
   display: flex;
   flex-direction: row;
   background-color: rgba(31, 14, 53, 0.45);
-  padding: 10px;
   align-items: stretch;
 }
 
@@ -1048,7 +1063,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
   margin: 10px;
   text-align: center;
@@ -1060,6 +1075,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1591,6 +1607,7 @@ body {
     align-items: center;
   }
 
+
   .projects {
 
     grid-template-columns: repeat(1, 1fr);
@@ -1787,6 +1804,17 @@ body {
 
   }
 
+  .heading-desc {
+
+    font-size: 16px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
   .profile-container {
     margin: 0 auto;
     justify-content: center;
@@ -1802,7 +1830,7 @@ body {
   }
 
   .content-profile {
-    width: 70%;
+    width:85%;
     margin: 10px auto;
     justify-content: center;
     align-items: center;
@@ -1823,6 +1851,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    font-size: 15px;
   }
 
   .Project_card-image {

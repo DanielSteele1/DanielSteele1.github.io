@@ -280,7 +280,6 @@ function Footer() {
 
       {/* Badge Section */}
       <div className="footer-strip">
-        <span className="footer-title">Daniel Steele ©{currentYear}</span>
         <div className="footer-badge">
 
           <a
@@ -298,7 +297,9 @@ function Footer() {
               />
             </picture>
           </a>
+          <span className="footer-connect">Daniel Steele ©{currentYear}. All rights reserved.</span>
         </div>
+
       </div>
     </div>
   );
@@ -342,7 +343,8 @@ export default function MyApp() {
       <br></br>
       <br></br>
 
-      <div className="heading"> <h1> Welcome to my Portfolio Website </h1> </div>
+      <div className="heading"> <h1> About Daniel Steele </h1> </div>
+      <div className="heading-desc"><span> A little bit about me...</span></div>
 
       <div className="main-content">
 
@@ -357,7 +359,7 @@ export default function MyApp() {
               <li className="content-title" style={{ gap: '10px', justifyContent: 'center' }}>
                 I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
                 that's recently graduated with <span className="highlight"> a bachelors
-                  degree from the University of Plymouth, UK. </span>
+                degree from the University of Plymouth, UK. </span>
                 I'm looking for oppurtunities in the UK to show off my development skills.
               </li>
             </ul>
@@ -393,6 +395,8 @@ export default function MyApp() {
       </div>
 
       <div className="heading"> <h1> My Skills and Experience </h1> </div>
+      <div className="heading-desc"><span> A list of my current skills and experience as a developer  </span></div>
+
 
       <div className="stack-card-container">
         <StackCard
@@ -474,7 +478,9 @@ export default function MyApp() {
 
       <div id="projects"> </div>
 
-      <div className="heading"> <h1> Some of my recent projects </h1> </div>
+      <div className="heading"> <h1> My Featured Projects </h1> </div>
+      <div className="heading-desc"><span> Some of my recent personal projects   </span></div>
+
       <div className="projects">
 
         <div className="project1">
@@ -548,7 +554,7 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project5">
+        {/* <div className="project5">
 
           <Project_card
             heading="DoodlePalette"
@@ -567,7 +573,7 @@ export default function MyApp() {
             </div>
 
           </Project_card>
-        </div>
+        </div> */}
 
         <div className="project6">
           <Project_card
