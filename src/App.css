@@ -64,6 +64,7 @@ li {
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
+  border-top: 2px #9445d4 solid;
 
 }
 
@@ -181,7 +182,7 @@ a:hover {
   margin: 0 auto;
   margin: 10px;
   padding: 10px;
-  font-size: 35px;
+  font-size: 50px;
 
 }
 
@@ -197,7 +198,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 25px;
 
 }
 
@@ -1800,7 +1801,7 @@ body {
     font-style: normal;
     margin: 10 auto;
     margin: 10px;
-    font-size: 25px;
+    font-size: 30px;
 
   }
 
@@ -2067,7 +2068,6 @@ body {
     margin: 0 auto 50px;
 
   }
-
 
   .nav-heading a {
 

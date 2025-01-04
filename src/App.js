@@ -356,7 +356,7 @@ export default function MyApp() {
 
             <ul style={{ padding: '10px' }}>
 
-              <li className="content-title" style={{ gap: '10px', justifyContent: 'center' }}>
+              <li className="content-title" style={{ gap: '10px', justifyContent: 'center', padding: '10px' }}>
                 I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
                 that's recently graduated with <span className="highlight"> a bachelors
                 degree from the University of Plymouth, UK. </span>
@@ -369,23 +369,23 @@ export default function MyApp() {
           <div className="content-desc">
             <ul>
 
-              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </CodeRoundedIcon>
+              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </CodeRoundedIcon>
               <li style={{ gap: '10px' }}>
                 Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
               </li>
               <br></br>
 
-              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </SchoolRoundedIcon>
+              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
               <li style={{ padding: '10px' }}>
                 At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
               </li>
               <br></br>
-              <TerminalSharpIcon style={{display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </TerminalSharpIcon>
+              <TerminalSharpIcon style={{display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </TerminalSharpIcon>
               <li style={{ gap: '10px' }}>
                 I'm always looking to expand on my current knowledge and teach myself new technologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
               </li>
               <br></br>
-              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px' }}> </SportsEsportsRoundedIcon>
+              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </SportsEsportsRoundedIcon>
               <li style={{ gap: '10px' }}>
                 As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
               </li>
