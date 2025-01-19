@@ -73,8 +73,8 @@ function LandingSection() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV__Daniel_Steele__updated_Dec24_.pdf';
-    link.download = '/CV__Daniel_Steele__updated_Dec24_.pdf';
+    link.href = '/CV_Daniel_Steele__updated_Jan25_.pdf';
+    link.download = '/CV_Daniel_Steele__updated_Jan25_.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -359,7 +359,7 @@ export default function MyApp() {
               <li className="content-title" style={{ gap: '10px', justifyContent: 'center', padding: '10px' }}>
                 I'm Daniel Steele, a <span className="highlight"> Full Stack Developer </span>
                 that's recently graduated with <span className="highlight"> a bachelors
-                degree from the University of Plymouth, UK. </span>
+                  degree from the University of Plymouth, UK. </span>
                 I'm looking for oppurtunities in the UK to show off my development skills.
               </li>
             </ul>
@@ -369,23 +369,23 @@ export default function MyApp() {
           <div className="content-desc">
             <ul>
 
-              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </CodeRoundedIcon>
+              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </CodeRoundedIcon>
               <li style={{ gap: '10px' }}>
                 Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
               </li>
               <br></br>
 
-              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
+              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
               <li style={{ padding: '10px' }}>
                 At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
               </li>
               <br></br>
-              <TerminalSharpIcon style={{display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </TerminalSharpIcon>
+              <TerminalSharpIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </TerminalSharpIcon>
               <li style={{ gap: '10px' }}>
                 I'm always looking to expand on my current knowledge and teach myself new technologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
               </li>
               <br></br>
-              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft:'10px', marginBottom: '5px' }}> </SportsEsportsRoundedIcon>
+              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SportsEsportsRoundedIcon>
               <li style={{ gap: '10px' }}>
                 As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
               </li>
@@ -492,6 +492,15 @@ export default function MyApp() {
             link="https://github.com/DanielSteele1/COMP3000"
           >
             <div className="project-description">
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+              <span className="mongo-highlight"> MongoDB </span>
+              <span className="project-highlight"> External API work </span>
+
+            </div>
+            <br></br>
+
+            <div className="project-description">
               <span className="highlight"> Skycompass is a web-based application </span>
               that allows users to monitor up-to-date weather patterns across the globe.
               It utilises multiple <span className="highlight"> APIs to create a dashboard</span> displaying weather maps,
@@ -509,6 +518,14 @@ export default function MyApp() {
             loading="lazy"
             link="https://github.com/DanielSteele1/DanielSteele1.github.io"
           >
+
+            <div className="project-description">
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+
+            </div>
+            <br></br>
+
             <div className="project-description">
               <span> You're on this site right now! </span>
               <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
@@ -517,6 +534,8 @@ export default function MyApp() {
               <span> I'm constantly tweaking the design of this project in order to give a great first impression, and it's truly something i'm proud of.</span>
               <span className="highlight"> Click below if you'd like to view the source code. </span>
             </div>
+
+
 
           </Project_card>
 
@@ -529,6 +548,14 @@ export default function MyApp() {
             loading="lazy"
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
+
+            <div className="project-description">
+              <span className="cplusplus-highlight"> C++ </span>
+              <span className="opengl-highlight"> OpenGL </span>
+
+            </div>
+            <br></br>
+
             <div className="project-description">
               <span className="highlight">EarthSim </span> is a project that I built in C++,
               <span className="highlight"> using OpenGL and various libraries </span> to create a 3D environment, with the goal of simulating our
@@ -537,22 +564,6 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project4" >
-          <Project_card
-            heading="TravelTracker.io (ongoing)"
-            src="coming_soon.png"
-            loading="lazy"
-            link="https://github.com/DanielSteele1/TravelTracker.io"
-          >
-            <div className="project-description">
-              <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
-              It's a full-stack application that will allow for users to track where they've been on holiday around the globe.
-              They will be able to add photos and descriptions of each trip, view a photo book tied to their account, view potential next holiday destinations,
-              and even share their trips with family & friends. <span className="highlight"> Built using React, Node, Express and MongoDB. </span>
-            </div>
-
-          </Project_card>
-        </div>
 
         {/* <div className="project5">
 
@@ -575,19 +586,61 @@ export default function MyApp() {
           </Project_card>
         </div> */}
 
-        <div className="project6">
+        <div className="project5">
           <Project_card
-            heading="Ongoing Project"
+            heading=" FocusDev - Personal Workload tracker"
             src="coming_soon.png"
             loading="lazy"
+            link="https://github.com/DanielSteele1/UtilitiesApp"
           >
             <div className="project-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <span className="project-highlight"> Ongoing Project </span>
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+              <span className="mongo-highlight"> MongoDB </span>
+              <span className="project-highlight"> External API work </span>
+
             </div>
+
+            <br></br>
+            <div className="project-description">
+              FocusDev is primarily developed for myself to organise my workload into one location. The project consists of a dashboard/group of tools that includes all sorts of useful features for daily work.
+              for example, if a developer has to handle a ticket or has an important work call, they can add it here and keep on top of things.
+              <span className="highlight"> Features include a Notes app, Calender, Github commit graph, local weather forecasts </span> to name a few.
+            </div>
+
           </Project_card>
         </div>
+
+        <div className="project6" >
+          <Project_card
+            heading="TravelTracker.io"
+            src="coming_soon.png"
+            loading="lazy"
+            link="https://github.com/DanielSteele1/TravelTracker.io"
+          >
+            <div className="project-description">
+              <span className="project-highlight"> Ongoing Project </span>
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+              <span className="mongo-highlight"> MongoDB </span>
+              <span className="project-highlight"> External API work </span>
+
+            </div>
+            <br></br>
+
+            <div className="project-description">
+              <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
+              It's a full-stack application that will allow for users to track where they've been on holiday around the globe.
+              They will be able to add photos and descriptions of each trip, view a photo book tied to their account, view potential next holiday destinations,
+              and even share their trips with family & friends. <span className="highlight"> Built using React, Node, Express and MongoDB. </span>
+            </div>
+
+          </Project_card>
+        </div>
+
+
+
 
       </div>
 

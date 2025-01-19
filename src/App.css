@@ -60,7 +60,7 @@ ul {
 }
 
 li {
-  position: relative; 
+  position: relative;
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
@@ -170,7 +170,6 @@ a:hover {
 
 }
 
-
 .heading h1 {
 
   font-family: 'Lexend Deca', sans-serif;
@@ -225,13 +224,61 @@ html {
 }
 
 body {
-  background-color:#1e102a;
-  
+  background-color: #1e102a;
+
 }
 
 .highlight {
 
   color: #c47dff;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.project-highlight {
+
+  color: #c47dff;
+  padding-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.javascript-highlight {
+
+  color: #e0ec36;
+  padding-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.mongo-highlight {
+
+  color: #3cf735;
+  padding-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.react-highlight {
+
+  color: #3ad3e7;
+  padding-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.opengl-highlight {
+
+  color: #6ea9e0;
+  padding-right: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+.cplusplus-highlight {
+
+  color: #6ea9e0;
+  padding-right: 10px;
   font-family: 'Nunito', sans-serif;
 
 }
@@ -300,25 +347,17 @@ body {
 }
 
 .nav-menu {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(30, 16, 42, 0.9); 
+  background-color: rgba(30, 16, 42, 0.9);
   transition: left 0.3s ease-in-out;
 }
-
-
-
-
-
 
 .nav-heading a {
   text-decoration: none;
   color: #c47dff;
 }
-
-
-
 
 .download-button-container {
 
@@ -499,7 +538,7 @@ body {
 
 .landing-button:hover {
 
-  background-color:#4b2669;
+  background-color: #4b2669;
   transform: translateY(10px);
   transition: 0.3s ease;
   border-radius: 50px;
@@ -1375,7 +1414,7 @@ body {
 
   .Project_card {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     max-width: 90%;
     justify-content: flex-start;
@@ -1679,7 +1718,7 @@ body {
   }
 
   .hamburger {
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 10px;
     align-items: flex-end;
@@ -1689,13 +1728,13 @@ body {
   }
 
   .nav-menu {
-    display:none;
+    display: none;
     flex-direction: column;
     width: 100%;
   }
 
   .nav-menu.active {
-    display:flex;
+    display: flex;
   }
 
   .nav-item {
@@ -1705,7 +1744,7 @@ body {
   }
 
   .nav-logo-heading {
-  
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1729,7 +1768,7 @@ body {
     height: fit-content;
     padding: 0px;
   }
-  
+
 
   .landing-content-container {
 
@@ -1767,7 +1806,7 @@ body {
   .content-desc-container {
 
     max-width: 100%;
-    
+
   }
 
   .content-desc {
@@ -1813,7 +1852,7 @@ body {
     padding-right: 10px;
     justify-content: center;
     align-items: center;
-  
+
   }
 
   .profile-container {
@@ -1831,7 +1870,7 @@ body {
   }
 
   .content-profile {
-    width:85%;
+    width: 85%;
     margin: 10px auto;
     justify-content: center;
     align-items: center;
@@ -1995,12 +2034,12 @@ body {
     height: fit-content;
     margin: 0 auto;
     padding: 0px;
-    
+
   }
 
   .landing-content-container {
 
-    height:fit-content;
+    height: fit-content;
     margin: 0 auto;
     padding: 0px;
     margin-left: 20px;
@@ -2025,7 +2064,7 @@ body {
 
     font-size: 45px;
     height: fit-content;
-    width:fit-content;
+    width: fit-content;
     margin-left: 10px;
     margin-top: 10px;
   }
@@ -2034,6 +2073,7 @@ body {
 
     padding-bottom: 100px;
   }
+
   .landing-desc {
     margin-top: 10px;
     font-size: 18px;
