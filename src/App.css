@@ -896,7 +896,7 @@ body {
   margin: 0 auto;
   height: 150px;
   width: fit-content;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   border: rgb(46, 44, 44) 1px solid;
   justify-content: center;
@@ -909,8 +909,14 @@ body {
 
 .stack-card:hover {
   border: #c47dff 1px solid;
-  transition: 0.3s;
+  transition: 0.5s;
 }
+
+.stack-card:hover, .stack-card:hover span {
+  color: #c47dff;
+  transition: 0.9s;
+}
+
 
 .stack-card h1 {
 

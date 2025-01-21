@@ -319,7 +319,7 @@ function StackCard({ src, description, title }) {
         </div>
         <h1>{title}</h1>
       </div>
-      <div id="description">{description}</div>
+      <div id="description"> <span> {description} </span> </div>
     </div>
   );
 }
@@ -403,7 +403,7 @@ export default function MyApp() {
 
           title="HTML5"
           src="HTML.png"
-          description="Full understanding and experience in the best practices of HTML."
+          description= "Full understanding and experience in the best practices of HTML."
 
         />
 
