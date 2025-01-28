@@ -23,6 +23,7 @@ import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
 import TerminalSharpIcon from '@mui/icons-material/TerminalSharp';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import { OpenInNewTwoTone } from '@mui/icons-material';
 
 
 
@@ -220,7 +221,7 @@ function Project_card({ src, children, heading, link }) {
         <div className="Project_card-description">{children}</div>
         <div className="Project_card-button-container">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>View Project</button>
+            <button className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>View Project </button>
           </a>
         </div>
       </div>
@@ -486,7 +487,7 @@ export default function MyApp() {
         <div className="project1">
 
           <Project_card
-            heading="SkyCompass"
+            heading="SkyCompass - Global Weather Tracker"
             src="SkyCompass.gif"
             loading="lazy"
             link="https://github.com/DanielSteele1/COMP3000"
@@ -588,7 +589,7 @@ export default function MyApp() {
 
         <div className="project5">
           <Project_card
-            heading=" FocusDev - Personal Workload tracker"
+            heading="FocusDev - Personal Workload Tracker"
             src="coming_soon.png"
             loading="lazy"
             link="https://github.com/DanielSteele1/UtilitiesApp"
@@ -638,9 +639,6 @@ export default function MyApp() {
 
           </Project_card>
         </div>
-
-
-
 
       </div>
 

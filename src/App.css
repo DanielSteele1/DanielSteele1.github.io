@@ -665,13 +665,13 @@ body {
 .Project_card-image img {
   flex: 1;
   margin-right: 50px;
-  border-radius: 8px;
-  border: rgb(46, 44, 44) 1px solid;
+  border-radius: 15px;
+  border: transparent 2px solid;
 }
 
 .Project_card-image img:hover {
-  border: #c47dff 1px solid;
-  transition: 0.3s;
+  border: #c47dff 2px solid;
+  transition: 0.6s;
 }
 
 .Project_card-image img {
@@ -774,7 +774,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  font-size: 25px;
+  font-size: 23px;
   font-family: 'Lexend Deca', sans-serif;
   margin: 0 auto;
   margin: 40px;
@@ -801,13 +801,11 @@ body {
 
 }
 
-
 #description:hover {
   color: #c47dff;
   transition: ease 0.3s;
 
 }
-
 
 .main-content {
 
@@ -897,8 +895,8 @@ body {
   height: 150px;
   width: fit-content;
   padding: 20px;
-  border-radius: 8px;
-  border: rgb(46, 44, 44) 1px solid;
+  border-radius: 15px;
+  border: transparent 2px solid;
   justify-content: center;
   align-items: center;
   color: #c47dff;
@@ -908,7 +906,7 @@ body {
 }
 
 .stack-card:hover {
-  border: #c47dff 1px solid;
+  border: #c47dff 2px solid;
   transition: 0.5s;
 }
 
@@ -916,8 +914,6 @@ body {
   color: #c47dff;
   transition: 0.9s;
 }
-
-
 .stack-card h1 {
 
   font-size: 23px;
@@ -1908,6 +1904,7 @@ body {
     object-fit: contain;
     justify-content: flex-start;
     align-items: flex-start;
+    
   }
 
   .profile {
