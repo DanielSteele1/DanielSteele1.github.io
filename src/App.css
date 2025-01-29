@@ -20,6 +20,39 @@
 
 }
 
+
+.landing-greeting-emoji-container {
+
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.emoji {
+  unicode-bidi: isolate;
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  font-size: 40px;
+  animation: emojifloat 2s ease-in-out infinite;
+  padding: 5px;
+
+}
+
+@keyframes emojifloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 #react-logo img {
   animation: App-logo-spin infinite 10s linear;
 
@@ -320,10 +353,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 70px;
   text-align: center;
-  top: 0;
-  z-index: 100;
+
 
 }
 
@@ -349,7 +381,11 @@ body {
 .nav-menu {
   display: flex;
   flex-direction: row;
+  height: fit-content;
+  justify-content: center;
   align-items: center;
+  padding: 10px;
+  margin-top: 0px;
   background-color: rgba(30, 16, 42, 0.9);
   transition: left 0.3s ease-in-out;
 }
@@ -750,7 +786,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
-  margin: 30px;
+  margin-left: 30px;
 
 }
 
@@ -773,19 +809,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  font-size: 23px;
+  font-size: 24px;
   font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
   margin: 0 auto;
-  margin: 40px;
-
-}
-
-#navigation-line {
-
-  height: 2px;
-  background-color: #141313;
-  box-shadow: #141313 0px 1px 10px;
+  margin: 30px;
 
 }
 
@@ -891,10 +919,9 @@ body {
 
 .stack-card {
 
-  margin: 0 auto;
   height: 150px;
   width: fit-content;
-  padding: 20px;
+  padding: 12px;
   border-radius: 15px;
   border: transparent 2px solid;
   justify-content: center;
@@ -910,14 +937,15 @@ body {
   transition: 0.5s;
 }
 
-.stack-card:hover, .stack-card:hover span {
+.stack-card:hover,
+.stack-card:hover span {
   color: #c47dff;
   transition: 0.9s;
 }
-.stack-card h1 {
 
-  font-size: 23px;
+.stack-card h1 {
   color: #c47dff;
+  font-size: 23px;
   font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
@@ -945,10 +973,8 @@ body {
 }
 
 #BookIcon {
-
   padding: 10px;
 }
-
 
 .socials {
   display: flex;
@@ -1260,7 +1286,8 @@ body {
     align-items: center;
     border-radius: 15px;
     margin: 0 auto;
-    margin: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
     background: linear-gradient(90deg, #c47dff, #ff8dfc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1904,7 +1931,7 @@ body {
     object-fit: contain;
     justify-content: flex-start;
     align-items: flex-start;
-    
+
   }
 
   .profile {

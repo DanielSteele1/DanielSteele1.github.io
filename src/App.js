@@ -84,8 +84,11 @@ function LandingSection() {
 
   return (
     <div className="landing-content-container">
-      <span className="landing-greeting">Hi, my name is </span>
+      <div className="landing-greeting-emoji-container">
+        <span className="landing-greeting">Hi,my name is </span> <div className="emoji">👋 </div>
+      </div>
       <p1 className="landing-title">Daniel Steele</p1>
+
 
       <div className="landing-desc">
         <ReactTypingEffect
@@ -404,7 +407,7 @@ export default function MyApp() {
 
           title="HTML5"
           src="HTML.png"
-          description= "Full understanding and experience in the best practices of HTML."
+          description="Full understanding and experience in the best practices of HTML."
 
         />
 
