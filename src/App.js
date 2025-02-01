@@ -85,7 +85,7 @@ function LandingSection() {
   return (
     <div className="landing-content-container">
       <div className="landing-greeting-emoji-container">
-        <span className="landing-greeting">Hi,my name is </span> <div className="emoji">👋 </div>
+        <span className="landing-greeting">Hi, my name is </span> <div className="emoji">👋 </div>
       </div>
       <p1 className="landing-title">Daniel Steele</p1>
 
@@ -101,7 +101,7 @@ function LandingSection() {
         />
       </div>
 
-      <span className="landing-para"> If you’d like to collaborate on a project or have any questions,
+      <span className="landing-para"> I'm currently looking for full-time opportunities in the UK. If you'd like to get in touch,
         feel free to reach out. I’d be happy to connect with you! </span>
 
       <div className="download-button-container">
@@ -381,7 +381,7 @@ export default function MyApp() {
 
               <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
               <li style={{ padding: '10px' }}>
-                At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects with different public web APIs, </span> which you can view below this page.
+                At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects using REST API's, </span> which you can view below this page.
               </li>
               <br></br>
               <TerminalSharpIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </TerminalSharpIcon>
@@ -499,7 +499,7 @@ export default function MyApp() {
               <span className="react-highlight"> ReactJS </span>
               <span className="javascript-highlight"> JavaScript </span>
               <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> External API work </span>
+              <span className="project-highlight"> REST API </span>
 
             </div>
             <br></br>
@@ -602,7 +602,7 @@ export default function MyApp() {
               <span className="react-highlight"> ReactJS </span>
               <span className="javascript-highlight"> JavaScript </span>
               <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> External API work </span>
+              <span className="project-highlight"> REST API </span>
 
             </div>
 
@@ -628,7 +628,7 @@ export default function MyApp() {
               <span className="react-highlight"> ReactJS </span>
               <span className="javascript-highlight"> JavaScript </span>
               <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> External API work </span>
+              <span className="project-highlight"> REST API </span>
 
             </div>
             <br></br>

@@ -27,7 +27,6 @@
   align-items: flex-end;
 }
 
-
 .emoji {
   unicode-bidi: isolate;
   display: inline-block;
