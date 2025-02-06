@@ -13,6 +13,7 @@ import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
+import Tooltip from '@mui/material/Tooltip';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GithubIcon from '@mui/icons-material/GitHub';
@@ -23,6 +24,7 @@ import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
 import TerminalSharpIcon from '@mui/icons-material/TerminalSharp';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import { OpenInNewTwoTone } from '@mui/icons-material';
 
 
@@ -87,8 +89,7 @@ function LandingSection() {
       <div className="landing-greeting-emoji-container">
         <span className="landing-greeting">Hi, my name is </span> <div className="emoji">👋 </div>
       </div>
-      <p1 className="landing-title">Daniel Steele</p1>
-
+      <p1 className="landing-title"> Daniel Steele  </p1>
 
       <div className="landing-desc">
         <ReactTypingEffect
@@ -102,7 +103,7 @@ function LandingSection() {
       </div>
 
       <span className="landing-para"> I'm currently looking for full-time opportunities in the UK. If you'd like to get in touch,
-        feel free to reach out. I’d be happy to connect with you! </span>
+        feel free to reach out. I’d be happy to connect with you! </span> 
 
       <div className="download-button-container">
 
@@ -328,12 +329,23 @@ function StackCard({ src, description, title }) {
   );
 }
 
+function BackToTop() {
+  return (
+    <Tooltip title="Back to top" placement="top"> 
+    <div className="backToTop" >
+      <div> <span> <a href="#top"> <KeyboardArrowUpRoundedIcon sx={{ display: 'flex,', fontSize: '70px'}}/> </a> </span> </div>
+    </div>
+    </Tooltip>
+  );
+}
+
 export default function MyApp() {
 
   return (
     <div>
 
       <Canvas />
+      <div id="top"> </div>
       <Navigation />
 
       <div className="landing-section-container">
@@ -644,6 +656,8 @@ export default function MyApp() {
         </div>
 
       </div>
+
+      <BackToTop />
 
       {/* <ContactForm /> */}
       <div id="contact" className="heading">  </div> {/* temporary div to ensure nav link isnt broken */}
