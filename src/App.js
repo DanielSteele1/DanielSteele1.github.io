@@ -27,7 +27,17 @@ import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
 import { OpenInNewTwoTone } from '@mui/icons-material';
 
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
+import Typography from '@mui/material/Typography';
+
+import ConstructionIcon from '@mui/icons-material/Construction';
 
 function Picture5() {
 
@@ -103,7 +113,7 @@ function LandingSection() {
       </div>
 
       <span className="landing-para"> I'm currently looking for full-time opportunities in the UK. If you'd like to get in touch,
-        feel free to reach out. I’d be happy to connect with you! </span> 
+        feel free to reach out. I’d be happy to connect with you! </span>
 
       <div className="download-button-container">
 
@@ -331,11 +341,97 @@ function StackCard({ src, description, title }) {
 
 function BackToTop() {
   return (
-    <Tooltip title="Back to top" placement="top"> 
-    <div className="backToTop" >
-      <div> <span> <a href="#top"> <KeyboardArrowUpRoundedIcon sx={{ display: 'flex,', fontSize: '70px'}}/> </a> </span> </div>
-    </div>
+    <Tooltip title="Back to top" placement="top">
+      <div className="backToTop" >
+        <div> <span> <a href="#top"> <KeyboardArrowUpRoundedIcon sx={{ display: 'flex,', fontSize: '70px' }} /> </a> </span> </div>
+      </div>
     </Tooltip>
+  );
+}
+
+function MyTimeline() {
+
+  return (
+    <Timeline position="alternate" className="timeline">
+      <TimelineItem>
+        <TimelineOppositeContent >
+          <span className="highlight"> 2011 - 2017 </span>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <ImportContactsTwoToneIcon sx={{ verticalAlign: 'middle', color: 'white', fontSizesize: '10px' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h5" component="span">
+            <span className="highlight">  Secondary Education </span>
+          </Typography>
+          <Typography> <span className="highlight"> ✨ Where my passion for technology began </span> </Typography>
+          <li> First explored how websites were made and experimented with Developer Tools and modifying content.</li>
+          <li> Developed a curiosity for how exactly websites are structured, which awakened a deep interest in coding and tech as a whole. </li>
+
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent >
+          <span className="highlight"> 2018 - 2021 </span>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <SchoolRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h5" component="span">
+            <span className="highlight"> Btec Extended Diploma in Computing </span>
+
+          </Typography>
+          <Typography> <span className="highlight"> South Devon College, Devon, United Kingdom 📍 </span> </Typography>
+
+          <li> Gained a strong foundation in software development principles, learning programming and scripting languages,
+            such as C# and C++, HTML/CSS, JavaScript and MySQL.  </li>
+          <li> Completed coursework in programming, covering C++ development,
+            front-end web development with JavaScript, networking principles, SQL/database management, and UI/UX fundamentals.</li>
+
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <span className="highlight"> 2021 - 2024 </span>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <CodeRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h5" component="span">
+            <span className="highlight"> <CodeRoundedIcon sx={{ verticalAlign: 'middle' }} /> BSc (Hons) in Computer Science </span>
+          </Typography>
+          <Typography> <span className="highlight"> 📍 University of Plymouth, Plymouth - Devon, UK </span></Typography>
+          <li> Specialised in Full-Stack Development, learnt to use React.js, Node.js and other modern web technologies. </li>
+          <li> Developed a Full-Stack web application for my final year project, which included working with REST APIs and database managment. </li>
+          <li> Launched my Portfolio Website in June 2024, my first professional project demonstrating my ability to develop real world applications. </li>
+          <li> Started looking into libraries such as MaterialUI and Mantime to level up my front user interfaces.</li>
+
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem >
+        <TimelineOppositeContent>
+          <span className="highlight">  2024 - Present </span>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot variant="filled" sx={{ bgcolor: '#9445d4' }} />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h5" component="span">
+            <span className="highlight">  Personal Projects <ConstructionIcon />  </span>
+          </Typography>
+          <Typography> <span className="highlight"> Building Cool Stuff for the Web ✨ </span> </Typography>
+          <li> Since graduating, I’ve been building full-stack applications to deepen my experience with the MERN stack — check them out below! </li>
+          <li> While I'm competent at full-stack development, I'm always striving to learn and experiment with new libraries and languages.
+            I'm currently learning to use TypeScript, TailwindCSS and Framer Motion in some of my latest projects. </li>
+
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
   );
 }
 
@@ -360,7 +456,7 @@ export default function MyApp() {
       <br></br>
 
       <div className="heading"> <h1> About Daniel Steele </h1> </div>
-      <div className="heading-desc"><span> A little bit about me...</span></div>
+      <div className="heading-desc"><span> A short summary about myself. </span></div>
 
       <div className="main-content">
 
@@ -393,7 +489,7 @@ export default function MyApp() {
 
               <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
               <li style={{ padding: '10px' }}>
-                At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects using REST API's, </span> which you can view below this page.
+                At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, React, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects using REST APIs, </span> which you can view below this page.
               </li>
               <br></br>
               <TerminalSharpIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </TerminalSharpIcon>
@@ -408,11 +504,19 @@ export default function MyApp() {
             </ul>
           </div>
         </div>
+
       </div>
+
+      <div className="timeline-container"> 
+      <div className="heading"> <h1> My Developer Journey so far... </h1></div>
+
+      <MyTimeline />
+
+      </div>
+
 
       <div className="heading"> <h1> My Skills and Experience </h1> </div>
       <div className="heading-desc"><span> A list of my current skills and experience as a developer  </span></div>
-
 
       <div className="stack-card-container">
         <StackCard
@@ -420,7 +524,6 @@ export default function MyApp() {
           title="HTML5"
           src="HTML.png"
           description="Full understanding and experience in the best practices of HTML."
-
         />
 
         <StackCard
@@ -428,67 +531,62 @@ export default function MyApp() {
           title="CSS"
           src="CSS.png"
           description="Mastered the basics of CSS in order to create beautiful UI elements."
-
         />
+
         <StackCard
           title="JavaScript"
           src="JS.png"
           description="Experience using JavaScript in both frontend & backend to create interactive web applications."
         />
+
         <div id="react-logo">
           <StackCard
             title="React"
             src="react.png"
             description="Expertise with using react with JSX to create resuable components."
-
           />
         </div>
+
         <StackCard
           title="Node"
           src="node.png"
           description="Knowledge in leveraging NodeJS in order to build server-side applications."
-
         />
+
         <StackCard
           title="MongoDB"
           src="mongoDB.png"
           description="Knowledge of creating and querying NoSQL databases with MongoDB to store application data."
-
         />
 
         <StackCard
           title="Git"
           src="git.png"
           description="Proficient in making use of version control systems like git and github with all of my projects."
-
         />
 
         <StackCard
           src="Figma.png"
           title="Figma"
           description="Extensive knowledge of using Figma to design and prototype ideas and wireframes for my projects."
-
         />
 
         <StackCard
           title="MaterialUI"
           src="MaterialUI.png"
           description="Experience in leveraging Material-UI to create modern & clean looking UI components."
-
         />
 
         <StackCard
           title="C++"
           src="c++.png"
           description="One of my hobbies is coding with C# and C++. I like to create scenes and games with OpenGL. "
-
         />
 
         <StackCard
           title="TypeScript & TailwindCSS"
           src={<ImportContactsTwoToneIcon id="BookIcon" fontSize="large" />}
           description="Currently, I'm also in the process of experimenting with TypeScript and TailwindCSS to level up my dev skills."
-
         />
       </div>
 
@@ -547,11 +645,9 @@ export default function MyApp() {
               <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
               <span className="highlight"> React, JavaScript and a lot of CSS,
               </span> I use it to showcase some of my best work.
-              <span> I'm constantly tweaking the design of this project in order to give a great first impression, and it's truly something i'm proud of.</span>
+              <span> I'm constantly tweaking the design of this project in order to give a great first impression, and it's truly something I'm proud of.</span>
               <span className="highlight"> Click below if you'd like to view the source code. </span>
             </div>
-
-
 
           </Project_card>
 
@@ -579,7 +675,6 @@ export default function MyApp() {
             </div>
           </Project_card>
         </div>
-
 
         {/* <div className="project5">
 
@@ -615,7 +710,6 @@ export default function MyApp() {
               <span className="javascript-highlight"> JavaScript </span>
               <span className="mongo-highlight"> MongoDB </span>
               <span className="project-highlight"> REST API </span>
-
             </div>
 
             <br></br>

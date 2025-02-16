@@ -43,7 +43,7 @@ function CanvasBackground() {
                 context.strokeStyle = '#c47dff';
                 context.lineWidth = 1;
                 context.shadowBlur = shadowBlur; // Adjust the blur radius for the glow effect
-                context.shadowColor = '#0f0a13;'; // Color of the shadow (glow)
+                context.shadowColor = '#0f0a13'; // Color of the shadow (glow)
                 context.shadowOffsetX = 0;
                 context.shadowOffsetY = 0;
                 context.beginPath();

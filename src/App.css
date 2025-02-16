@@ -20,6 +20,28 @@
 
 }
 
+.timeline  {
+
+  display: flex;
+  margin: 0 auto;
+  color: whitesmoke;
+  max-width: 80%;
+
+}
+
+
+.timeline li, ul {
+
+  color: whitesmoke;
+  text-align: flex-end;
+  font-size: 17px;
+  font-family: 'Nunito', sans-serif;
+  border: 0px;
+
+}
+
+
+
 
 .landing-greeting-emoji-container {
 
@@ -256,7 +278,7 @@ html {
 }
 
 body {
-  background-color: #1e102a;
+  background-color: #0e0b0b;
 
 }
 
@@ -906,7 +928,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #c47dff;
-  background-color: rgba(20, 7, 36, 0.7);
+  background-color: rgba(36, 28, 48, 0.7);
   margin: 10px;
 
 }
@@ -1112,7 +1134,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: rgba(31, 14, 53, 0.45);
   align-items: stretch;
 }
 
@@ -1875,7 +1896,6 @@ body {
     }
   }
 
-
   .heading h1 {
 
     font-family: 'Nunito', sans-serif;
@@ -2183,6 +2203,21 @@ body {
     width: fit-content;
   }
 
+  .timeline-container {
+
+    display: none;
+
+  }
+
+  .timeline  {
+
+    display: flex;
+    margin: 0 auto;
+    color: whitesmoke;
+    max-width: 80%;
+  
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -2231,3 +2266,5 @@ body {
 
   }
 }
+
+
