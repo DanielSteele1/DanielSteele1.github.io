@@ -403,7 +403,7 @@ function MyTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h5" component="span">
-            <span className="highlight"> <CodeRoundedIcon sx={{ verticalAlign: 'middle' }} /> BSc (Hons) in Computer Science </span>
+            <span className="highlight"> BSc (Hons) in Computer Science </span>
           </Typography>
           <Typography> <span className="highlight"> 📍 University of Plymouth, Plymouth - Devon, UK </span></Typography>
           <li> Specialised in Full-Stack Development, learnt to use React.js, Node.js and other modern web technologies. </li>
