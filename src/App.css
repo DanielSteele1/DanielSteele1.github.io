@@ -2018,27 +2018,48 @@ body {
   .stack-card-container {
 
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat, (2fr);
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     height: fit-content;
-    max-width: 100%;
-    padding: 10px;
+    width: fit-content;
   }
 
   .stack-card {
-
+    display: flex;
     height: fit-content;
     overflow: none;
     width: fit-content;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
     margin: 10px;
+  }
+
+  #stack-heading {
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 160px;
+    margin: 0 auto;
+
+  }
+
+  #stack-heading img {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    
   }
 
   .stack-card h1 {
 
-    font-size: 18px;
-    padding: 5px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 17px;
 
   }
 
@@ -2047,7 +2068,7 @@ body {
     padding: 1px;
     font-size: 14px;
     justify-content: center;
-
+    display: none;
 
   }
 
