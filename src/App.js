@@ -25,7 +25,9 @@ import TerminalSharpIcon from '@mui/icons-material/TerminalSharp';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
-import { OpenInNewTwoTone } from '@mui/icons-material';
+import { OpenInNewTwoTone, TrendingUpRounded } from '@mui/icons-material';
+import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
+
 
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -228,7 +230,11 @@ function Project_card({ src, children, heading, link }) {
   return (
     <div className="Project_card">
       <div className="Project_card-image">
+      { typeof src === 'string' ? (
         <img src={src} alt={heading} loading="lazy" />
+      ) : (
+        src
+      ) }
       </div>
       <div className="Project_card-content">
         <div className="Project_card-heading">{heading}</div>
@@ -655,6 +661,35 @@ export default function MyApp() {
 
         <div className="project3">
           <Project_card
+            heading="FocusDev - Developer Workload Dashboard"
+            src="FocusDev.png"
+            //{<TrendingUpRoundedIcon sx={{ fontSize: '200px', marginRight: '350px', color: '#1DB954' } } />}
+            loading="lazy"
+            link="https://github.com/DanielSteele1/UtilitiesApp"
+          >
+            <div className="project-description">
+              <span className="project-highlight"> Ongoing Project </span>
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+              <span className="mongo-highlight"> MongoDB </span>
+              <span className="project-highlight"> REST API </span>
+            </div>
+
+            <br></br>
+            <div className="project-description">
+              FocusDev is primarily developed for developers to organise thier workload into one location. The project consists of a dashboard that includes all sorts of useful features for daily work.
+              For example, if a developer has to handle a ticket, keep track of meetings or needs to copy paste code snippets over and over, they can add it here and keep on top of things.
+              <br></br>
+              <br></br>
+              Developers can also connect thier github to the app in order to see different statistics, <span className="highlight">such as contributions, forks and the last project they worked on. </span>
+              Features include <span className="highlight"> a Notes app, Reusable code snippet feature, Calender, Github commit graph w/ stats, local weather forecasts </span> to name a few.
+            </div>
+
+          </Project_card>
+        </div>
+
+        <div className="project4">
+          <Project_card
             heading="EarthSim"
             src="EarthSim.gif"
             loading="lazy"
@@ -697,30 +732,6 @@ export default function MyApp() {
           </Project_card>
         </div> */}
 
-        <div className="project5">
-          <Project_card
-            heading="FocusDev - Personal Workload Tracker"
-            src="coming_soon.png"
-            loading="lazy"
-            link="https://github.com/DanielSteele1/UtilitiesApp"
-          >
-            <div className="project-description">
-              <span className="project-highlight"> Ongoing Project </span>
-              <span className="react-highlight"> ReactJS </span>
-              <span className="javascript-highlight"> JavaScript </span>
-              <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> REST API </span>
-            </div>
-
-            <br></br>
-            <div className="project-description">
-              FocusDev is primarily developed for myself to organise my workload into one location. The project consists of a dashboard/group of tools that includes all sorts of useful features for daily work.
-              for example, if a developer has to handle a ticket or has an important work call, they can add it here and keep on top of things.
-              <span className="highlight"> Features include a Notes app, Calender, Github commit graph, local weather forecasts </span> to name a few.
-            </div>
-
-          </Project_card>
-        </div>
 
         <div className="project6" >
           <Project_card
