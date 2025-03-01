@@ -88,8 +88,8 @@ function LandingSection() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV_Daniel_Steele__updated_Jan25_.pdf';
-    link.download = '/CV_Daniel_Steele__updated_Jan25_.pdf';
+    link.href = '/CV_Daniel_Steele_march_25.pdf';
+    link.download = '/CV_Daniel_Steele_march_25.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
