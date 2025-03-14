@@ -32,18 +32,16 @@ function CanvasBackground() {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 0.5 + 0.5;  // size of orbs
-                this.speedX = Math.random() * 1 - 0.5;
-                this.speedY = Math.random() * 1 - 0.5;
+                this.size = Math.random() * 1.2 + 1.2;  // size of orbs
+                this.speedX = (Math.random() * 1 - 0.5) * 0.4;
+                this.speedY = (Math.random() * 1 - 0.5) * 0.3;
             }
 
             // Method to draw individual particle
             draw() {
-                context.fillStyle = '#c47dff';
-                context.strokeStyle = '#c47dff';
-                context.lineWidth = 1;
+                context.fillStyle = '#FF4C98';
+                context.strokeStyle = '#FF4C98';
                 context.shadowBlur = shadowBlur; // Adjust the blur radius for the glow effect
-                context.shadowColor = '#0f0a13'; // Color of the shadow (glow)
                 context.shadowOffsetX = 0;
                 context.shadowOffsetY = 0;
                 context.beginPath();
@@ -86,7 +84,7 @@ function CanvasBackground() {
                     const distance = Math.sqrt(dx * dx + dy * dy);
 
                     if (distance < 150) {
-                        context.strokeStyle = 'rgba(196, 160, 2550, 0.4)';
+                        context.strokeStyle = 'rgba(255, 76, 152, 0.4)';
                         context.lineWidth = 1;
                         context.beginPath();
                         context.moveTo(particlesArray.current[a].x, particlesArray.current[a].y);

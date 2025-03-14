@@ -36,10 +36,12 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import ThumbUpRoundedIcon from '@mui/icons-material/ThumbUpRounded';
 
 import Typography from '@mui/material/Typography';
 
 import ConstructionIcon from '@mui/icons-material/Construction';
+
 
 function Picture5() {
 
@@ -138,7 +140,7 @@ function LandingSection() {
         <button className="download-button">
           <a href="#" target="_blank" onClick={handleDownloadAndView} rel="noopener noreferrer">
             <h1 className="download-text">
-              <FileDownloadIcon fontSize="large" sx={{ display: 'flex', color: '#c47dff', padding: '5px', paddingTop: '10px', verticalAlign: 'middle' }} />
+              <FileDownloadIcon fontSize="large" sx={{ display: 'flex', padding: '5px', paddingTop: '10px', verticalAlign: 'middle' }} />
               Download Resume </h1>
           </a>
         </button>
@@ -146,7 +148,7 @@ function LandingSection() {
       </div>
 
       <div className="landing-button-container">
-        <button className="landing-button"> <a href="#about">   <KeyboardDoubleArrowDownRoundedIcon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '70px', color: '#c47dff' }} /> </a> </button>
+        <button className="landing-button"> <a href="#about">   <KeyboardDoubleArrowDownRoundedIcon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '70px' }} /> </a> </button>
       </div>
     </div >
   )
@@ -158,7 +160,7 @@ function Profile() {
 
     <img
       className="profile"
-      src="Sunglasses.jpg"
+      src="DanielSteele.jpg"
       alt="profile"
       loading="lazy"
     />
@@ -289,11 +291,11 @@ function Footer() {
           <span className="footer-title">Connect</span>
           <div className="footer-connect">
             <a href="https://github.com/DanielSteele1" target="_blank" onClick={handleGithubClick} rel="noopener noreferrer">
-              <GithubIcon sx={{ fontSize: '35px', padding: '5px', color: '#c47dff' }} onClick={handleGithubClick} />
+              <GithubIcon sx={{ fontSize: '35px', padding: '5px' }} onClick={handleGithubClick} />
             </a>
 
             <a onClick={handleLinkedinClick} href="https://www.linkedin.com/in/daniel-steele1/" target="_blank">
-              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px', color: '#c47dff' }} />
+              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px' }} />
             </a>
           </div>
         </div>
@@ -364,8 +366,8 @@ function MyTimeline() {
           <span className="highlight"> 2011 - 2017 </span>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <ImportContactsTwoToneIcon sx={{ verticalAlign: 'middle', color: 'white', fontSizesize: '10px' }} /> </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+          <TimelineDot sx={{ bgcolor: '#D53D7C' }}> <ImportContactsTwoToneIcon sx={{ verticalAlign: 'middle', color: 'white', fontSizesize: '10px' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#D53D7C' }} />
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h5" component="span">
@@ -382,8 +384,8 @@ function MyTimeline() {
           <span className="highlight"> 2018 - 2021 </span>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <SchoolRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+          <TimelineDot sx={{ bgcolor: '#D53D7C' }}> <SchoolRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#D53D7C' }} />
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h5" component="span">
@@ -404,8 +406,8 @@ function MyTimeline() {
           <span className="highlight"> 2021 - 2024 </span>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot sx={{ bgcolor: '#9445d4' }}> <CodeRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: '#9445d4' }} />
+          <TimelineDot sx={{ bgcolor: '#D53D7C' }}> <CodeRoundedIcon sx={{ verticalAlign: 'middle', color: 'white' }} /> </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#D53D7C' }} />
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h5" component="span">
@@ -415,7 +417,7 @@ function MyTimeline() {
           <li> Specialised in Full-Stack Development, learnt to use ReactJS, NodeJS and other modern web technologies. </li>
           <li> Developed a Full-Stack web application for my final year project, which included working with REST APIs and database managment. </li>
           <li> Launched my Portfolio Website in June 2024, my first professional project demonstrating my ability to develop real world applications. </li>
-          <li> Started looking into libraries such as MaterialUI and Mantime to level up my front user interfaces.</li>
+          <li> Started looking into libraries such as MaterialUI and Mantime to level up my front end & UI skills.</li>
 
         </TimelineContent>
       </TimelineItem>
@@ -424,7 +426,7 @@ function MyTimeline() {
           <span className="highlight">  2024 - Present </span>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineDot variant="filled" sx={{ bgcolor: '#9445d4' }} />
+          <TimelineDot variant="filled" sx={{ bgcolor: '#D53D7C' }} />
         </TimelineSeparator>
         <TimelineContent>
           <Typography variant="h5" component="span">
@@ -487,23 +489,23 @@ export default function MyApp() {
           <div className="content-desc">
             <ul>
 
-              <CodeRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </CodeRoundedIcon>
+              <CodeRoundedIcon style={{ display: 'flex', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px', color: '#FF4C98' }}> </CodeRoundedIcon>
               <li style={{ gap: '10px' }}>
                 Having recently graduated from the <span className="highlight">  University of Plymouth in 2024, </span> and with a passion for creativity, I'm eager to immerse myself in the world of <span className="highlight">full-stack development. </span>
               </li>
               <br></br>
 
-              <SchoolRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
+              <SchoolRoundedIcon style={{ display: 'flex', color: '#FF4C98', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SchoolRoundedIcon>
               <li style={{ padding: '10px' }}>
                 At my time at university, I've learnt to code with web technologies such as <span className="highlight"> JavaScript, ReactJS, MongoDB & MySQL. </span>I've also created a variety of <span className="highlight"> projects using REST APIs, </span> which you can view below this page.
               </li>
               <br></br>
-              <TerminalSharpIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </TerminalSharpIcon>
+              <TerminalSharpIcon style={{ display: 'flex', color: '#FF4C98', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </TerminalSharpIcon>
               <li style={{ gap: '10px' }}>
                 I'm always looking to expand on my current knowledge and teach myself new technologies in and around web development. <span className="highlight"> Learning different approaches keeps me motivated and excited to code.</span>
               </li>
               <br></br>
-              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#c47dff', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SportsEsportsRoundedIcon>
+              <SportsEsportsRoundedIcon style={{ display: 'flex', color: '#FF4C98', fontSize: '40px', paddingLeft: '10px', marginBottom: '5px' }}> </SportsEsportsRoundedIcon>
               <li style={{ gap: '10px' }}>
                 As an occasional hobby in my free time, I like to experiment with <span className="highlight"> coding passion projects in OpenGL (C++), </span> and have a keen interest in computer hardware. To unwind, I like to play video games with friends.
               </li>
@@ -519,7 +521,6 @@ export default function MyApp() {
       <MyTimeline />
 
       </div>
-
 
       <div className="heading"> <h1> My Skills and Experience </h1> </div>
       <div className="heading-desc"><span> A list of my current skills and experience as a developer  </span></div>
