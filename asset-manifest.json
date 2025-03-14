@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9f42092.css",
-    "main.js": "/static/js/main.29a913e2.js",
+    "main.css": "/static/css/main.238bf9ee.css",
+    "main.js": "/static/js/main.ca85d815.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/raleway-latin-400-normal.woff": "/static/media/raleway-latin-400-normal.7274e8a7766c320ff67b.woff",
     "static/media/raleway-latin-400-normal.woff2": "/static/media/raleway-latin-400-normal.bc8445f492c7fbf7a0bb.woff2",
@@ -18,12 +18,12 @@
     "static/media/poppins-latin-ext-400-normal.woff2": "/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "static/media/raleway-vietnamese-400-normal.woff": "/static/media/raleway-vietnamese-400-normal.b1a419d3ead111471ac7.woff",
     "index.html": "/index.html",
-    "main.b9f42092.css.map": "/static/css/main.b9f42092.css.map",
-    "main.29a913e2.js.map": "/static/js/main.29a913e2.js.map",
+    "main.238bf9ee.css.map": "/static/css/main.238bf9ee.css.map",
+    "main.ca85d815.js.map": "/static/js/main.ca85d815.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9f42092.css",
-    "static/js/main.29a913e2.js"
+    "static/css/main.238bf9ee.css",
+    "static/js/main.ca85d815.js"
   ]
 }
