@@ -515,9 +515,9 @@ export default function MyApp() {
 
       </div>
 
-      <div className="heading"> <h2> My Github Contributions </h2> </div>
-
       <div className="github-commit-chart">
+
+      <div className="heading"> <h2> My Github Contributions </h2> </div>
 
         <div className="commit-chart">
           <iframe src="https://www.gitch.art/api/og/danielsteele1?color=FF4C98" width="1200" height="200" frameborder="0" scrolling="no"></iframe>

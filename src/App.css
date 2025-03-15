@@ -693,9 +693,7 @@ body {
 }
 
 .picture:hover {
-
   cursor: pointer;
-
 }
 
 .github-commit-chart {
@@ -723,9 +721,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px;
-
 }
-
 
 .Project_card {
   display: flex;
@@ -1420,7 +1416,7 @@ body {
 @media(min-width: 800px) and (max-width: 1200px) {
 
   .commit-chart iframe {
-    height:140px; /* Adjust height for mobile separately */
+    height:140px;
     border: none;
   }
 
@@ -1811,8 +1807,8 @@ body {
 @media (max-width: 480px) {
 
 
-  .commit-chart iframe {
-    height:65px; /* Adjust height for mobile separately */
+  .github-commit-chart {
+    visibility: hidden;
     border: none;
   }
 
