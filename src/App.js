@@ -28,7 +28,6 @@ import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRound
 import { OpenInNewTwoTone, TrendingUpRounded } from '@mui/icons-material';
 import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 
-
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -232,11 +231,11 @@ function Project_card({ src, children, heading, link }) {
   return (
     <div className="Project_card">
       <div className="Project_card-image">
-      { typeof src === 'string' ? (
-        <img src={src} alt={heading} loading="lazy" />
-      ) : (
-        src
-      ) }
+        {typeof src === 'string' ? (
+          <img src={src} alt={heading} loading="lazy" />
+        ) : (
+          src
+        )}
       </div>
       <div className="Project_card-content">
         <div className="Project_card-heading">{heading}</div>
@@ -511,14 +510,25 @@ export default function MyApp() {
               </li>
             </ul>
           </div>
+
         </div>
 
       </div>
 
-      <div className="timeline-container"> 
-      <div className="heading"> <h1> My Developer Journey so far... </h1></div>
+      <div className="heading"> <h2> My Github Contributions </h2> </div>
 
-      <MyTimeline />
+      <div className="github-commit-chart">
+
+        <div className="commit-chart">
+          <iframe src="https://www.gitch.art/api/og/danielsteele1?color=FF4C98" width="1200" height="200" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+      </div>
+
+      <div className="timeline-container">
+        <div className="heading"> <h1> My Developer Journey so far... </h1></div>
+
+        <MyTimeline />
 
       </div>
 

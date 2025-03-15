@@ -698,6 +698,32 @@ body {
 
 }
 
+.github-commit-chart {
+
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+
+
+}
+
+.github-commit-chart .heading{
+
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+
+}
+
+
+
+
+
 .Project_card {
   display: flex;
   flex-direction: row;
