@@ -20,7 +20,7 @@
 
 }
 
-.timeline  {
+.timeline {
 
   display: flex;
   margin: 0 auto;
@@ -30,7 +30,8 @@
 }
 
 
-.timeline li, ul {
+.timeline li,
+ul {
 
   color: whitesmoke;
   text-align: flex-end;
@@ -43,9 +44,9 @@
 
 .likes-counter-container {
 
-  display:flex;
-  width:400px;
-  color:#FF4C98;
+  display: flex;
+  width: 400px;
+  color: #FF4C98;
   font-size: 15px;
   font-family: 'Nunito', sans-serif;
   justify-content: center;
@@ -698,8 +699,8 @@ body {
 
 .github-commit-chart {
 
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   max-width: 100%;
   height: auto;
@@ -714,10 +715,10 @@ body {
   border: none;
 }
 
-.github-commit-chart .heading{
+.github-commit-chart .heading {
 
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 20px;
@@ -965,7 +966,7 @@ body {
   align-items: center;
   color: #FF4C98;
   margin: 10px;
-   
+
 }
 
 .stack-card:hover {
@@ -1143,7 +1144,7 @@ body {
   width: fit-content;
   height: fit-content;
   color: white;
-  
+
 }
 
 .backToTop:hover {
@@ -1158,8 +1159,9 @@ body {
   0% {
     transform: translateY(0px);
   }
+
   100% {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
   }
 }
 
@@ -1416,7 +1418,7 @@ body {
 @media(min-width: 800px) and (max-width: 1200px) {
 
   .commit-chart iframe {
-    height:140px;
+    height: 140px;
     border: none;
   }
 
@@ -1440,7 +1442,7 @@ body {
 @media (max-width: 800px) {
 
   .commit-chart iframe {
-    height:110px; 
+    height: 110px;
     border: none;
   }
 
@@ -1797,15 +1799,12 @@ body {
   }
 
   .footer {
-
     flex-direction: column;
-
   }
 
 }
 
 @media (max-width: 480px) {
-
 
   .github-commit-chart {
     visibility: hidden;
@@ -1828,7 +1827,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-
   }
 
   .hamburger {
@@ -1839,23 +1837,99 @@ body {
     position: absolute;
     top: 25px;
     right: 25px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-menu {
-    display: none;
+    display: flex;
+    visibility: hidden;
     flex-direction: column;
     width: 100%;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+    height: 0px;
+
   }
 
   .nav-menu.active {
     display: flex;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+    height: 120px;
+
   }
 
   .nav-item {
-    width: 100%;
+    width: 30%;
     text-align: center;
     margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+    font-size: 15px;
+    
   }
+
+  .nav-menu.active .nav-item {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav-menu.active {
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0);
+
+  }
+
+  .nav-menu:not(.active) .nav-item {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .nav-menu:not(.active) {
+    transition-delay: 0.5s;
+  }
+  
+  .nav-menu:not(.active) .nav-item {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .nav-menu:not(.active) {
+    transition-delay: 0.5s;
+  }
+
+  .nav-menu.active .nav-item:nth-child(1) {
+    transition-delay: 0.4s;
+  }
+
+  .nav-menu.active .nav-item:nth-child(2) {
+    transition-delay: 0.45s;
+  }
+
+  .nav-menu.active .nav-item:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+
 
   .nav-logo-heading {
 
@@ -1867,10 +1941,14 @@ body {
 
   }
 
+  .nav-heading :hover {
+    border-bottom: 2px solid #FF4C98;
+
+  }
+
   .nav-logo-heading span {
     visibility: hidden;
   }
-
 
   .nav-heading a {
     display: block;
@@ -2082,7 +2160,7 @@ body {
     height: fit-content;
     overflow: none;
     width: fit-content;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin: 10px;
@@ -2090,7 +2168,7 @@ body {
 
   #stack-heading {
 
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 160px;
@@ -2099,15 +2177,15 @@ body {
   }
 
   #stack-heading img {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
   }
 
   .stack-card h1 {
 
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     font-size: 17px;
@@ -2281,13 +2359,13 @@ body {
 
   }
 
-  .timeline  {
+  .timeline {
 
     display: flex;
     margin: 0 auto;
     color: whitesmoke;
     max-width: 80%;
-  
+
   }
 
 }
@@ -2338,5 +2416,3 @@ body {
 
   }
 }
-
-
