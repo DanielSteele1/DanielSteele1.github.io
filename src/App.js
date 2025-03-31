@@ -327,16 +327,22 @@ function Footer() {
   );
 }
 
-function StackCard({ src, description, title }) {
+function StackCard({ src, src2, description, title, spinLogo }) {
   return (
     <div className="stack-card">
       <div id="stack-heading">
         { }
         <div>
           {typeof src === 'string' ? (
-            <img src={src} alt={title} loading="lazy" />
+            <img src={src} alt={title} className={spinLogo ? "react-logo-spin" : ""} loading="lazy" />
           ) : (
             src
+          )}
+
+          {typeof src2 === 'string' ? (
+            <img src={src2} alt={title} loading="lazy" />
+          ) : (
+            src2
           )}
         </div>
         <h1>{title}</h1>
@@ -517,7 +523,7 @@ export default function MyApp() {
 
       <div className="github-commit-chart">
 
-      <div className="heading"> <h2> My Github Contributions </h2> </div>
+        <div className="heading"> <h2> My Github Contributions </h2> </div>
 
         <div className="commit-chart">
           <iframe src="https://www.gitch.art/api/og/danielsteele1?color=FF4C98" width="1200" height="200" frameborder="0" scrolling="no"></iframe>
@@ -526,7 +532,7 @@ export default function MyApp() {
       </div>
 
       <div className="timeline-container">
-        <div className="heading"> <h1> My Developer Journey so far... </h1></div>
+        <div className="heading"> <h1> My Developer Journey so far </h1></div>
 
         <MyTimeline />
 
@@ -538,31 +544,27 @@ export default function MyApp() {
       <div className="stack-card-container">
         <StackCard
 
-          title="HTML5"
+          title="HTML & CSS"
           src="HTML.png"
-          description="Full understanding and experience in the best practices of HTML."
-        />
-
-        <StackCard
-
-          title="CSS"
-          src="CSS.png"
-          description="Mastered the basics of CSS in order to create beautiful UI elements."
+          description="Full understanding and experience in the best practices of HTML5, Alongside a mastering of core CSS principles to quickly create beautiful UI."
         />
 
         <StackCard
           title="JavaScript"
           src="JS.png"
-          description="Experience using JavaScript in both frontend & backend to create interactive web applications."
+          description="Proficient in client-side JavaScript (ES6+, DOM, REST API) and server-side JavaScript, crafting efficient and scalable solutions across the full stack."
         />
 
         <div id="react-logo">
           <StackCard
-            title="ReactJS"
+            title="ReactJS + Vite"
             src="react.png"
-            description="Expertise with using react with JSX to create resuable components."
+            src2="vite-logo.png"
+            description="Expertise with using react, leveraging React Hooks alongside React Router. Also exploring the use of Vite with React for optimized, fast development."
+            spinLogo={true}
           />
         </div>
+
 
         <StackCard
           title="NodeJS"

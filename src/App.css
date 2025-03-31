@@ -86,7 +86,7 @@ ul {
   }
 }
 
-#react-logo img {
+.react-logo-spin {
   animation: App-logo-spin infinite 10s linear;
 
 }
@@ -957,9 +957,9 @@ body {
 
 .stack-card {
 
-  height: 150px;
+  height: 170px;
   width: fit-content;
-  padding: 12px;
+  padding: 10px;
   border-radius: 15px;
   border: #342834 2px solid;
   justify-content: center;
@@ -983,7 +983,7 @@ body {
 
 .stack-card h1 {
   color: #FF4C98;
-  font-size: 23px;
+  font-size: 22px;
   font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-items: center;
@@ -994,7 +994,6 @@ body {
 
   height: 50px;
   width: auto;
-  padding-right: 10px;
   margin: 10px;
 
 }
