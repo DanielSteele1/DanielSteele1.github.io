@@ -849,9 +849,32 @@ body {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 300;
   margin: 0 auto;
-  margin: 30px;
+  margin: 25px;
 
 }
+
+.nav-link a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+
+  background-color: #FF4C98; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(90deg, #FF4C98, #FF6EC7); /* Standard syntax; must be last */
+
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav-link a:hover::after{
+  transform: scaleX(1);
+}
+
 
 #description {
 
