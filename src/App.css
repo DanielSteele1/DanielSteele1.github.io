@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import '@fontsource/poppins';
 @import '@fontsource/raleway';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 @keyframes App-logo-spin {
@@ -237,12 +238,9 @@ a:hover {
 
 .heading h1 {
 
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 250;
-  background: linear-gradient(90deg, #FF4C98);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-style: bold;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #FF4C98;
   margin: 0 auto;
   margin: 10px;
   padding: 10px;
@@ -961,7 +959,7 @@ body {
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
-  border: #342834 2px solid;
+  border: transparent 2px solid;
   justify-content: center;
   align-items: center;
   color: #FF4C98;
@@ -1619,8 +1617,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #FF4C98;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
     margin: 0 auto;
 
   }
@@ -2026,7 +2022,6 @@ body {
 
   .heading h1 {
 
-    font-family: 'Nunito', sans-serif;
     font-style: normal;
     margin: 10 auto;
     margin: 10px;
@@ -2040,6 +2035,7 @@ body {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    width: 80%;
     justify-content: center;
     align-items: center;
 
@@ -2146,18 +2142,15 @@ body {
   .stack-card-container {
 
     display: grid;
-    grid-template-columns: repeat, (2fr);
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
     margin: 0 auto;
-    height: fit-content;
-    width: fit-content;
   }
 
   .stack-card {
     display: flex;
-    height: fit-content;
-    overflow: none;
+    height: 100px;
+    overflow: hidden;
     width: fit-content;
     justify-content: center;
     align-items: center;
@@ -2170,7 +2163,8 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 160px;
+    width:160px;
+    min-height: 60px;
     margin: 0 auto;
 
   }

@@ -42,6 +42,20 @@ import Typography from '@mui/material/Typography';
 import ConstructionIcon from '@mui/icons-material/Construction';
 
 
+import { SiJavascript } from "react-icons/si";
+import { FaHtml5, FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { TbBrandVite } from "react-icons/tb";
+import { BiLogoMongodb } from "react-icons/bi";
+
+import { FaGitAlt } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
+import { BiLogoCPlusPlus } from "react-icons/bi";
+import { FaBook } from "react-icons/fa";
+
+
+
 function Picture5() {
 
   return (
@@ -147,7 +161,7 @@ function LandingSection() {
       </div>
 
       <div className="landing-button-container">
-        <button className="landing-button"> <a href="#about">   <KeyboardDoubleArrowDownRoundedIcon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '70px' }} /> </a> </button>
+        <button className="landing-button"> <a href="#about">   <KeyboardDoubleArrowDownRoundedIcon sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '70px', color: '#FF4C98' }} /> </a> </button>
       </div>
     </div >
   )
@@ -290,11 +304,11 @@ function Footer() {
           <span className="footer-title">Connect</span>
           <div className="footer-connect">
             <a href="https://github.com/DanielSteele1" target="_blank" onClick={handleGithubClick} rel="noopener noreferrer">
-              <GithubIcon sx={{ fontSize: '35px', padding: '5px' }} onClick={handleGithubClick} />
+              <GithubIcon sx={{ fontSize: '35px', padding: '5px', color: '#FF4C98' }} onClick={handleGithubClick} />
             </a>
 
             <a onClick={handleLinkedinClick} href="https://www.linkedin.com/in/daniel-steele1/" target="_blank">
-              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px' }} />
+              <LinkedInIcon sx={{ fontSize: '35px', padding: '5px', color: '#FF4C98' }} />
             </a>
           </div>
         </div>
@@ -327,38 +341,34 @@ function Footer() {
   );
 }
 
-function StackCard({ src, src2, description, title, spinLogo }) {
+
+function BackToTop() {
+  return (
+    <Tooltip title="Back to top" placement="top">
+      <div className="backToTop" >
+        <div> <span> <a href="#top"> <KeyboardArrowUpRoundedIcon sx={{ display: 'flex,', fontSize: '70px', color: '#FF4C98' }} /> </a> </span> </div>
+      </div>
+    </Tooltip>
+  );
+}
+
+function StackCard({src, src2, description, title, spinLogo, iconComponent: IconComponent, iconComponent2: IconComponent2 }) {
   return (
     <div className="stack-card">
       <div id="stack-heading">
-        { }
         <div>
-          {typeof src === 'string' ? (
-            <img src={src} alt={title} className={spinLogo ? "react-logo-spin" : ""} loading="lazy" />
-          ) : (
-            src
+          {IconComponent && (
+            <IconComponent className={spinLogo ? "react-logo-spin" : ""} style={{ fontSize: '40px', margin: '10px', color: '#FF4C98' }} />
           )}
 
-          {typeof src2 === 'string' ? (
-            <img src={src2} alt={title} loading="lazy" />
-          ) : (
-            src2
+          {IconComponent2 && (
+            <IconComponent2 style={{ fontSize: '40px', margin: '10px', color: '#FF4C98' }} />
           )}
         </div>
         <h1>{title}</h1>
       </div>
       <div id="description"> <span> {description} </span> </div>
     </div>
-  );
-}
-
-function BackToTop() {
-  return (
-    <Tooltip title="Back to top" placement="top">
-      <div className="backToTop" >
-        <div> <span> <a href="#top"> <KeyboardArrowUpRoundedIcon sx={{ display: 'flex,', fontSize: '70px' }} /> </a> </span> </div>
-      </div>
-    </Tooltip>
   );
 }
 
@@ -469,7 +479,7 @@ export default function MyApp() {
       <br></br>
 
       <div className="heading"> <h1> About Daniel Steele </h1> </div>
-      <div className="heading-desc"><span> A short summary about myself. </span></div>
+      <div className="heading-desc"><span> A short summary about myself </span></div>
 
       <div className="main-content">
 
@@ -545,12 +555,13 @@ export default function MyApp() {
         <StackCard
 
           title="HTML & CSS"
-          src="HTML.png"
+          iconComponent={FaHtml5}
           description="Full understanding and experience in the best practices of HTML5, Alongside a mastering of core CSS principles to quickly create beautiful UI."
         />
 
         <StackCard
           title="JavaScript"
+          iconComponent={SiJavascript}
           src="JS.png"
           description="Proficient in client-side JavaScript (ES6+, DOM, REST API) and server-side JavaScript, crafting efficient and scalable solutions across the full stack."
         />
@@ -558,53 +569,53 @@ export default function MyApp() {
         <div id="react-logo">
           <StackCard
             title="ReactJS + Vite"
-            src="react.png"
+            iconComponent={FaReact}
+            iconComponent2={TbBrandVite}
             src2="vite-logo.png"
             description="Expertise with using react, leveraging React Hooks alongside React Router. Also exploring the use of Vite with React for optimized, fast development."
             spinLogo={true}
           />
         </div>
 
-
         <StackCard
           title="NodeJS"
-          src="node.png"
+          iconComponent={FaNodeJs}
           description="Knowledge in leveraging NodeJS in order to build server-side applications."
         />
 
         <StackCard
           title="MongoDB"
-          src="mongoDB.png"
+          iconComponent={BiLogoMongodb}
           description="Knowledge of creating and querying NoSQL databases with MongoDB to store application data."
         />
 
         <StackCard
           title="Git"
-          src="git.png"
+          iconComponent={FaGitAlt}
           description="Proficient in making use of version control systems like git and github with all of my projects."
         />
 
         <StackCard
-          src="Figma.png"
+          iconComponent={FaFigma}
           title="Figma"
           description="Extensive knowledge of using Figma to design and prototype ideas and wireframes for my projects."
         />
 
         <StackCard
           title="MaterialUI"
-          src="MaterialUI.png"
+          iconComponent={SiMui}
           description="Experience in leveraging Material-UI to create modern & clean looking UI components."
         />
 
         <StackCard
           title="C++"
-          src="c++.png"
+          iconComponent={BiLogoCPlusPlus}
           description="One of my hobbies is coding with C# and C++. I like to create scenes and games with OpenGL. "
         />
 
         <StackCard
           title="TypeScript & TailwindCSS"
-          src={<ImportContactsTwoToneIcon id="BookIcon" fontSize="large" />}
+          iconComponent={FaBook}
           description="Currently, I'm also in the process of experimenting with TypeScript and TailwindCSS to level up my dev skills."
         />
       </div>
