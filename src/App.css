@@ -2143,19 +2143,20 @@ body {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
   }
 
   .stack-card {
     display: flex;
-    height: 100px;
+    height: 105px;
+    flex-direction: row;
     overflow: hidden;
     width: fit-content;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin: 10px;
+    margin: 5px;
   }
 
   #stack-heading {
@@ -2163,7 +2164,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width:160px;
+    width:150px;
     min-height: 60px;
     margin: 0 auto;
 
@@ -2181,7 +2182,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 17px;
+    font-size: 15px;
 
   }
 
@@ -2195,7 +2196,7 @@ body {
   }
 
   #stack-heading img {
-    width: 35px;
+    width: 30px;
     height: auto;
   }
 
@@ -2211,7 +2212,6 @@ body {
   }
 
   .contact-Box {
-
 
     justify-content: center;
     align-items: center;
