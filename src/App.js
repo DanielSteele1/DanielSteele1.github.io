@@ -54,8 +54,6 @@ import { SiMui } from "react-icons/si";
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { FaBook } from "react-icons/fa";
 
-
-
 function Picture5() {
 
   return (
@@ -450,7 +448,7 @@ function MyTimeline() {
           <Typography> <span className="highlight"> Building Cool Stuff for the Web ✨ </span> </Typography>
           <li> Since graduating, I’ve been building full-stack applications to deepen my experience with the MERN stack — check them out below! </li>
           <li> While I'm competent at full-stack development, I'm always striving to learn and experiment with new libraries and languages.
-            I'm currently learning to use TypeScript, TailwindCSS and Framer Motion in some of my latest projects. </li>
+            I'm currently learning to use TypeScript, GraphQL and Framer Motion in some of my latest projects. </li>
 
         </TimelineContent>
       </TimelineItem>
@@ -614,9 +612,9 @@ export default function MyApp() {
         />
 
         <StackCard
-          title="TypeScript & TailwindCSS"
+          title="TypeScript & GraphQL"
           iconComponent={FaBook}
-          description="Currently, I'm also in the process of experimenting with TypeScript and TailwindCSS to level up my dev skills."
+          description="Currently, I'm also in the process of experimenting with TypeScript & playing around with GraphQL in order to level up my skills."
         />
       </div>
 
@@ -627,6 +625,36 @@ export default function MyApp() {
 
       <div className="projects">
 
+
+        <div className="project3">
+          <Project_card
+            heading="FocusDev - Developer Workload Dashboard"
+            src="FocusDev.png"
+            //{<TrendingUpRoundedIcon sx={{ fontSize: '200px', marginRight: '350px', color: '#1DB954' } } />}
+            loading="lazy"
+            link="https://github.com/DanielSteele1/UtilitiesApp"
+          >
+            <div className="project-description">
+              <span className="project-highlight"> Ongoing Project </span>
+              <span className="react-highlight"> ReactJS </span>
+              <span className="javascript-highlight"> JavaScript </span>
+              <span className="mongo-highlight"> MongoDB </span>
+              <span className="project-highlight"> REST API </span>
+            </div>
+
+            <br></br>
+            <div className="project-description">
+              FocusDev is primarily developed for developers to organise thier workload into one location. The project consists of a dashboard that includes all sorts of useful features for daily work.
+              For example, if a developer has to handle a ticket, keep track of meetings or needs to copy paste code snippets over and over, they can add it here and keep on top of things.
+              <br></br>
+              <br></br>
+              Developers can also connect thier github to the app in order to see different statistics, <span className="highlight">such as contributions, forks and the last project they worked on. </span>
+              Features include <span className="highlight"> a Notes app, Reusable code snippet feature, Calender, Github commit graph w/ stats, local weather forecasts </span> to name a few.
+            </div>
+
+          </Project_card>
+        </div>
+        
         <div className="project1">
 
           <Project_card
@@ -681,35 +709,6 @@ export default function MyApp() {
 
           </Project_card>
 
-        </div>
-
-        <div className="project3">
-          <Project_card
-            heading="FocusDev - Developer Workload Dashboard"
-            src="FocusDev.png"
-            //{<TrendingUpRoundedIcon sx={{ fontSize: '200px', marginRight: '350px', color: '#1DB954' } } />}
-            loading="lazy"
-            link="https://github.com/DanielSteele1/UtilitiesApp"
-          >
-            <div className="project-description">
-              <span className="project-highlight"> Ongoing Project </span>
-              <span className="react-highlight"> ReactJS </span>
-              <span className="javascript-highlight"> JavaScript </span>
-              <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> REST API </span>
-            </div>
-
-            <br></br>
-            <div className="project-description">
-              FocusDev is primarily developed for developers to organise thier workload into one location. The project consists of a dashboard that includes all sorts of useful features for daily work.
-              For example, if a developer has to handle a ticket, keep track of meetings or needs to copy paste code snippets over and over, they can add it here and keep on top of things.
-              <br></br>
-              <br></br>
-              Developers can also connect thier github to the app in order to see different statistics, <span className="highlight">such as contributions, forks and the last project they worked on. </span>
-              Features include <span className="highlight"> a Notes app, Reusable code snippet feature, Calender, Github commit graph w/ stats, local weather forecasts </span> to name a few.
-            </div>
-
-          </Project_card>
         </div>
 
         <div className="project4">

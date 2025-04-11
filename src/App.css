@@ -242,17 +242,16 @@ a:hover {
   font-weight: 500;
   color: #FF4C98;
   margin: 0 auto;
-  margin: 10px;
-  padding: 10px;
-  font-size: 50px;
+  margin: 5px;
+  font-size: 40px;
 
 }
 
 .heading-desc {
 
   display: flex;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 300;
   background: linear-gradient(90deg, #FF4C98, #FF6EC7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -625,7 +624,7 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
-  padding: 2%;
+  padding: 10px;
 
 }
 
@@ -728,7 +727,7 @@ body {
   align-items: center;
   width: fit-content;
   margin: auto auto;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 }
 
@@ -745,8 +744,8 @@ body {
 }
 
 .Project_card-image img {
-  width: 500px;
-  height: auto;
+  width: 600px;
+  height: 100%;
 }
 
 .Project_card-content {
@@ -754,7 +753,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 800px;
+  width: 750px;
 }
 
 .Project_card-heading {
@@ -768,7 +767,7 @@ body {
 }
 
 .Project_card-description {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-family: 'Nunito', sans-serif;
   margin-bottom: 20px;
@@ -1545,10 +1544,9 @@ body {
 
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    max-width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 10px;
     margin: 0 auto;
   }
 
@@ -1629,9 +1627,8 @@ body {
 
   .projects {
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
-
 
   .heading {
 
@@ -1824,7 +1821,7 @@ body {
 @media (max-width: 480px) {
 
   .github-commit-chart {
-    visibility: hidden;
+    display: none;
     border: none;
   }
 
@@ -2106,10 +2103,8 @@ body {
 
     display: flex;
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 
   }
 
@@ -2139,12 +2134,12 @@ body {
   .Project_card-description {
 
 
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .Project_card #heading {
 
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 300;
   }
 
