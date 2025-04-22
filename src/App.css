@@ -21,6 +21,44 @@
 
 }
 
+.Cta-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #FF4C98;
+  font-size: 35px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+
+}
+
+.Cta {
+
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.Cta-description {
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
 .timeline {
 
   display: flex;
@@ -73,6 +111,17 @@ ul {
 
 }
 
+.emoji-static {
+  unicode-bidi: isolate;
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  font-size: 40px;
+  padding: 5px;
+
+}
+
+
 @keyframes emojifloat {
   0% {
     transform: translateY(0px);
@@ -118,6 +167,11 @@ ul {
 .nav-item img:hover {
 
   border: none;
+}
+
+.nav-title {
+  display: flex;
+  font-size: 25px;
 }
 
 ul {
@@ -236,31 +290,18 @@ a:hover {
 
 }
 
-.heading h1 {
-
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  color: #FF4C98;
-  margin: 0 auto;
-  margin: 5px;
-  font-size: 40px;
-
-}
 
 .heading-desc {
 
   display: flex;
-  font-family: 'Inter', sans-serif; 
-  font-weight: 300;
-  background: linear-gradient(90deg, #FF4C98, #FF6EC7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: white;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
   font-size: 25px;
-
 }
 
 .link {
@@ -646,7 +687,7 @@ body {
   align-items: center;
   border-radius: 75%;
   justify-content: center;
-  margin: 0px auto 0px;
+  margin: 0px auto;
   border: 2px solid transparent;
   object-fit: cover;
   border: 3px solid;
@@ -675,18 +716,18 @@ body {
   opacity: 1.0;
 }
 
-.heading {
 
-  display: flex;
-  justify-content: center;
+.heading {
   align-items: center;
   color: #FF4C98;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
   margin: 0 auto;
-  font-weight: 200;
-  text-align: center;
-  position: relative;
-  width: fit-content;
-  height: fit-content;
+  padding: 10px;
 
 }
 
@@ -700,6 +741,8 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   height: auto;
   margin: 0 auto;
   justify-content: center;
@@ -712,14 +755,6 @@ body {
   border: none;
 }
 
-.github-commit-chart .heading {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
 
 .Project_card {
   display: flex;
@@ -762,7 +797,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -859,17 +895,22 @@ body {
   height: 2px;
   bottom: -3px;
   left: 0;
-  background-color: #FF4C98; /* fallback color if gradients are not supported */
-  background-image: -webkit-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image:    -moz-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For Firefox (3.6 to 15) */
-  background-image:      -o-linear-gradient(90deg, #FF4C98, #FF6EC7); /* For old Opera (11.1 to 12.0) */ 
-  background-image:         linear-gradient(90deg, #FF4C98, #FF6EC7); /* Standard syntax; must be last */
+  background-color: #FF4C98;
+  /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(90deg, #FF4C98, #FF6EC7);
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image: -moz-linear-gradient(90deg, #FF4C98, #FF6EC7);
+  /* For Firefox (3.6 to 15) */
+  background-image: -o-linear-gradient(90deg, #FF4C98, #FF6EC7);
+  /* For old Opera (11.1 to 12.0) */
+  background-image: linear-gradient(90deg, #FF4C98, #FF6EC7);
+  /* Standard syntax; must be last */
 
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
 
-.nav-link a:hover::after{
+.nav-link a:hover::after {
   transform: scaleX(1);
 }
 
@@ -883,14 +924,8 @@ body {
   align-items: center;
   font-size: 16px;
   border: 2px solid transparent;
-
 }
 
-#description:hover {
-  color: #FF4C98;
-  transition: ease 0.3s;
-
-}
 
 .main-content {
 
@@ -988,16 +1023,16 @@ body {
 
 }
 
-.stack-card:hover {
-  border: #FF4C98 2px solid;
-  background-color: #1a1417;
-  transition: 0.5s;
-}
+@media (hover: hover) and (pointer: fine) {
+  .stack-card:hover {
+    background-color: #3a252f;
+    transition: 0.5s;
+  }
 
-.stack-card:hover,
-.stack-card:hover span {
-  color: #FF4C98;
-  transition: 0.9s;
+  .stack-card:hover,
+  .stack-card:hover span {
+    transition: 0.9s;
+  }
 }
 
 .stack-card h1 {
@@ -1763,12 +1798,13 @@ body {
 
 @media (max-width: 100px) {
 
-  .heading h1 {
+  .heading {
 
     margin: 0 auto;
     margin: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
   }
 
 
@@ -1824,6 +1860,19 @@ body {
     display: none;
     border: none;
   }
+
+  .Cta-title{
+    font-size:  20px;
+    width: 100%;
+
+  }
+
+  .Cta-description {
+    font-size: 15px;
+    width: 80%;
+  }
+
+
 
   .projects,
   .profile-container,
@@ -1896,7 +1945,7 @@ body {
     transition: all 0.3s ease-in-out;
     transform: translateX(-50%);
     font-size: 15px;
-    
+
   }
 
   .nav-menu.active .nav-item {
@@ -1917,17 +1966,17 @@ body {
     opacity: 0;
     transition-delay: 0s;
   }
-  
+
   .nav-menu:not(.active) {
     transition-delay: 0.5s;
   }
-  
+
   .nav-menu:not(.active) .nav-item {
     transform: translateX(-50%);
     opacity: 0;
     transition-delay: 0s;
   }
-  
+
   .nav-menu:not(.active) {
     transition-delay: 0.5s;
   }
@@ -2039,7 +2088,7 @@ body {
     }
   }
 
-  .heading h1 {
+  .heading {
 
     font-style: normal;
     margin: 10 auto;
@@ -2174,7 +2223,7 @@ body {
     align-items: center;
     margin: 0px;
     padding: 0px;
-    
+
   }
 
   #stack-heading {
@@ -2182,7 +2231,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width:150px;
+    width: 150px;
 
   }
 
@@ -2402,7 +2451,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
     position: relative;
   }
 

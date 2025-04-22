@@ -213,8 +213,8 @@ function Navigation() {
     <div className="navigation">
 
       <div className="nav-logo-heading">
-        <div id="nav-profile"> <img src="Sunglasses_mini.png" loading="lazy" /> </div>
-        <span> Daniel Steele - Full Stack Engineer  </span>
+        <div id="nav-profile"> <img src="Sunglasses_mini.png" /> </div>
+        <span className="nav-title"> &lt; DanielSteele.dev /&gt;  </span>
       </div>
 
       <div className="hamburger">
@@ -350,7 +350,7 @@ function BackToTop() {
   );
 }
 
-function StackCard({src, src2, description, title, spinLogo, iconComponent: IconComponent, iconComponent2: IconComponent2 }) {
+function StackCard({ description, title, spinLogo, iconComponent: IconComponent, iconComponent2: IconComponent2 }) {
   return (
     <div className="stack-card">
       <div id="stack-heading">
@@ -446,7 +446,7 @@ function MyTimeline() {
             <span className="highlight">  Personal Projects <ConstructionIcon />  </span>
           </Typography>
           <Typography> <span className="highlight"> Building Cool Stuff for the Web ✨ </span> </Typography>
-          <li> Since graduating, I’ve been building full-stack applications to deepen my experience with the MERN stack — check them out below! </li>
+          <li> Since graduating, I’ve been building full-stack applications to deepen my experience with the MERN stack. </li>
           <li> While I'm competent at full-stack development, I'm always striving to learn and experiment with new libraries and languages.
             I'm currently learning to use TypeScript, GraphQL and Framer Motion in some of my latest projects. </li>
 
@@ -455,6 +455,19 @@ function MyTimeline() {
     </Timeline>
   );
 }
+
+
+function CallToAction() {
+
+  return (
+    <div className="Cta">
+      <div className="Cta-title"> Congrats! You hit the end. You can click the arrow to go back to the top. </div>
+      <span className="Cta-description"> I'm always developing something in my free time, so be sure to check back later in case i launch a project 👀 </span>
+
+    </div>
+  );
+}
+
 
 export default function MyApp() {
 
@@ -476,8 +489,8 @@ export default function MyApp() {
       <br></br>
       <br></br>
 
-      <div className="heading"> <h1> About Daniel Steele </h1> </div>
-      <div className="heading-desc"><span> A short summary about myself </span></div>
+      <div className="heading"> About Daniel Steele </div>
+      <div className="heading-desc"><span> A short summary introducing myself </span></div>
 
       <div className="main-content">
 
@@ -531,7 +544,8 @@ export default function MyApp() {
 
       <div className="github-commit-chart">
 
-        <div className="heading"> <h2> My Github Contributions </h2> </div>
+        <div className="heading"> My Github Contributions </div>
+        <div className="heading-desc"><span> Github Contributions in the last year</span></div>
 
         <div className="commit-chart">
           <iframe src="https://www.gitch.art/api/og/danielsteele1?color=FF4C98" width="1200" height="200" frameborder="0" scrolling="no"></iframe>
@@ -539,17 +553,11 @@ export default function MyApp() {
 
       </div>
 
-      <div className="timeline-container">
-        <div className="heading"> <h1> My Developer Journey so far </h1></div>
-
-        <MyTimeline />
-
-      </div>
-
-      <div className="heading"> <h1> My Skills and Experience </h1> </div>
+      <div className="heading">  My Skills and Experience </div>
       <div className="heading-desc"><span> A list of my current skills and experience as a developer  </span></div>
 
       <div className="stack-card-container">
+
         <StackCard
 
           title="HTML & CSS"
@@ -620,16 +628,15 @@ export default function MyApp() {
 
       <div id="projects"> </div>
 
-      <div className="heading"> <h1> My Featured Projects </h1> </div>
-      <div className="heading-desc"><span> Some of my recent personal projects   </span></div>
+      <div className="heading"> My Featured Projects  </div>
+      <div className="heading-desc"><span> Some of my recent personal projects </span></div>
 
       <div className="projects">
-
 
         <div className="project3">
           <Project_card
             heading="FocusDev - Developer Workload Dashboard"
-            src="FocusDev.png"
+            src="FocusDev.gif"
             //{<TrendingUpRoundedIcon sx={{ fontSize: '200px', marginRight: '350px', color: '#1DB954' } } />}
             loading="lazy"
             link="https://github.com/DanielSteele1/UtilitiesApp"
@@ -654,7 +661,7 @@ export default function MyApp() {
 
           </Project_card>
         </div>
-        
+
         <div className="project1">
 
           <Project_card
@@ -781,6 +788,19 @@ export default function MyApp() {
             </div>
 
           </Project_card>
+        </div>
+
+        <div className="timeline-container">
+          <div className="heading"> My Developer Journey </div>
+
+          <MyTimeline />
+
+        </div>
+
+        <div className="call-to-action">
+
+          <CallToAction />
+
         </div>
 
       </div>
