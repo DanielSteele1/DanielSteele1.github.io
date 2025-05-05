@@ -6,27 +6,21 @@ import { useEffect } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
 import Canvas from './Canvas.js';
-import ContactForm from './Contact.js';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone';
 import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
-import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import Tooltip from '@mui/material/Tooltip';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GithubIcon from '@mui/icons-material/GitHub';
-import MailIcon from '@mui/icons-material/Mail';
-import PhoneIcon from '@mui/icons-material/Phone';
 
 import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
 import TerminalSharpIcon from '@mui/icons-material/TerminalSharp';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import KeyboardArrowUpRoundedIcon from '@mui/icons-material/KeyboardArrowUpRounded';
-import { OpenInNewTwoTone, TrendingUpRounded } from '@mui/icons-material';
-import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -35,7 +29,6 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import ThumbUpRoundedIcon from '@mui/icons-material/ThumbUpRounded';
 
 import Typography from '@mui/material/Typography';
 
@@ -112,7 +105,7 @@ function LandingSection() {
   return (
     <div className="landing-content-container">
       <div className="landing-greeting-emoji-container">
-        <span className="landing-greeting">Hi, my name is </span> <div className="emoji">👋 </div>
+        <span className="landing-greeting">Hey, I'm</span>
       </div>
       <p1 className="landing-title"> Daniel Steele  </p1>
 
@@ -213,8 +206,10 @@ function Navigation() {
     <div className="navigation">
 
       <div className="nav-logo-heading">
-        <div id="nav-profile"> <img src="Sunglasses_mini.png" /> </div>
-        <span className="nav-title"> &lt; DanielSteele.dev /&gt;  </span>
+         <span className="nav-title">  <div className="logo">D<span className="logo-backtick">/</span>S</div> </span>
+      </div>
+        <div className="nav-logo-heading">
+          <span className="nav-update"> 🔥Currently working on <a href="https://github.com/DanielSteele1/FocusDev" className="update-link"> <div classname="highlight">FocusDev</div> </a> & redeveloping <a href="https://github.com/DanielSteele1/Portfolio-V2" className="update-link"> <div classname="highlight"> this portfolio site </div> </a> with vite. </span>
       </div>
 
       <div className="hamburger">
