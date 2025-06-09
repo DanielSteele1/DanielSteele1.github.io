@@ -752,16 +752,32 @@ body {
   border: none;
 }
 
-
 .Project_card {
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: fit-content;
   margin: auto auto;
   padding: 15px;
   border-radius: 10px;
 }
+
+.Project_card-image iframe {
+  flex: 1;
+  margin-right: 50px;
+  border-radius: 15px;
+  border: #342834 2px solid;
+}
+
+.Project_card-image iframe:hover {
+  border: #FF4C98 2px solid;
+  transition: 0.6s;
+}
+
+.Project_card-image iframe {
+  width: 600px;
+  height: 100%;
+}
+
 
 .Project_card-image img {
   flex: 1;
@@ -2149,6 +2165,15 @@ body {
 
   }
 
+  .Project_card iframe {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   .profile {
 
     margin: 0 auto 30px;
@@ -2160,7 +2185,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     gap: 10px;
-    max-width: 90%;
+    max-width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
 
@@ -2519,15 +2544,15 @@ body {
 }
 
 .nav-update {
-  display:flex;
+  display: flex;
   font-size: 18px;
-  color:#cfc9cc;
+  color: #cfc9cc;
   justify-content: center;
   align-items: center;
 }
 
 .update-link {
- padding-left: 5px;
- padding-right: 5px;
- color:#FF6EC7
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #FF6EC7
 }

@@ -234,25 +234,42 @@ function Navigation() {
   )
 }
 
-function Project_card({ src, children, heading, link }) {
-  return (
-    <div className="Project_card">
-      <div className="Project_card-image">
-        {typeof src === 'string' ? (
+function Project_card({ mediaType = 'image', src, youtubeId, children, heading, link }) {
+  const renderMedia = () => {
+    switch (mediaType) {
+      case 'youtube':
+        return (
+          <iframe
+            src={`https://www.youtube.com/embed/${youtubeId}`}
+            title={heading}
+            frameBorder="0"
+            allow=" autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        );
+      case 'image':
+      default:
+        return typeof src === 'string' ? (
           <img src={src} alt={heading} loading="lazy" />
         ) : (
           src
-        )}
+        );
+    }
+  };
+
+  return (
+    <div className="Project_card">
+      <div className={`Project_card-image ${mediaType}`}>
+        {renderMedia()}
       </div>
       <div className="Project_card-content">
         <div className="Project_card-heading">{heading}</div>
         <div className="Project_card-description">{children}</div>
         <div className="Project_card-button-container">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="Project_card-button" onClick={() => window.sa_event('Project_viewed', { project: heading })}>View Project </button>
+            <button className="Project_card-button" onClick={() => window.sa_event(`project_${heading.toLowerCase().replace(/[^a-z0-9]+/g, '_')}_viewed`)}>View Project </button>
           </a>
         </div>
-
       </div>
     </div>
   );
@@ -630,9 +647,8 @@ export default function MyApp() {
         <div className="project1">
           <Project_card
             heading="FocusDev - Developer Workload Dashboard"
-            src="FocusDev.gif"
-            //{<TrendingUpRoundedIcon sx={{ fontSize: '200px', marginRight: '350px', color: '#1DB954' } } />}
-            loading="lazy"
+            mediaType="youtube"
+            youtubeId="tpSIyG0BEt0"
             link="https://github.com/DanielSteele1/UtilitiesApp"
           >
             <div className="project-description">
