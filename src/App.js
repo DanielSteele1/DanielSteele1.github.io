@@ -164,7 +164,7 @@ function Profile() {
 
     <img
       className="profile"
-      src="Daniel_Steele.jpg"
+      src={`${process.env.PUBLIC_URL}/Daniel_Steele.jpg`}
       alt="profile"
       loading="lazy"
     />
@@ -675,7 +675,7 @@ export default function MyApp() {
         <div className="project2">
           <Project_card
             heading="Developer Portfolio v2"
-            src="Portfolio-v2.png"
+            src={`${process.env.PUBLIC_URL}/Portfolio-v2.png`}
             loading="lazy"
             link="https://github.com/DanielSteele1/Portfolio-V2"
           >
@@ -708,7 +708,7 @@ export default function MyApp() {
 
           <Project_card
             heading="SkyCompass - Global Weather Tracker"
-            src="SkyCompass.gif"
+            src={`${process.env.PUBLIC_URL}/SkyCompass.gif`}
             loading="lazy"
             link="https://github.com/DanielSteele1/COMP3000"
           >
@@ -735,7 +735,7 @@ export default function MyApp() {
         <div className="project4">
           <Project_card
             heading="EarthSim"
-            src="EarthSim.gif"
+            src={`${process.env.PUBLIC_URL}/EarthSim.gif`}
             loading="lazy"
             link="https://github.com/DanielSteele1/COMP3016_2"
           >
@@ -759,7 +759,7 @@ export default function MyApp() {
 
           <Project_card
             heading="DoodlePalette"
-            src="drawing-app.gif"
+            src={`${process.env.PUBLIC_URL}/drawing-app.gif`}
             loading="lazy"
             link="https://github.com/DanielSteele1/Drawing-App"
           >
@@ -782,10 +782,10 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project6" >
+        {/* <div className="project6" >
           <Project_card
             heading="TravelTracker.io"
-            src="coming_soon.png"
+            src={`${process.env.PUBLIC_URL}/coming_soon.png`}
             loading="lazy"
             link="https://github.com/DanielSteele1/TravelTracker.io"
           >
@@ -807,7 +807,7 @@ export default function MyApp() {
             </div>
 
           </Project_card>
-        </div>
+        </div> */}
 
         <div className="timeline-container">
           <div className="heading"> My Developer Journey </div>

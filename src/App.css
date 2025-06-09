@@ -2159,7 +2159,7 @@ body {
   .Project_card-image {
 
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
 
@@ -2168,7 +2168,7 @@ body {
   .Project_card iframe {
 
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
 
