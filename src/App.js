@@ -35,7 +35,7 @@ import Typography from '@mui/material/Typography';
 import ConstructionIcon from '@mui/icons-material/Construction';
 
 
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiVite } from "react-icons/si";
 import { FaHtml5, FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandVite } from "react-icons/tb";
@@ -164,7 +164,7 @@ function Profile() {
 
     <img
       className="profile"
-      src="DanielSteele.jpg"
+      src="Daniel_Steele.jpg"
       alt="profile"
       loading="lazy"
     />
@@ -206,10 +206,10 @@ function Navigation() {
     <div className="navigation">
 
       <div className="nav-logo-heading">
-         <span className="nav-title">  <div className="logo">D<span className="logo-backtick">/</span>S</div> </span>
+        <span className="nav-title">  <div className="logo">D<span className="logo-backtick">/</span>S</div> </span>
       </div>
-        <div className="nav-logo-heading">
-          <span className="nav-update"> 🔥Currently working on <a href="https://github.com/DanielSteele1/FocusDev" className="update-link"> <div classname="highlight">FocusDev</div> </a> & redeveloping <a href="https://github.com/DanielSteele1/Portfolio-V2" className="update-link"> <div classname="highlight"> this portfolio site </div> </a> with vite. </span>
+      <div className="nav-logo-heading">
+        <span className="nav-update"> 🔥Currently working on <a href="https://github.com/DanielSteele1/FocusDev" className="update-link"> <div classname="highlight">FocusDev</div> </a> & redeveloping <a href="https://github.com/DanielSteele1/Portfolio-V2" className="update-link"> <div classname="highlight"> this portfolio site </div> </a> with vite. </span>
       </div>
 
       <div className="hamburger">
@@ -249,9 +249,10 @@ function Project_card({ src, children, heading, link }) {
         <div className="Project_card-description">{children}</div>
         <div className="Project_card-button-container">
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <button className="Project_card-button" onClick={() => window.sa_event('project_viewed')}>View Project </button>
+            <button className="Project_card-button" onClick={() => window.sa_event('Project_viewed', { project: heading })}>View Project </button>
           </a>
         </div>
+
       </div>
     </div>
   );
@@ -485,7 +486,6 @@ export default function MyApp() {
       <br></br>
 
       <div className="heading"> About Daniel Steele </div>
-      <div className="heading-desc"><span> A short summary introducing myself </span></div>
 
       <div className="main-content">
 
@@ -549,7 +549,6 @@ export default function MyApp() {
       </div>
 
       <div className="heading">  My Skills and Experience </div>
-      <div className="heading-desc"><span> A list of my current skills and experience as a developer  </span></div>
 
       <div className="stack-card-container">
 
@@ -624,11 +623,11 @@ export default function MyApp() {
       <div id="projects"> </div>
 
       <div className="heading"> My Featured Projects  </div>
-      <div className="heading-desc"><span> Some of my recent personal projects </span></div>
+      <div className="heading-desc"><span> A list of my Personal Projects </span></div>
 
       <div className="projects">
 
-        <div className="project3">
+        <div className="project1">
           <Project_card
             heading="FocusDev - Developer Workload Dashboard"
             src="FocusDev.gif"
@@ -651,13 +650,45 @@ export default function MyApp() {
               <br></br>
               <br></br>
               Developers can also connect thier github to the app in order to see different statistics, <span className="highlight">such as contributions, forks and the last project they worked on. </span>
-              Features include <span className="highlight"> a Notes app, Reusable code snippet feature, Calender, Github commit graph w/ stats, local weather forecasts </span> to name a few.
+              Features include <span className="highlight"> a Notes app, Reusable code snippet feature, Calender, Github commit graph w/ stats </span> to name a few.
             </div>
 
           </Project_card>
         </div>
 
-        <div className="project1">
+        <div className="project2">
+          <Project_card
+            heading="Developer Portfolio v2"
+            src="Portfolio-v2.png"
+            loading="lazy"
+            link="https://github.com/DanielSteele1/Portfolio-V2"
+          >
+
+            <div className="project-description">
+              <span className="project-highlight"> Ongoing Project </span>
+              <span className="react-highlight"> ReactJS </span>
+              <span className="react-highlight"> TypeScript </span>
+              <span className="highlight"> Vite </span>
+
+            </div>
+            <br></br>
+
+            <div className="project-description">
+
+              I'm currently in the process of rebuilding this website as i've outgrown this site.
+              <span className="highlight"> The new website uses TypeScript & Vite as opposed to CRA, </span>
+              and it's code structure will be much more cleaner & modular,
+              in order to properly showcase how far my skills have come in the last 6 months. It's currently in development, but
+              you can view the project's code below.
+              <span className="highlight"> I hope to launch it soon on this domain, so stay tuned. </span>
+
+            </div>
+
+          </Project_card>
+
+        </div>
+
+        <div className="project3">
 
           <Project_card
             heading="SkyCompass - Global Weather Tracker"
@@ -685,34 +716,6 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        <div className="project2" >
-          <Project_card
-            heading="Developer Portfolio"
-            src="Portfolio.gif"
-            loading="lazy"
-            link="https://github.com/DanielSteele1/DanielSteele1.github.io"
-          >
-
-            <div className="project-description">
-              <span className="react-highlight"> ReactJS </span>
-              <span className="javascript-highlight"> JavaScript </span>
-
-            </div>
-            <br></br>
-
-            <div className="project-description">
-              <span> You're on this site right now! </span>
-              <span className="highlight"> My developer portfolio, </span> and current website. Built by me using
-              <span className="highlight"> ReactJS, JavaScript and a lot of CSS,
-              </span> I use it to showcase some of my best work.
-              <span> I'm constantly tweaking the design of this project in order to give a great first impression, and it's truly something I'm proud of.</span>
-              <span className="highlight"> Click below if you'd like to view the source code. </span>
-            </div>
-
-          </Project_card>
-
-        </div>
-
         <div className="project4">
           <Project_card
             heading="EarthSim"
@@ -736,7 +739,7 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        {/* <div className="project5">
+        <div className="project5">
 
           <Project_card
             heading="DoodlePalette"
@@ -744,6 +747,12 @@ export default function MyApp() {
             loading="lazy"
             link="https://github.com/DanielSteele1/Drawing-App"
           >
+
+            <div className="project-description">
+              <span className="react-highlight"> ReactJs </span>
+              <span className="javascript-highlight"> JavaScript </span>
+
+            </div>
 
             <div className="project-description">
 
@@ -755,8 +764,7 @@ export default function MyApp() {
             </div>
 
           </Project_card>
-        </div> */}
-
+        </div>
 
         <div className="project6" >
           <Project_card
