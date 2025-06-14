@@ -94,8 +94,8 @@ function LandingSection() {
 
     // download and view document
     const link = document.createElement('a');
-    link.href = '/CV_Daniel_Steele_march_25.pdf';
-    link.download = '/CV_Daniel_Steele_march_25.pdf';
+    link.href = '/Daniel_Steele_Frontend_Developer_CV.pdf';
+    link.download = '/Daniel_Steele_Frontend_Developer_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
