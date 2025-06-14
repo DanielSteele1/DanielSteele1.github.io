@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import '@fontsource/poppins';
-@import '@fontsource/raleway';
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
 
 @keyframes App-logo-spin {
   from {
@@ -23,7 +17,7 @@
 }
 
 .Cta-title {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 600;
   color: #FF4C98;
   font-size: 35px;
@@ -48,7 +42,7 @@
 
 .Cta-description {
 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 600;
   color: #cfc9cc;
   font-size: 25px;
@@ -76,7 +70,7 @@ ul {
   color: #cfc9cc;
   text-align: flex-end;
   font-size: 17px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   border: 0px;
 
 }
@@ -88,7 +82,7 @@ ul {
   width: 400px;
   color: #FF4C98;
   font-size: 15px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   justify-content: center;
   align-items: center;
   height: fit-content;
@@ -189,19 +183,6 @@ li {
 
 }
 
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-/* html::-webkit-scrollbar {
-  display: none;
-} */
-
-/* Hide scrollbar for IE, Edge, and Firefox */
-/* html {
-  -ms-overflow-style: none;  /* IE and Edge */
-/* scrollbar-width: none;  /* Firefox 
-}  */
-
-
 ::-webkit-scrollbar {
 
   width: 10px;
@@ -295,7 +276,7 @@ a:hover {
 .heading-desc {
 
   display: flex;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
   color: #cfc9cc;
   margin: 0 auto;
@@ -309,7 +290,7 @@ a:hover {
   display: inline-block;
   color: #FF4C98;
   /* Fallback color */
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 18px;
   padding: 5px 5px;
   margin-top: 10px;
@@ -335,7 +316,7 @@ body {
 .highlight {
 
   color: #FF4C98;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -343,7 +324,7 @@ body {
 
   color: #FF4C98;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -351,7 +332,7 @@ body {
 
   color: #e0ec36;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -359,7 +340,7 @@ body {
 
   color: #3cf735;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -367,7 +348,7 @@ body {
 
   color: #3ad3e7;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -375,7 +356,7 @@ body {
 
   color: #6ea9e0;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -383,7 +364,7 @@ body {
 
   color: #6ea9e0;
   padding-right: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -504,7 +485,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
   color: #FF4C98;
   font-size: 21px;
@@ -559,7 +540,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Figtree', sans-serif;
   font-size: 30px;
   width: fit-content;
   margin-top: 80px;
@@ -572,7 +553,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Figtree', sans-serif;
   font-size: 23px;
   width: 60%;
   margin-top: 20px;
@@ -583,7 +564,7 @@ body {
 
 .landing-title {
   display: flex;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   margin-bottom: 10px;
   font-size: 80px;
   height: 100px;
@@ -601,7 +582,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Figtree', sans-serif;
   font-size: 28px;
   margin-left: 5px;
   width: fit-content;
@@ -708,7 +689,7 @@ body {
   font-size: 20px;
   line-height: 1.35;
   color: #cfc9cc;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   max-width: 60%;
   opacity: 1.0;
 }
@@ -717,7 +698,7 @@ body {
 .heading {
   align-items: center;
   color: #FF4C98;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree', sans-serif;
   display: flex;
   font-weight: 500;
   justify-content: center;
@@ -810,7 +791,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -818,7 +799,7 @@ body {
 .Project_card-description {
   font-size: 16px;
   color: #cfc9cc;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -857,7 +838,7 @@ body {
 .nav-logo-heading {
 
   display: flex;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-weight: 400;
   background-clip: border-box;
   font-size: 25px;
@@ -888,8 +869,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  font-family: 'Lexend Deca', sans-serif;
+  font-size: 22px;
+  font-family: 'Figtree', sans-serif;
   font-weight: 300;
   margin: 0 auto;
   margin: 25px;
@@ -904,16 +885,10 @@ body {
   bottom: -3px;
   left: 0;
   background-color: #FF4C98;
-  /* fallback color if gradients are not supported */
   background-image: -webkit-linear-gradient(90deg, #FF4C98, #FF6EC7);
-  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
   background-image: -moz-linear-gradient(90deg, #FF4C98, #FF6EC7);
-  /* For Firefox (3.6 to 15) */
   background-image: -o-linear-gradient(90deg, #FF4C98, #FF6EC7);
-  /* For old Opera (11.1 to 12.0) */
   background-image: linear-gradient(90deg, #FF4C98, #FF6EC7);
-  /* Standard syntax; must be last */
-
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
@@ -927,7 +902,7 @@ body {
 
   color: #cfc9cc;
   max-width: 340px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   justify-content: center;
   align-items: center;
   font-size: 16px;
@@ -965,7 +940,7 @@ body {
   color: #cfc9cc;
   margin: 10px;
   padding: 30px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   text-align: flex-start;
 
 }
@@ -979,7 +954,7 @@ body {
   line-height: 1.35;
   color: #cfc9cc;
   margin: 0 auto;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   text-align: center;
 }
 
@@ -999,7 +974,7 @@ body {
   font-size: 25px;
   line-height: 1.5;
   color: #FF4C98;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   margin: 0 20%;
   margin-bottom: 10px;
   width: 95%;
@@ -1046,7 +1021,7 @@ body {
 .stack-card h1 {
   color: #FF4C98;
   font-size: 22px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   justify-content: center;
   align-items: center;
 
@@ -1063,7 +1038,7 @@ body {
 #stack-heading {
 
   display: flex;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1109,14 +1084,14 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 0px auto;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   color: #FF4C98;
   width: 100%;
 }
 
 .contact-desc-container {
   display: flex;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   align-items: center;
   justify-content: center;
   margin: 0px auto;
@@ -1144,7 +1119,7 @@ body {
   border-radius: 5px;
   background-color: #201e1e;
   color: #FF4C98;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 15px;
 
 }
@@ -1167,29 +1142,6 @@ body {
   background-color: #201e1e;
   border-radius: 5px;
   color: #FF4C98;
-
-}
-
-.contactForm textarea {
-
-  height: 80px;
-  width: 400px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #FF4C98;
-  background-color: #201e1e;
-  font-family: 'Overpass', sans-serif;
-  border-radius: 5px;
-  color: #FF4C98;
-
-}
-
-.contactForm h2 {
-
-  font-family: 'Overpass', sans-serif;
-  color: #FF4C98;
-  font-size: 25px;
 
 }
 
@@ -1251,13 +1203,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 17px;
   margin: 0 auto;
 }
 
 .footer-title {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   background: linear-gradient(90deg, #FF4C98, #FF6EC7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1269,7 +1221,7 @@ body {
 }
 
 .footer-link {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Figtree', sans-serif;
   background: linear-gradient(90deg, #FF4C98, #FF6EC7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1320,7 +1272,7 @@ body {
   background-color: #201e1e;
   border-radius: 5px;
   color: #FF4C98;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 18px;
 
 }
@@ -1347,7 +1299,7 @@ body {
   display: flex;
   margin: 10px auto;
   color: #fc0000;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
 
 }
 
@@ -1696,7 +1648,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
     position: relative;
     padding: 5px;
 
@@ -1742,7 +1694,7 @@ body {
     align-items: center;
     margin: 0 auto;
     height: fit-content;
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Figtree', sans-serif;
     width: 83%;
 
   }
@@ -1839,7 +1791,7 @@ body {
     align-items: center;
     margin: 0 auto;
     height: fit-content;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
   }
 
   .stack-card {
@@ -1863,6 +1815,10 @@ body {
 }
 
 @media (max-width: 480px) {
+
+  .nav-update {
+    display: none !important;
+  }
 
   .github-commit-chart {
     display: none;
@@ -1897,7 +1853,6 @@ body {
   .navigation {
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
   }
 
   .hamburger {
@@ -2001,16 +1956,6 @@ body {
     transition-delay: 0.5s;
   }
 
-
-  .nav-logo-heading {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-
-  }
 
   .nav-heading :hover {
     border-bottom: 2px solid #FF4C98;
@@ -2403,7 +2348,7 @@ body {
     text-align: center;
     margin: 0 auto;
     font-size: 18px;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Figtree', sans-serif;
     color: #FF4C98;
     position: relative;
 
@@ -2549,10 +2494,15 @@ body {
   color: #cfc9cc;
   justify-content: center;
   align-items: center;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  
 }
 
 .update-link {
   padding-left: 5px;
   padding-right: 5px;
-  color: #FF6EC7
+  color: #FF6EC7;
+  cursor: pointer;
+  text-decoration: underline;
 }
