@@ -1,7 +1,5 @@
-//import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-//import Carousel from './Carousel.js';
 import { useEffect } from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 
@@ -9,7 +7,6 @@ import Canvas from './Canvas.js';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ImportContactsTwoToneIcon from '@mui/icons-material/ImportContactsTwoTone';
-import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
 import KeyboardDoubleArrowDownRoundedIcon from '@mui/icons-material/KeyboardDoubleArrowDownRounded';
 import Tooltip from '@mui/material/Tooltip';
 
@@ -692,11 +689,10 @@ export default function MyApp() {
             <div className="project-description">
 
               I'm currently in the process of rebuilding this website as i've outgrown this site.
-              <span className="highlight"> The new website uses TypeScript & Vite as opposed to CRA, </span>
-              and it's code structure will be much more cleaner & modular,
-              in order to properly showcase how far my skills have come in the last 6 months. It's currently in development, but
-              you can view the project's code below.
-              <span className="highlight"> I hope to launch it soon on this domain, so stay tuned. </span>
+              <span className="highlight"> The new website will feature a technical blog, uses TypeScript & Vite as opposed to CRA, </span>
+              and it's code structure will be much more cleaner & modular in order to properly showcase how far my skills have come in the last 6 months. 
+              It's currently in development, but you can view the project's code below.
+              <span className="highlight"> I hope to launch it soon on this domain, so stay tuned. You can check out progress by clicking below:  </span>
 
             </div>
 
@@ -782,33 +778,6 @@ export default function MyApp() {
           </Project_card>
         </div>
 
-        {/* <div className="project6" >
-          <Project_card
-            heading="TravelTracker.io"
-            src={`${process.env.PUBLIC_URL}/coming_soon.png`}
-            loading="lazy"
-            link="https://github.com/DanielSteele1/TravelTracker.io"
-          >
-            <div className="project-description">
-              <span className="project-highlight"> Ongoing Project </span>
-              <span className="react-highlight"> ReactJS </span>
-              <span className="javascript-highlight"> JavaScript </span>
-              <span className="mongo-highlight"> MongoDB </span>
-              <span className="project-highlight"> REST API </span>
-
-            </div>
-            <br></br>
-
-            <div className="project-description">
-              <span className="highlight"> TravelTracker.io is a project that I'm currently working on. </span>
-              It's a full-stack application that will allow for users to track where they've been on holiday around the globe.
-              They will be able to add photos and descriptions of each trip, view a photo book tied to their account, view potential next holiday destinations,
-              and even share their trips with family & friends. <span className="highlight"> Built using ReactJS, NodeJS, Express and MongoDB. </span>
-            </div>
-
-          </Project_card>
-        </div> */}
-
         <div className="timeline-container">
           <div className="heading"> My Developer Journey </div>
 
@@ -826,7 +795,6 @@ export default function MyApp() {
 
       <BackToTop />
 
-      {/* <ContactForm /> */}
       <div id="contact" className="heading">  </div> {/* temporary div to ensure nav link isnt broken */}
 
       <Footer />
