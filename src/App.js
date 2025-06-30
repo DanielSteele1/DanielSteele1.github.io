@@ -672,7 +672,7 @@ export default function MyApp() {
         <div className="project2">
           <Project_card
             heading="Developer Portfolio v2"
-            src={`${process.env.PUBLIC_URL}/Portfolio-v2.png`}
+            src={`${process.env.PUBLIC_URL}/PortfolioV2.png`}
             loading="lazy"
             link="https://github.com/DanielSteele1/Portfolio-V2"
           >
